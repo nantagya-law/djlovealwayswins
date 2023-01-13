@@ -1,0 +1,25 @@
+.wrapper {
+    column-count: 2;
+    column-gap: 50px;
+    padding: 50px;
+}
+
+.star {
+    float: left;
+    width: 250px;
+    shape-outside: url(https://upload.wikimedia.org/wikipedia/commons/3/34/Red_star.svg);
+    shape-margin: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.moon {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-color: #2badd9;
+    float: right;
+    shape-outside: inset(1% round 50%);
+    margin-left: 20px;
+    margin-bottom: 10px;
+}

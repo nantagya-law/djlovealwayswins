@@ -1,0 +1,69 @@
+{%load static %}
+
+<div class="container-fluid text-white bg-transparent " style="background-color: #336666">
+    
+        <!-- Start: Pretty Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 footer-navigation">
+                    
+                    <a href="{% url 'main-home' %}">
+                        <img alt="Our logo" src="{% static 'main/assets/img/logo1.png' %}"/>
+                    </a>
+               
+                    <p class="links"><a href="{% url 'main-home' %}">Home</a><strong> ·
+                    </strong><a href="{% url 'main-about' %}">Über Mich</a><strong> ·
+                    </strong><a href="{% url 'main-help' %}">Hilfe</a><strong> ·
+                    </strong><a href="{% url 'main-events' %}">Events</a><strong> ·
+                    </strong><a href="{% url 'main-projects' %}">Projekte</a><strong> ·
+                    </strong><a href="{% url 'main-book' %}">Buch</a><strong> ·
+                    </strong><a href="{% url 'main-donate' %}">Unterstützer</a><strong> ·
+                    </strong><a href="{% url 'main-about' %}">Contact</a></p>
+                    <p
+                        class="company-name">© 2023 Lovealwayswins </p>
+                </div>
+                <div class="col-sm-6 col-md-4 footer-contacts">
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                        <p><span class="new-line-span">Germany</span> </p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left"> +49 555 123456</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p> <a href="{% url 'main-about' %}">support@lovealwayswins.de</a></p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-4 footer-about">
+                    <h4>About the company</h4>
+                    <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
+
+                    <div class="social-lin">
+
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+</svg></i></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z" />
+</svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="4" y="4" width="16" height="16" rx="4" />
+  <circle cx="12" cy="12" r="3" />
+  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+</svg></i></a>
+                        <a href="#" ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail"  width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="5" width="18" height="14" rx="2" />
+  <polyline points="3 7 12 13 21 7" />
+</svg></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- End: Pretty Footer -->
+    </div>
