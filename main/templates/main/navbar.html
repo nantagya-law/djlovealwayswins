@@ -1,0 +1,165 @@
+{% load static %}
+<!--
+Choose from .navbar-light for use with light background colors, 
+or .navbar-dark for dark background colors. Then, customize with .bg-* utilities.
+<nav class="navbar navbar-dark bg-dark"></nav>
+<nav class="navbar navbar-dark bg-primary"></nav>
+<nav class="navbar navbar-light" style="background-color: #e3f2fd"></nav>
+
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapse">
+-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'main-home' %}">
+        <img alt="Our Logo" src="{% static 'main/assets/img/logo2.png' %}" />
+    </a>
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'main-home' %}"
+                    >Home <span class="sr-only">(current)</span></a
+                >
+            </li>
+            <li class="nav-item about">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarAbout"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Über Mich
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarAbout">
+                    <a class="dropdown-item" href="{% url 'main-setcard' %}"
+                        >Set card</a
+                    >
+                    <a class="dropdown-item" href="{% url 'main-autogram' %}"
+                        >Autogramme</a
+                    >
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Noch was</a>
+                </div>
+            </li>
+            <li class="nav-item help">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarHelp"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Hilfe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarHelp">
+                    <a class="dropdown-item" href="{% url 'main-portalhelp' %}"
+                        >Portal</a
+                    >
+                    <a class="dropdown-item" href="{% url 'main-poesiealbum' %}"
+                        >PoesieAlbum</a
+                    >
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Noch was</a>
+                </div>
+            </li>
+            <li class="nav-item events">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarEvents"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarEvents">
+                    <a class="dropdown-item" href="{% url 'main-trailer' %}"
+                        >Trailer</a
+                    >
+                    <a class="dropdown-item" href="{% url 'main-booking' %}"
+                        >Buchnungen</a
+                    >
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Noch was</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'main-book' %}">Buch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'main-donate' %}"
+                    >Unterstützer</a
+                >
+            </li>
+            <li class="nav-item project">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Projekte
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'main-school' %}"
+                        >Schule in Uganda</a
+                    >
+                    <a class="dropdown-item" href="{% url 'main-coffee' %}"
+                        >Geruga Kaffe</a
+                    >
+                    <a class="dropdown-item" href="{% url 'main-vanilla' %}"
+                        >Vanilla</a
+                    >
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{% url 'main-donate' %}"
+                        >Unterstürze Uns</a
+                    >
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+            </button>
+        </form>
+    </div>
+</nav>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

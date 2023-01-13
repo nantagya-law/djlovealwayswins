@@ -1,0 +1,147 @@
+/*Taata wano wetujja okuteka custom css waffe nga bwetunaba tussazewo*/
+
+/*universal parameters(Jim)*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_body {
+    background-image: url("/static/main/assets/img/heart-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* style for logo for blending */
+.logo {
+}
+
+.por-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    /* flex-basis: 50%; */
+    /* align-content:space-around; */
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nt a::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 2px;
+    background-color: lightcyan;
+    margin: 0 auto;
+    margin-top: 4px;
+    transition-duration: 0.3s;
+
+    opacity: 0;
+}
+
+.nt a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+#navbar {
+    overflow: hidden;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*top padding to the page content to prevent sudden quick movement */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* style for botomm buttons */
+.container-button {
+    text-align: center;
+    margin-top: 360px;
+    /* border-radius: 10%;
+	box-shadow: 0 5px 15px -5px #00000070; */
+}
+.btn {
+    border: 1px solid #ffffff;
+    background: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    /* border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070; */
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1,
+.btn2 {
+    color: #ffffff;
+}
+.btn3 {
+    color: #ffffff;
+}
+.btn1:hover,
+.btn2:hover {
+    color: #8b59a7;
+    transform: scale(1.1);
+}
+.btn3:hover,
+.btn4:hover {
+    color: #063d41;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #8B59A;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn1::before,
+.btn3::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn2::before,
+.btn4::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn3::before,
+.btn4::before {
+    height: 180%;
+}
+.btn1:hover::before,
+.btn2:hover::before {
+    height: 180%;
+}
+.btn3:hover::before,
+.btn4:hover::before {
+    height: 0%;
+}
+
+/* media quaries */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("/static/main/assets/img/heart1-bg-sm.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+/* sign up button css */
+.btn-signup {
+    list-style: none;
+}
