@@ -11,9 +11,33 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import json
+import sshtunnel
+
+from .base import *
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+sshtunnel.SSH_TIMEOUT = 5.0
+sshtunnel.TUNNEL_TIMEOUT = 5.0
+
+with open('C:/Users/jmkag/priv/config.json') as config_file:
+#with open('/var/www/ssd1561/priv/config.json') as config_file:
+    config = json.load(config_file)
+
+local_tunnel_host = '127.0.0.1'
+#with sshtunnel.SSHTunnelForwarder(
+#    ( config['REMOTE_SSH_HOST'],  config['REMOTE_SSH_PORT'] ),
+#    ssh_username = config['REMOTE_SSH_USER'], ssh_password = config['REMOTE_SSH_PASS'],
+#    remote_bind_address=( config['REMOTE_MYSQL_HOST'],  config['REMOTE_MYSQL_PORT'] ),
+#    #local_bind_address=( config['LOCAL_TUNNEL_HOST'],  config['LOCAL_TUNNEL_PORT'])   # did not work
+#    local_bind_address=( local_tunnel_host,   config['LOCAL_TUNNEL_PORT'] )
+#) as tunnel:
+#    port = tunnel.local_bind_port
+    #host = tunnel.local_bind_host
 
 
 # Quick-start development settings - unsuitable for production
@@ -21,6 +45,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'u1_$!qeqwajjpke$@mm4x#ud%n=mqi4-&8q0)62%m%@k&4_s5d'
+#SECRET_KEY = config['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,7 +105,23 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    },
+
+    'shhtunnel_db': {
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'database': config.get('DATABASE_NAME'),
+            'user': config.get('DATABASE_USER'),
+            'password': config.get('DATABASE_PASS'),
+            'host': 'localhost',	# We have to use localhost otherwise it won't work!!!!!
+            #'port': port,
+            #'host': '127.0.0.1',
+            #'host': host,
+            'port': 3306,
+            'charset': 'utf8mb4',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+    },
+  }
 }
 
 
