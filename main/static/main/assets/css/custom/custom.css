@@ -1,3 +1,35 @@
+
+  @font-face {
+    font-family: 'Louis George Cafe';
+    font-style: normal;
+    font-weight: 300;
+    src:
+    local('Louis George Cafe-Bold') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold.ttf') format('truetype'),
+    local('Louis George Cafe-BoldItalic') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold-Italic.ttf') format('truetype'),
+    local('Louis George Cafe-Italic') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Italic.ttf') format('truetype'),
+    local('Louis George Cafe-Light') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Light.ttf') format('truetype'),
+    local('Louis George Cafe-LightItalic') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Light-Italic.ttf') format('truetype'),
+    local('Louis George Cafe-Regular') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Regular.ttf') format('truetype')
+    ;
+  }
+
+  @font-face {
+    font-family: 'DjangoITC';
+    font-style: normal;
+    font-weight: 300;
+    src:url("/static/django-itc-std.otf");
+}
+
+h1 {
+  font-family: DjangoITC, fantasy;
+}
+
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+  }
+
 .btn {
     border: 1px solid #c0aeae;
     background: none;
@@ -16,6 +48,8 @@
 .navbar {
     background: #ff7a59;
     color: #94128a;
+    /*font-family:'Courier New', Courier, monospace;*/
+    font-family:'Louis George Cafe';
     font-size: 18px;
     font-weight: bold;
 }
@@ -27,11 +61,15 @@
 }
 .font-size-60b {
     color: white;
+    /*font-family:'Courier New', Courier, monospace;*/
+    font-family:'Louis George Cafe';
     font-size: 60px;
     font-weight: bold;
 }
 .font-size-36b {
     color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-family:'Louis George Cafe';
     font-size: 36px;
     font-weight: bold;
 }
@@ -42,11 +80,14 @@
 }
 .font-size-18n {
     color: #94128a;
+    font-family:'Courier New', Courier, monospace;
+    font-family:'Louis George Cafe';
     font-size: 18px;
     font-weight: normal;
 }
 .font-size-32n {
     color: white;
+    font-family:'Courier New', Courier, monospace;
     font-size: 18px;
     font-weight: normal;
 }

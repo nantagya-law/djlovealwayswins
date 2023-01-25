@@ -45,10 +45,15 @@
   <body class="text-dark" style="background-color: #ffffff">
   -->
 
-    <body class="text-dark" style="background-color: #ffffff">
-        {% include '../main/logo.html' %}{% include '../main/navbar.html' %}
+    <body class="text-dark" style="background-color: #ffffff" style = "font-family:Arial, Helvetica, sans-serif;font-size:16px;font-style:normal;">
+    
+        {% include '../main/logo.html' %}
+        {% include '../main/navbar.html' %}
         <br />
-        {% block content %} {% endblock %} {% include '../main/footer.html' %}
+        {% block content %} 
+        {% endblock %} 
+        {% include '../main/footer.html' %}
+    
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

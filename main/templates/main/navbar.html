@@ -1,9 +1,7 @@
 {% load static %}
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
-        <nav class="navbar navbar-expand-lg bg-light" style="height: 52px">
-            <div class="container-fluid">
+
+    <div class="row container-fluid m-0 p-0">
+        <nav style="z-index: 1; height: 45px;" class="navbar navbar-expand-lg bg-light">
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -17,10 +15,10 @@
                 </button>
                 <div class="col"></div>
                 <div
-                    class="collapse navbar-collapse w-75 p-5"
+                    class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav  w-75 p-3">
                         <!-- Lijana menu point-->
                         <li class="nav-item dropdown">
                             <a
@@ -221,18 +219,13 @@
                         </li>
                         <!-- SPENDE menu point ends here-->
                     </ul>
-                    <form class="d-flex" role="search" style="height: 52px">
-                        <input
-                            class="form-control me-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                        />
+                    <form class="d-flex p-3" role="search" style="height: 52px">
+                        
 
                         <a class="float-end" href="{% url 'main-donate' %}">
                             <img
                                 src="{% static 'main/assets/img/new/grafik/Lupe-Suchen.svg' %}"
-                                alt="Spende"
+                                alt="Lupe"
                                 width="60"
                                 height="20"
                             />
@@ -240,7 +233,7 @@
                         <a class="float-end" href="{% url 'main-donate' %}">
                             <img
                                 src="{% static 'main/assets/img/new/grafik/Sprachauswahl.svg' %}"
-                                alt="Spende"
+                                alt="Sprachauswahl"
                                 width="60"
                                 height="20"
                             />
@@ -248,10 +241,10 @@
                     </form>
                 </div>
                 <div class="col"></div>
-            </div>
+        
         </nav>
     </div>
-</div>
+
 <!-- ### Menu Navbar ### -->
 
 <!-- jQuery -->
