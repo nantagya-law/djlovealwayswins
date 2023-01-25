@@ -13,8 +13,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import json
 import sshtunnel
+import MySQLdb
 
-from .base import *
+# from .base import *
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -29,15 +30,25 @@ with open('C:/Users/jmkag/priv/config.json') as config_file:
     config = json.load(config_file)
 
 local_tunnel_host = '127.0.0.1'
-#with sshtunnel.SSHTunnelForwarder(
-#    ( config['REMOTE_SSH_HOST'],  config['REMOTE_SSH_PORT'] ),
-#    ssh_username = config['REMOTE_SSH_USER'], ssh_password = config['REMOTE_SSH_PASS'],
-#    remote_bind_address=( config['REMOTE_MYSQL_HOST'],  config['REMOTE_MYSQL_PORT'] ),
-#    #local_bind_address=( config['LOCAL_TUNNEL_HOST'],  config['LOCAL_TUNNEL_PORT'])   # did not work
-#    local_bind_address=( local_tunnel_host,   config['LOCAL_TUNNEL_PORT'] )
-#) as tunnel:
-#    port = tunnel.local_bind_port
+with sshtunnel.SSHTunnelForwarder(
+   ( config['REMOTE_SSH_HOST'],  config['REMOTE_SSH_PORT'] ),
+   ssh_username = config['REMOTE_SSH_USER'], ssh_password = config['REMOTE_SSH_PASS'],
+   remote_bind_address=( config['REMOTE_MYSQL_HOST'],  config['REMOTE_MYSQL_PORT'] ),
+   #local_bind_address=( config['LOCAL_TUNNEL_HOST'],  config['LOCAL_TUNNEL_PORT'])   # did not work
+   local_bind_address=( local_tunnel_host,   config['LOCAL_TUNNEL_PORT'] )
+) as tunnel:
+    port = tunnel.local_bind_port
     #host = tunnel.local_bind_host
+    """  connection = MySQLdb.connect(
+        user=config.get('DATABASE_USER'),
+        passwd=config.get('DATABASE_PASS'),
+        #host='127.0.0.1', 
+        host= 'localhost',
+        port=tunnel.local_bind_port,
+        db=config.get('DATABASE_NAME'),
+    )
+    # Do stuff
+    connection.close() """
 
 
 # Quick-start development settings - unsuitable for production
@@ -77,7 +88,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'lovealwayswins.urls'
+ROOT_URLCONF = 'init.urls'
 
 TEMPLATES = [
     {
@@ -95,7 +106,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'lovealwayswins.wsgi.application'
+WSGI_APPLICATION = 'init.wsgi.application'
 
 
 # Database

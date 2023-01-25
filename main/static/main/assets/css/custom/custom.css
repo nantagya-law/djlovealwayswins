@@ -1,0 +1,52 @@
+.btn {
+    border: 1px solid #c0aeae;
+    background: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    /* border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070; */
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar {
+    background: #ff7a59;
+    color: #94128a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+.font-size-60b {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.font-size-36b {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+.titeltext2 {
+    color: #94128a;
+    font-size: 60px;
+    font-weight: bold;
+}
+.font-size-18n {
+    color: #94128a;
+    font-size: 18px;
+    font-weight: normal;
+}
+.font-size-32n {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}

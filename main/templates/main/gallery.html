@@ -1,67 +1,15 @@
-{% load static %}
-{% include "../main/header.html" %}
-
-<body>
-
-{% include '../main/menu.html' %}
-
-    <header class="gallery-header">
-      <h1>My Gallery</h1>
-    </header>
-
-    <!-- Gallery starts here -->
-    <div id="wrapper">
-        <!---Gallery Row 1 Start -->
-        <section class="one-third">
-          <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l1.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l1.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <section class="one-third">
-             <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l7.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l7.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <section class="one-third">
-             <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l8.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l8.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <!---Gallery Row 1 End -->
-
-        <!---Gallery Row 2 Start -->
-        <section class="one-third">
-             <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l2.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l2.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <section class="one-third">
-             <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l5.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l5.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <section class="one-third">
-             <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l3.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l3.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <!---Gallery Row 2 End -->
-
-        <!---Gallery Row 3 Start -->
-        <section class="one-third">
-             <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l7.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l7.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <section class="one-third">
-             <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l6.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l6.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <section class="one-third">
-             <a class="example-image-link" id="lightbox-img" href= "{% static 'main/assets/img/gallery/l9.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'main/assets/img/gallery/l9.jpg' %}" alt="" title="Love always wins"></a>
-        </section>
-        <!---Gallery Row 3 End -->
-
+{% extends "../main/base_generic.html" %} {% block content %}
+<header class="masthead">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+                <div class="site-heading">
+                    <h1>Gallery Page</h1>
+                    <span class="subheading">Coming Soon</span>
+                </div>
+            </div>
+        </div>
     </div>
+</header>
 
-    {% include '../main/footer.html' %}
-
-
-    <!-- js links -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.js"></script>
-    <script src="main/assets/js/lightbox-plus-jquery.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-
-    </body>
-
-    </html>
+{% endblock %}

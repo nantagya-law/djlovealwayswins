@@ -1,162 +1,258 @@
 {% load static %}
-<!--
-Choose from .navbar-light for use with light background colors, 
-or .navbar-dark for dark background colors. Then, customize with .bg-* utilities.
-<nav class="navbar navbar-dark bg-dark"></nav>
-<nav class="navbar navbar-dark bg-primary"></nav>
-<nav class="navbar navbar-light" style="background-color: #e3f2fd"></nav>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <nav class="navbar navbar-expand-lg bg-light" style="height: 52px">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col"></div>
+                <div
+                    class="collapse navbar-collapse w-75 p-5"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <!-- Lijana menu point-->
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                LIJANA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-about' %}"
+                                        >Das bin ich</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-setcard' %}"
+                                        >Setcard</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-autogram' %}"
+                                        >Autogramme</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Lijana menu point ends here-->
 
+                        <!-- CYBERMOBBING menu point starts here-->
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                CYBERMOBBING
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-portalhelp' %}"
+                                        >Hilfestellenportal</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-poesiealbum' %}"
+                                        >Poesiealbum</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- CYBERMOBBING menu point ends here-->
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="collapse">
--->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="{% url 'main-home' %}">
-        <img alt="Our Logo" src="{% static 'main/assets/img/logo2.png' %}" />
-    </a>
-    <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-    >
-        <span class="navbar-toggler-icon"></span>
-    </button>
+                        <!-- SCHULBESUCHE menu point starts here-->
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                SCHULBESUCHE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-gallery' %}"
+                                        >Bildergalerie</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-booking' %}"
+                                        >Buchnungen</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- SCHULBESUCHE menu point ends here-->
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{% url 'main-home' %}"
-                    >Home <span class="sr-only">(current)</span></a
-                >
-            </li>
-            <li class="nav-item about">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarAbout"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                    Über Mich
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarAbout">
-                    <a class="dropdown-item" href="{% url 'main-setcard' %}"
-                        >Set card</a
-                    >
-                    <a class="dropdown-item" href="{% url 'main-autogram' %}"
-                        >Autogramme</a
-                    >
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Noch was</a>
+                        <!-- PROJEKTE menu point starts here-->
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                PROJEKTE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-school' %}"
+                                        >Schule in Uganda</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-coffee' %}"
+                                        >Geruga Kaffee</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-donate' %}"
+                                        >Unterstürze Uns</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- PROJEKTE menu point ends here-->
+
+                        <!-- BUCH menu point starts here-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'main-book' %}"
+                                >BUCH</a
+                            >
+                        </li>
+                        <!-- BUCH menu point ends here-->
+
+                        <!-- SPENDE menu point starts here-->
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                SPENDE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="{% url 'main-donate' %}"
+                                        >So kannst du spenden</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- SPENDE menu point ends here-->
+                    </ul>
+                    <form class="d-flex" role="search" style="height: 52px">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+
+                        <a class="float-end" href="{% url 'main-donate' %}">
+                            <img
+                                src="{% static 'main/assets/img/new/grafik/Lupe-Suchen.svg' %}"
+                                alt="Spende"
+                                width="60"
+                                height="20"
+                            />
+                        </a>
+                        <a class="float-end" href="{% url 'main-donate' %}">
+                            <img
+                                src="{% static 'main/assets/img/new/grafik/Sprachauswahl.svg' %}"
+                                alt="Spende"
+                                width="60"
+                                height="20"
+                            />
+                        </a>
+                    </form>
                 </div>
-            </li>
-            <li class="nav-item help">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarHelp"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                    Hilfe
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarHelp">
-                    <a class="dropdown-item" href="{% url 'main-portalhelp' %}"
-                        >Portal</a
-                    >
-                    <a class="dropdown-item" href="{% url 'main-poesiealbum' %}"
-                        >PoesieAlbum</a
-                    >
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Noch was</a>
-                </div>
-            </li>
-            <li class="nav-item events">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarEvents"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                    Events
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarEvents">
-                    <a class="dropdown-item" href="{% url 'main-trailer' %}"
-                        >Trailer</a
-                    >
-                    <a class="dropdown-item" href="{% url 'main-booking' %}"
-                        >Buchnungen</a
-                    >
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Noch was</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'main-book' %}">Buch</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'main-donate' %}"
-                    >Unterstützer</a
-                >
-            </li>
-            <li class="nav-item project">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                    Projekte
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'main-school' %}"
-                        >Schule in Uganda</a
-                    >
-                    <a class="dropdown-item" href="{% url 'main-coffee' %}"
-                        >Geruga Kaffe</a
-                    >
-                    <a class="dropdown-item" href="{% url 'main-vanilla' %}"
-                        >Vanilla</a
-                    >
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{% url 'main-donate' %}"
-                        >Unterstürze Uns</a
-                    >
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                Search
-            </button>
-        </form>
+                <div class="col"></div>
+            </div>
+        </nav>
     </div>
-</nav>
+</div>
+<!-- ### Menu Navbar ### -->
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

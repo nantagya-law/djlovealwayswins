@@ -17,8 +17,8 @@ def help(request):
     return render(request, 'main/help.html', {'title': 'Help'})
 def portalhelp(request):
     return render(request, 'main/portalhelp.html', {'title': 'Portal Hilfe'})
-def trailer(request):
-    return render(request, 'main/trailer.html', {'title': 'Trailer'})
+def gallery(request):
+    return render(request, 'main/gallery.html', {'title': 'Trailer'})
 def booking(request):
     return render(request, 'main/booking.html', {'title': 'Booking'})
 
