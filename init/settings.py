@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import json
 import sshtunnel
-import MySQLdb
+#import MySQLdb
 
 # from .base import *
 

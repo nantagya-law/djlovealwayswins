@@ -1,4 +1,8 @@
 
+   html {
+	font-size: 18px; /* default value would be 16*/
+} 
+
   @font-face {
     font-family: 'Louis George Cafe';
     font-style: normal;
@@ -13,21 +17,37 @@
     ;
   }
 
-  @font-face {
-    font-family: 'DjangoITC';
-    font-style: normal;
-    font-weight: 300;
-    src:url("/static/django-itc-std.otf");
-}
+  * {
+    font-family: 'Louis George Cafe';
+    /*color: white;*/
+ }
 
 h1 {
-  font-family: DjangoITC, fantasy;
-}
+    font-size: 5rem;  /* 5 * 18px = 36px;*/
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  h1 + p {
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: red;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+
 
 body {
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
+    font-family:'Louis George Cafe', Arial, Helvetica, sans-serif;font-size:16px;font-style:normal;
   }
 
 .btn {
@@ -46,11 +66,11 @@ body {
 }
 
 .navbar {
-    background: #ff7a59;
+    background: #e0d8d6;
     color: #94128a;
     /*font-family:'Courier New', Courier, monospace;*/
     font-family:'Louis George Cafe';
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
@@ -60,34 +80,30 @@ body {
     line-height: 80px;
 }
 .font-size-60b {
-    color: white;
-    /*font-family:'Courier New', Courier, monospace;*/
-    font-family:'Louis George Cafe';
-    font-size: 60px;
+     /*color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-family:'Louis George Cafe';*/
+    font-size: 3.3rem;
     font-weight: bold;
 }
 .font-size-36b {
-    color: white;
-    font-family:'Courier New', Courier, monospace;
-    font-family:'Louis George Cafe';
-    font-size: 36px;
+   /* font-family:'Courier New', Courier, monospace;
+    font-family:'Louis George Cafe';*/
+    font-size: 2rem;
     font-weight: bold;
 }
-.titeltext2 {
-    color: #94128a;
-    font-size: 60px;
-    font-weight: bold;
-}
+
 .font-size-18n {
-    color: #94128a;
-    font-family:'Courier New', Courier, monospace;
-    font-family:'Louis George Cafe';
-    font-size: 18px;
+   /* font-family:'Louis George Cafe';*/
+    font-size: 1rem;
     font-weight: normal;
 }
 .font-size-32n {
-    color: white;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 18px;
+    /*font-family:'Louis George Cafe';*/
+    font-size: 1.8rem;
     font-weight: normal;
 }
+
+  
+  
+  
