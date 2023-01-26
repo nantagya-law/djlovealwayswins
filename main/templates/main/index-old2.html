@@ -1,16 +1,14 @@
 {% extends "../main/base_generic.html" %} {% block content %}
 <!-- ######## Titel bild block starts here ########-->
 <!-- Background image -->
-<div class="row bg-image h-200" style="
+<div class="row bg-image vh-100" style="
             margin-top: -22px;
             margin-right: -15px;
-            margin-bottom: 0px;
-            height: 700px;
              background-image: url('../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web-ohne_Schatten.jpg');">
     <!-- Container -->
     <div class="container d-flex justify-content-center align-items-center">
         <div class="col"></div>
-        <div class="col-sm-9">
+        <div class="float-bottom w-75">
             <span class="font-size-60b">Love Always<br /></span>
             <span class="font-size-60b">Wins e.V.<br /></span>
             <span class="font-size-36b">Mehr Selbstvertrauen für<br /></span>
@@ -27,7 +25,7 @@
 <div class="row" style="height: 302px">
     <div class="container d-flex justify-content-center align-items-center">
         <div class="col"></div>
-        <div class="col-sm-9">
+        <div class="w-75">
             <span class="titeltext2">Willkommen bei uns!<br /></span>
             <span class="titeltext2">Schön, dass du hier bist.<br /></span>
             <span class="font-size-18n"
@@ -41,11 +39,11 @@
 <!-- ######## Welcome block ends here ########-->
 
 <!-- ######## History block starts here ########-->
+<div class="container bg-info">
 <div class="row">
-
     <div class="col"></div>
-    <div class="col-sm-3 d-flex align-items-center">
-        <div class="card border-0 shadow p-3 mb-5 p-0 h-100 m-0">
+    <div class="w-25 d-flex align-items-center">
+        <div class="card border-2 p-0 h-100 m-0">
             <img
                 src="../../static/main/assets/img/new/01-Lijana.jpg"
                 class="card-img-top"
@@ -66,13 +64,16 @@
             >
         </div>
     </div>
-    <div class="col-sm-3 d-flex align-items-center">
-        <div class="card border-0 shadow p-3 mb-5 h-100 m-0 mr-3">
+    <div class="w-25 d-flex align-items-center">
+        <div class="card border-1 h-100 m-0">
             <img
                 class="card-img-top"
                 src="../../static/main/assets/img/new/02-Cybermobbing.jpg"
                 alt="Cybermobbing"
             />
+
+
+            
             <a class="float-end" href="{% url 'main-portalhelp' %}">
                 <img
                     src="../../static/main/assets/img/new/grafik/02-Cybermobbing.svg"
@@ -87,8 +88,8 @@
             </span>
         </div>
     </div>
-    <div class="col-sm-3 d-flex align-items-center">
-        <div class="card border-0 shadow p-3 mb-5 h-100 m-0">
+    <div class="w-25 d-flex align-items-center">
+        <div class="card border-1 h-100 m-0">
             <img
                 src="../../static/main/assets/img/new/03-Schulbesuche.jpg"
                 class="card-img-top"
@@ -109,18 +110,23 @@
     </div>
     <div class="col"></div>
 </div>
-
+</div>
 <!-- ######## History block ends here ########-->
 
 <!-- ######## Buy Book block starts here ########-->
-<!-- Background image -->
-<div class="row bg-image vh-50" style="
-            margin-top: 22px;
-            margin-right: -15px;
-             background-image: url('../../static/main/assets/img/new/Banner-HG.png');">
-    <div class="row d-flex align-items-center">
+<!--
+<div
+    class="row bg-image"
+    style="
+     z-index: 1;
+     margin-bottom: 0px;
+    height: 490px;
+        background-image: url('../../static/main/assets/img/new/Banner-HG.png');">
+</div>
+-->
+    <div class="container d-flex align-items-center bg-success">
         <div class="col"></div>
-        <div class="col-sm-6  text-white">
+        <div class="w-50 text-white bg-info">
             <span class="font-size-36b">Du verdienst den Tod!<br /></span>
             <span class="font-size-36b">Trotzdem lebe ich weiter.<br /></span>
             <span class="font-size-32n"
@@ -130,7 +136,7 @@
                 >erhaltet eine kleine Überraschung!<br
             /></span>
 
-            <a class="" href="{% url 'main-book' %}">
+            <a class="float-start" href="{% url 'main-book' %}">
                 <img
                     class=""
                     src="../../static/main/assets/img/new/grafik/Button_Bestellen.svg"
@@ -139,11 +145,12 @@
                     height="80"
                 />
             </a>
+            <a class="btn btn-primary" href="#" role="button">Learn with me</a>
         </div>
-        <div class="col-sm-3 float-end text-white">
+        <div class="w-25 text-white bg-danger">
             
 
-            <a href="{% url 'main-book' %}">
+            <a class="float-start" href="{% url 'main-book' %}">
                 <img
                     class="card-img-top"
                     src="../../static/main/assets/img/new/Buch.png"
@@ -155,8 +162,9 @@
         </div>
         <div class="col"></div>
     </div>
-</div>
+
 
 <!-- ######## Buy Book block ends here ########-->
 
 {% endblock %}
+
