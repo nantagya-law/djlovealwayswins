@@ -1,54 +1,141 @@
+html {
+    font-size: 18px; /* default value would be 16*/
+}
 
-   html {
-	font-size: 18px; /* default value would be 16*/
-} 
+/*
+mt-1 = .25rem
+mt-2 = .5rem
+mt-3 = 1rem
+mt-4 = 1.5rem
+mt-5 = 3rem
+*/
 
-  @font-face {
-    font-family: 'Louis George Cafe';
+@font-face {
+    font-family: "Louis George Cafe";
     font-style: normal;
     font-weight: 300;
-    src:
-    local('Louis George Cafe-Bold') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold.ttf') format('truetype'),
-    local('Louis George Cafe-BoldItalic') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold-Italic.ttf') format('truetype'),
-    local('Louis George Cafe-Italic') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Italic.ttf') format('truetype'),
-    local('Louis George Cafe-Light') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Light.ttf') format('truetype'),
-    local('Louis George Cafe-LightItalic') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Light-Italic.ttf') format('truetype'),
-    local('Louis George Cafe-Regular') url('../../fonts/louis-george-cafe/LouisGeorgeCafe-Regular.ttf') format('truetype')
-    ;
-  }
+    src: local("Louis George Cafe-Bold")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold.ttf")
+            format("truetype"),
+        local("Louis George Cafe-BoldItalic")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold-Italic.ttf")
+            format("truetype"),
+        local("Louis George Cafe-Italic")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Italic.ttf")
+            format("truetype"),
+        local("Louis George Cafe-Light")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Light.ttf")
+            format("truetype"),
+        local("Louis George Cafe-LightItalic")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Light-Italic.ttf")
+            format("truetype"),
+        local("Louis George Cafe-Regular")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Regular.ttf")
+            format("truetype");
+}
 
-  * {
-    font-family: 'Louis George Cafe';
+* {
+    font-family: "Louis George Cafe", Helvetica, Arial, sans-serif;
     /*color: white;*/
- }
+}
+
+div.relative-pos-top-titel-text {
+    position: relative;
+    margin-top: 380px;
+}
+
+div.relative-pos-bottom-titel-text {
+    position: relative;
+    /* position: absolute;
+    position: fixed; */
+    margin-bottom: 108px;
+}
+
+div.relative-pos-content-text {
+    position: relative;
+    margin-top: 65px;
+}
+
+div.relative-pos-content-sub-text {
+    position: relative;
+    margin-top: 20px;
+}
+
+div.relative-pos-book-titel {
+    position: relative;
+    margin-top: 106px;
+}
+div.relative-pos-book-sub-titel {
+    position: relative;
+    margin-top: 28px;
+}
+
+div.relative-pos-book-button {
+    position: relative;
+    margin-top: 40px;
+}
+
+div.margin-pos-left {
+    margin-left: 5rem;
+}
+div.margin-pos-right {
+    margin-right: 5rem;
+}
+
+div.titel-text {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+div.titel-sub-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+div.content-text {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+div.content-sub-text {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: normal;
+}
+
+div.book-titel-text {
+    font-size: 1.9rem;
+    font-weight: bold;
+    line-height: normal;
+}
+div.book-titel-sub-text {
+    font-size: 1.7rem;
+    font-weight: normal;
+    line-height: normal;
+}
 
 h1 {
-    font-size: 5rem;  /* 5 * 18px = 36px;*/
+    font-size: 5rem; /* 5 * 18px = 36px;*/
     text-transform: capitalize;
     text-shadow: 1px 1px 1px red, 2px 2px 1px red;
     text-align: center;
     letter-spacing: 2px;
-  }
-  
-  h1 + p {
-    font-weight: bold;
-  }
-  
-  p {
-    font-size: 1.5rem;
-    color: red;
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    letter-spacing: 1px;
-  }
+}
 
+h1 + p {
+    font-weight: bold;
+}
 
 body {
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
-    font-family:'Louis George Cafe', Arial, Helvetica, sans-serif;font-size:16px;font-style:normal;
-  }
+    font-size: 16px;
+    font-style: normal;
+}
 
 .btn {
     border: 1px solid #c0aeae;
@@ -68,8 +155,7 @@ body {
 .navbar {
     background: #e0d8d6;
     color: #94128a;
-    /*font-family:'Courier New', Courier, monospace;*/
-    font-family:'Louis George Cafe';
+    font-family: "Louis George Cafe";
     font-size: 0.9rem;
     font-weight: bold;
 }
@@ -80,30 +166,584 @@ body {
     line-height: 80px;
 }
 .font-size-60b {
-     /*color: white;
-    font-family:'Courier New', Courier, monospace;
-    font-family:'Louis George Cafe';*/
     font-size: 3.3rem;
     font-weight: bold;
+    line-height: normal;
 }
 .font-size-36b {
-   /* font-family:'Courier New', Courier, monospace;
-    font-family:'Louis George Cafe';*/
     font-size: 2rem;
     font-weight: bold;
+    line-height: normal;
 }
 
 .font-size-18n {
-   /* font-family:'Louis George Cafe';*/
     font-size: 1rem;
     font-weight: normal;
+    line-height: normal;
 }
 .font-size-32n {
-    /*font-family:'Louis George Cafe';*/
     font-size: 1.8rem;
     font-weight: normal;
+    line-height: normal;
 }
 
-  
-  
-  
+/*
+.card{
+	transition: all 0.4s ease-in-out;;
+}
+.card:hover{
+	transform: scale(1.2);
+}
+*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.HoverDiv {
+    position: relative;
+    overflow: hidden;
+    border: 0px solid black;
+    /*width: 360px;
+	margin: 10px;*/
+}
+
+/*.HoverDiv img {
+    max-width: 100%;
+    text-align: center;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.5s;
+}
+
+.HoverDiv:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+img {
+    display: inline-block;
+    border: 0px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}*/
+
+/*########### Example2 hover #############*/
+
+#cards_landscape_wrap-2 {
+    text-align: left;
+    background: #f7f7f7;
+}
+#cards_landscape_wrap-2 .container {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+#cards_landscape_wrap-2 a {
+    text-decoration: none;
+    outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box {
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    width: 100%;
+    height: 100%;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box {
+    text-align: left;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+    padding: 20px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer {
+    background: #ffffff;
+    margin-top: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+#cards_landscape_wrap-2 .card-flyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 10px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto Black", sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+}
+
+/*################# BOOK CSS ##############*/
+#cards_landscape_wrap-3 {
+    text-align: left;
+    background: #f7f7f7;
+}
+#cards_landscape_wrap-3 .container {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+#cards_landscape_wrap-3 a {
+    text-decoration: none;
+    outline: none;
+}
+#cards_landscape_wrap-3 .card-flyer {
+    border-radius: 5px;
+}
+#cards_landscape_wrap-3 .card-flyer .image-box {
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+#cards_landscape_wrap-3 .card-flyer .image-box img {
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    width: 100%;
+    height: 100%;
+}
+#cards_landscape_wrap-3 .card-flyer:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+#cards_landscape_wrap-3 .card-flyer .text-box {
+    text-align: left;
+}
+#cards_landscape_wrap-3 .card-flyer .text-box .text-container {
+    padding: 20px 18px;
+}
+#cards_landscape_wrap-3 .card-flyer {
+    background: #ffffff;
+    margin-top: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+#cards_landscape_wrap-3 .card-flyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 10px;
+}
+#cards_landscape_wrap-3 .card-flyer .text-box p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+#cards_landscape_wrap-3 .card-flyer .text-box h6 {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto Black", sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+}
+
+/* ######################### Example hover ############################## */
+body {
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+h1,
+h1 + p {
+    margin: 30px 15px 0;
+    font-weight: 300;
+}
+h1 + p a {
+    color: #333;
+}
+h1 + p a:hover {
+    text-decoration: none;
+}
+h2 {
+    margin: 60px 15px 0;
+    padding: 0;
+    font-weight: 300;
+}
+h2 span {
+    margin-left: 1em;
+    color: #aaa;
+    font-size: 85%;
+}
+.column {
+    margin: 15px 15px 0;
+    padding: 0;
+}
+.column:last-child {
+    padding-bottom: 60px;
+}
+.column::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.column div {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+.column div:first-child {
+    margin-left: 0;
+}
+.column div span {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+figure {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+figure:hover + span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+/* Zoom In #1 */
+.hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover01 figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Zoom In #2 */
+.hover02 figure img {
+    width: 300px;
+    height: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover02 figure:hover img {
+    width: 350px;
+}
+
+/* Zoom Out #1 */
+.hover03 figure img {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover03 figure:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Zoom Out #2 */
+.hover04 figure img {
+    width: 400px;
+    height: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover04 figure:hover img {
+    width: 300px;
+}
+
+/* Slide */
+.hover05 figure img {
+    margin-left: 30px;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover05 figure:hover img {
+    margin-left: 0;
+}
+
+/* Rotate */
+.hover06 figure img {
+    -webkit-transform: rotate(15deg) scale(1.4);
+    transform: rotate(15deg) scale(1.4);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover06 figure:hover img {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+}
+
+/* Blur */
+.hover07 figure img {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover07 figure:hover img {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+/* Gray Scale */
+.hover08 figure img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover08 figure:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/* Sepia */
+.hover09 figure img {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover09 figure:hover img {
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
+}
+
+/* Blur + Gray Scale */
+.hover10 figure img {
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover10 figure:hover img {
+    -webkit-filter: grayscale(100%) blur(3px);
+    filter: grayscale(100%) blur(3px);
+}
+
+/* Opacity #1 */
+.hover11 figure img {
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover11 figure:hover img {
+    opacity: 0.5;
+}
+
+/* Opacity #2 */
+.hover12 figure {
+    background: #1abc9c;
+}
+.hover12 figure img {
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hover12 figure:hover img {
+    opacity: 0.5;
+}
+
+/* Flashing */
+.hover13 figure:hover img {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Shine */
+.hover14 figure {
+    position: relative;
+}
+.hover14 figure::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+    -webkit-animation: shine 0.75s;
+    animation: shine 0.75s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+/* Circle */
+.hover15 figure {
+    position: relative;
+}
+.hover15 figure::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.hover15 figure:hover::before {
+    -webkit-animation: circle 0.75s;
+    animation: circle 0.75s;
+}
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
