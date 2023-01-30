@@ -1,107 +1,155 @@
 {%load static %}
-<div class="row container-fluid text-white" style="background-color: #0a0c0c">
-    <div class="col"></div>
-    <div class="w-75 p-3">
-        <!-- Start: Pretty Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-sm-2 footer-navigation">
-                    <h6>Lijana</h6>
-                    <p class="links">
-                        <a href="{% url 'main-about' %}">Das bin ich</a><br />
-                        <a href="{% url 'main-setcard' %}">Setcard</a><br />
-                        <a href="{% url 'main-autogram' %}">Autogramme</a>
-                    </p>
-                </div>
-                <div class="col-sm-2 footer-contacts">
-                    <h6>Cybermobbing</h6>
-                    <p class="links">
-                    <a href="{% url 'main-portalhelp' %}">Hilfestellenportal</a
-                    ><br />
-                    <a href="{% url 'main-poesiealbum' %}">Poesiealbum</a>
-                </p>
-                </div>
-                <div class="col-sm-2 footer-contacts">
-                    <h6>Schulbesuche</h6>
-                    <p class="links">
-                    <a href="{% url 'main-gallery' %}">Bildergalerie</a><br />
-                    <a href="{% url 'main-booking' %}">Buchnungen</a>
-                </p>
-                </div>
-                <div class="col-sm-2 footer-contacts">
-                    <h6>Projekte</h6>
-                    <p class="links">
-                    <a class="" href="{% url 'main-school' %}"
-                        >Schule in Uganda</a
-                    >
-                    <a class="" href="{% url 'main-coffee' %}">Geruga Kaffee</a>
-                    <a class="" href="{% url 'main-donate' %}"
-                        >Unterstürze Uns</a
-                    >
-                </p>
-                </div>
-                <div class="col-sm-1 footer-contacts">
-                    <h6>Buch</h6>
-                </div>
-                <div class="col-sm-2 footer-contacts">
-                    <h6>Spende</h6>
-                    <p class="links">
-                    <a class="" href="{% url 'main-donate' %}"
-                        >So kannst du spenden</a
-                    >
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="dropdown-divider col-sm-10"></div>
-                <div class="col-sm-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-5">
-                    <br />
-                    <h6>Hier findest du Lijana:</h6>
-                    <br />
-                </div>
-                <div class="col-sm-5 text-right">
-                    <br />
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-skype"></i></a>
-                    <br />
-                </div>
-            </div>
-            <div class="row">
-                <div class="dropdown-divider col-sm-10"></div>
-                <div class="col-sm-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <br />
-                    <a href="#"><h6>Nutzungsbedingungen</h6></a>
-                </div>
-                <div class="col-sm-2">
-                    <br />
-                    <a href="#"><h6>Datenschutzrichtlinie</h6></a>
-                </div>
-                <div class="col-sm-2">
-                    <br />
-                    <a href="#"><h6>Cookies-Richtlinien</h6></a>
-                </div>
-                <div class="col-sm-2">
-                    <br />
-                    <a href="#"><h6>Sicherheitshinweise</h6></a>
-                </div>
-                <div class="col-sm-2">
-                    <br />
-                    <a href="#" class="link-light">Cookie-Einstellungen</a>
-                </div>
-            </div>
-        </footer>
 
-        <!--End footer 2-->
+<div class="row text-white" style="background-color: #0a0c0c">
+    <!-- footer menu header -->
+    <div class="row relative-spacer-top">
+        <div class="col-sm-1 margin-pos-right"></div>
+        <div class="col-sm-1 footer-contacts">
+            <h6>Lijana</h6>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <h6>Cybermobbing</h6>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <h6>Schulbesuche</h6>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <h6>Projekte</h6>
+        </div>
+        <div class="col-sm-1 footer-contacts">
+            <h6>Buch</h6>
+        </div>
+        <div class="col-sm-1 footer-contacts">
+            <h6>Spende</h6>
+        </div>
     </div>
-    <div class="col"></div>
+
+    <!-- footer menu entry1 -->
+    <div class="row relative-pos-footer-row">
+        <div class="col-sm-1 margin-pos-right"></div>
+        <div class="col-sm-1 footer-contacts">
+            <a href="{% url 'main-about' %}">Das bin ich</a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="{% url 'main-portalhelp' %}">Hilfestellenportal</a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="{% url 'main-gallery' %}">Bildergalerie</a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a class="" href="{% url 'main-school' %}">Schule in Uganda</a>
+        </div>
+        <div class="col-sm-1 footer-contacts">
+            <a href="{% url 'main-book' %}">Mein Buch</a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a class="" href="{% url 'main-donate' %}">So kannst du spenden</a>
+        </div>
+    </div>
+
+    <!-- footer menu entry2 -->
+    <div class="row relative-pos-footer-row">
+        <div class="col-sm-1 margin-pos-right"></div>
+        <div class="col-sm-1 footer-contacts">
+            <a href="{% url 'main-setcard' %}">Setcard</a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="{% url 'main-poesiealbum' %}">Poesiealbum</a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="{% url 'main-booking' %}">Buchnungen</a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a class="" href="{% url 'main-coffee' %}">Geruga Kaffee</a>
+        </div>
+        <div class="col-sm-1 footer-contacts"></div>
+        <div class="col-sm-2 footer-contacts"></div>
+    </div>
+
+    <!-- footer menu entry3 -->
+    <div class="row">
+        <div class="col-sm-1 margin-pos-right"></div>
+        <div class="col-sm-1 footer-contacts">
+            <a href="{% url 'main-autogram' %}">Autogramme</a>
+        </div>
+        <div class="col-sm-2 footer-contacts"></div>
+        <div class="col-sm-2 footer-contacts"></div>
+        <div class="col-sm-2 footer-contacts">
+            <a class="" href="{% url 'main-donate' %}">Unterstürze Uns</a>
+        </div>
+        <div class="col-sm-1 footer-contacts"></div>
+        <div class="col-sm-2 footer-contacts"></div>
+    </div>
+
+    <!-- footer horizont line -->
+    <div class="row relative-spacer-top">
+        <div class="col-sm-1 margin-pos-right"></div>
+        <div class="col-sm-10 footer-contacts"><hr /></div>
+        <div class="col-sm-1 footer-contacts"></div>
+    </div>
+
+    <!-- footer Lijana social media text -->
+    <div class="row">
+        <div class="col-sm-1 margin-pos-right"></div>
+        <div class="col-sm-6 relative-spacer-top d-flex align-items-center">
+            Hier findest du Lijana:
+        </div>
+        <div class="col-sm-1 relative-pos-social-media-icon">
+            <a class="float-start" href="{% url 'main-home' %}">
+                <img
+                    class="card-img-top"
+                    style="margin-top: 0px; max-width: 25%; height: auto"
+                    src="{% static 'main/assets/img/new/grafik/Icon-Instagram.svg' %}"
+                    alt="Instagram"
+                />
+            </a>
+        </div>
+        <div class="col-sm-1 relative-pos-social-media-icon">
+            <a class="float-start" href="{% url 'main-home' %}">
+                <img
+                    class="card-img-top"
+                    style="margin-top: 0px; max-width: 25%; height: auto"
+                    src="{% static 'main/assets/img/new/grafik/Icon-TikTok.svg' %}"
+                    alt="TikTok"
+                />
+            </a>
+        </div>
+        <div class="col-sm-1 relative-pos-social-media-icon">
+            <a class="float-start" href="{% url 'main-home' %}">
+                <img
+                    class="card-img-top"
+                    style="margin-top: 0px; max-width: 25%; height: auto"
+                    src="{% static 'main/assets/img/new/grafik/Icon-YouTube.svg' %}"
+                    alt="YouTube"
+                />
+            </a>
+        </div>
+        <!-- footer horizont line -->
+        <div class="row relative-spacer-top">
+            <div class="col-sm-1 margin-pos-right"></div>
+            <div class="col-sm-10 footer-contacts"><hr /></div>
+            <div class="col-sm-1 footer-contacts"></div>
+        </div>
+        <div class="col-sm-1 footer-contacts"></div>
+    </div>
+
+    <!-- footer cookies -->
+    <div class="row relative-spacer-top">
+        <div class="col-sm-1 margin-pos-right"></div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="#"><h6>Nutzungsbedingungen</h6></a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="#"><h6>Datenschutzrichtlinie</h6></a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="#"><h6>Cookies-Richtlinien</h6></a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="#"><h6>Sicherheitshinweise</h6></a>
+        </div>
+        <div class="col-sm-2 footer-contacts">
+            <a href="#" class="link-light">Cookie-Einstellungen</a>
+        </div>
+    </div>
 </div>

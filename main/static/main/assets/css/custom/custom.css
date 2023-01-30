@@ -39,6 +39,38 @@ mt-5 = 3rem
     /*color: white;*/
 }
 
+div.relative-spacer-top {
+    position: relative;
+    margin-top: 42px;
+}
+div.relative-heart-spacer-top {
+    position: relative;
+    margin-top: 630px;
+}
+div.relative-heart-spacer-bottom {
+    position: relative;
+    margin-bottom: 45px;
+}
+div.relative-heart-spacer-left-right {
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div.relative-pos-logo {
+    position: relative;
+    margin-top: 39px;
+    margin-bottom: 39px;
+    height: auto;
+}
+
+div.relative-pos-navbar {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+
 div.relative-pos-top-titel-text {
     position: relative;
     margin-top: 380px;
@@ -46,8 +78,7 @@ div.relative-pos-top-titel-text {
 
 div.relative-pos-bottom-titel-text {
     position: relative;
-    /* position: absolute;
-    position: fixed; */
+    margin-top: 40px;
     margin-bottom: 108px;
 }
 
@@ -63,7 +94,7 @@ div.relative-pos-content-sub-text {
 
 div.relative-pos-book-titel {
     position: relative;
-    margin-top: 106px;
+    margin-top: 56px;
 }
 div.relative-pos-book-sub-titel {
     position: relative;
@@ -73,6 +104,33 @@ div.relative-pos-book-sub-titel {
 div.relative-pos-book-button {
     position: relative;
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+div.relative-pos-footer {
+    position: relative;
+    margin-top: 42px;
+    margin-bottom: 11px;
+}
+
+div.relative-pos-footer-row {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+div.relative-pos-footer-horizont-line {
+    position: relative;
+    margin-top: 42px;
+    margin-bottom: 0px;
+}
+div.relative-pos-social-media-text {
+    position: relative;
+    margin-top: 42px;
+    margin-bottom: 0px;
+}
+div.relative-pos-social-media-icon {
+    position: relative;
+    margin-top: 37px;
+    margin-bottom: 0px;
 }
 
 div.margin-pos-left {
