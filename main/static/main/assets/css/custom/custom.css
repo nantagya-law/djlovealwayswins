@@ -9,6 +9,26 @@ mt-3 = 1rem
 mt-4 = 1.5rem
 mt-5 = 3rem
 */
+#openPopup {
+    padding: 20px 30px;
+    background-color: #a2238e;
+    border-color: #a2238e;
+    box-shadow: 1px 1px 1px #999;
+    white-space: normal;
+    font-size: smaller;
+    letter-spacing: 0.2px;
+}
+
+#openPopup:hover,
+#openPopup:active,
+#openPopup:focus {
+    background-color: #912284 !important;
+    border-color: #912284 !important;
+}
+
+#openPopup:focus {
+    outline: none;
+}
 
 @font-face {
     font-family: "Louis George Cafe";
@@ -39,9 +59,47 @@ mt-5 = 3rem
     /*color: white;*/
 }
 
+div.relative-line-spacer-top-bottom {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.relative-line-spacer-top {
+    position: relative;
+    margin-top: 10px;
+}
+div.relative-footer-spacer-bottom {
+    position: relative;
+    margin-bottom: 20px;
+}
+div.relative-spacer-footer-top {
+    position: relative;
+    margin-top: 20px;
+}
+
 div.relative-spacer-top {
     position: relative;
-    margin-top: 42px;
+    margin-top: 50px;
+}
+
+div.relative-spacer-top-video {
+    position: relative;
+    margin-top: 50px;
+}
+div.relative-spacer-top-bottom {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+div.relative-spacer-top-bottom-equal {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+div.relative-spacer-bottom {
+    position: relative;
+    margin-bottom: 70px;
 }
 div.relative-heart-spacer-top {
     position: relative;
@@ -55,6 +113,12 @@ div.relative-heart-spacer-left-right {
     position: relative;
     margin-right: 0px;
     margin-left: 0px;
+}
+
+div.relative-spacer-left-right {
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 div.relative-pos-logo {
@@ -150,6 +214,14 @@ div.titel-sub-text {
     font-size: 1.7rem;
     font-weight: bold;
     line-height: normal;
+}
+
+div.book-content-text {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 2.3rem;
+    letter-spacing: 1px;
+    text-align: justify;
 }
 
 div.content-text {
