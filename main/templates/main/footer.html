@@ -1,27 +1,15 @@
 {%load static %}
 
-<div class="row text-white" style="background-color: #0a0c0c">
+<div class="row text-white footer-text" style="background-color: #0a0c0c">
     <!-- footer menu header -->
     <div class="row relative-spacer-footer-top">
         <div class="col-sm-1 margin-pos-right"></div>
-        <div class="col">
-            <font size="-1">Lijana</font>
-        </div>
-        <div class="col">
-            <font size="-1">Cybermobbing</font>
-        </div>
-        <div class="col">
-            <font size="-1">Schulbesuche</font>
-        </div>
-        <div class="col">
-            <font size="-1">Projekte</font>
-        </div>
-        <div class="col">
-            <font size="-1">Buch</font>
-        </div>
-        <div class="col">
-            <font size="-1">Spende</font>
-        </div>
+        <div class="col">Lijana</div>
+        <div class="col">Cybermobbing</div>
+        <div class="col">Schulbesuche</div>
+        <div class="col">Projekte</div>
+        <div class="col">Buch</div>
+        <div class="col">Spende</div>
         <div class="col-sm-1 margin-pos-left"></div>
     </div>
 
@@ -29,34 +17,22 @@
     <div class="row relative-pos-footer-row">
         <div class="col-sm-1 margin-pos-right"></div>
         <div class="col">
-            <a href="{% url 'main-about' %}">
-                <font size="-1">Das bin ich</font></a
-            >
+            <a href="{% url 'main-about' %}"> Das bin ich</a>
         </div>
         <div class="col">
-            <a href="{% url 'main-portalhelp' %}">
-                <font size="-1">Hilfestellenportal</font></a
-            >
+            <a href="{% url 'main-portalhelp' %}"> Hilfestellenportal</a>
         </div>
         <div class="col">
-            <a href="{% url 'main-gallery' %}">
-                <font size="-1">Bildergalerie</font></a
-            >
+            <a href="{% url 'main-gallery' %}"> Bildergalerie</a>
         </div>
         <div class="col">
-            <a class="" href="{% url 'main-school' %}">
-                <font size="-1">Schule in Uganda</font></a
-            >
+            <a class="" href="{% url 'main-school' %}"> Schule in Uganda</a>
         </div>
         <div class="col">
-            <a href="{% url 'main-book' %}">
-                <font size="-1">Mein Buch</font></a
-            >
+            <a href="{% url 'main-book' %}"> Mein Buch</a>
         </div>
         <div class="col">
-            <a class="" href="{% url 'main-donate' %}">
-                <font size="-1">So kannst du spenden</font></a
-            >
+            <a class="" href="{% url 'main-donate' %}"> So kannst du spenden</a>
         </div>
         <div class="col-sm-1 margin-pos-left"></div>
     </div>
@@ -65,24 +41,16 @@
     <div class="row relative-pos-footer-row">
         <div class="col-sm-1 margin-pos-right"></div>
         <div class="col">
-            <a href="{% url 'main-setcard' %}"
-                ><font size="-1">Setcard</font></a
-            >
+            <a href="{% url 'main-setcard' %}">Setcard</a>
         </div>
         <div class="col">
-            <a href="{% url 'main-poesiealbum' %}"
-                ><font size="-1">Poesiealbum</font></a
-            >
+            <a href="{% url 'main-poesiealbum' %}">Poesiealbum</a>
         </div>
         <div class="col">
-            <a href="{% url 'main-booking' %}"
-                ><font size="-1">Buchnungen</font></a
-            >
+            <a href="{% url 'main-booking' %}">Buchnungen</a>
         </div>
         <div class="col">
-            <a class="" href="{% url 'main-coffee' %}"
-                ><font size="-1">Geruga Kaffee</font></a
-            >
+            <a class="" href="{% url 'main-coffee' %}">Geruga Kaffee</a>
         </div>
         <div class="col"></div>
         <div class="col"></div>
@@ -93,16 +61,12 @@
     <div class="row">
         <div class="col-sm-1 margin-pos-right"></div>
         <div class="col">
-            <a href="{% url 'main-autogram' %}"
-                ><font size="-1">Autogramme</font></a
-            >
+            <a href="{% url 'main-autogram' %}">Autogramme</a>
         </div>
         <div class="col"></div>
         <div class="col"></div>
         <div class="col">
-            <a class="" href="{% url 'main-donate' %}"
-                ><font size="-1">Unterstürze Uns</font></a
-            >
+            <a class="" href="{% url 'main-donate' %}">Unterstürze Uns</a>
         </div>
         <div class="col"></div>
         <div class="col"></div>
@@ -120,39 +84,48 @@
     <!-- footer Lijana social media text -->
     <div class="row">
         <div class="col-sm-1 margin-pos-right"></div>
-        <div class="col-sm-6 relative-spacer-top d-flex align-items-center">
+        <div
+            class="col relative-pos-footer-social-media-text d-flex align-items-center"
+        >
             Hier findest du Lijana:
         </div>
-        <div class="col-sm-1 relative-pos-social-media-icon">
-            <a class="float-start" href="{% url 'main-home' %}">
+        <div class="col-sm-1 relative-pos-footer-social-media-icon text-end">
+            <a
+                class="float-start"
+                href="https://instagram.com/lijanarisen?igshid=YmMyMTA2M2Y="
+            >
                 <img
                     class="card-img-top"
-                    style="margin-top: 0px; max-width: 25%; height: auto"
+                    style="margin-top: 0px; max-width: 20%; height: auto"
                     src="{% static 'main/assets/img/new/grafik/Icon-Instagram.svg' %}"
                     alt="Instagram"
                 />
             </a>
         </div>
-        <div class="col-sm-1 relative-pos-social-media-icon">
-            <a class="float-start" href="{% url 'main-home' %}">
+        <div class="col-sm-1 relative-pos-footer-social-media-icon text-end">
+            <a
+                class="float-start"
+                href=" https://www.tiktok.com/@lijanarisen?_t=8ZSj27fX0YX&_r=1"
+            >
                 <img
                     class="card-img-top"
-                    style="margin-top: 0px; max-width: 25%; height: auto"
+                    style="margin-top: 0px; max-width: 20%; height: auto"
                     src="{% static 'main/assets/img/new/grafik/Icon-TikTok.svg' %}"
                     alt="TikTok"
                 />
             </a>
         </div>
-        <div class="col-sm-1 relative-pos-social-media-icon">
-            <a class="float-start" href="{% url 'main-home' %}">
+        <div class="col-sm-1 relative-pos-footer-social-media-icon text-end">
+            <a class="float-start" href="https://youtube.com/@lijanarisen8955">
                 <img
                     class="card-img-top"
-                    style="margin-top: 0px; max-width: 25%; height: auto"
+                    style="margin-top: 0px; max-width: 20%; height: auto"
                     src="{% static 'main/assets/img/new/grafik/Icon-YouTube.svg' %}"
                     alt="YouTube"
                 />
             </a>
         </div>
+        <div class="col-sm-1 margin-pos-left"></div>
     </div>
     <!-- footer Lijana social media text end -->
 
@@ -165,30 +138,30 @@
     <!-- footer horizont line after social media end -->
 
     <!-- footer cookies -->
-    <div class="row relative-footer-spacer-bottom">
+    <div class="row relative-footer-spacer-bottom d-flex align-items-center">
         <div class="col-sm-1 margin-pos-right"></div>
         <div class="col">
-            <a href="#"><font size="-1">Nutzungsbedingungen</font></a>
+            <a href="#">Nutzungsbedingungen</a>
         </div>
         <div class="col">
-            <a href="#"><font size="-1">Datenschutzrichtlinie</font></a>
+            <a href="#">Datenschutzrichtlinie</a>
         </div>
         <div class="col">
-            <a href="#"><font size="-1">Cookies-Richtlinien</font></a>
+            <a href="#">Cookies-Richtlinien</a>
         </div>
         <div class="col">
-            <a href="#"><font size="-1">Sicherheitshinweise</font></a>
+            <a href="#">Sicherheitshinweise</a>
         </div>
         <div class="col">
-            <a href="#"><font size="-1">Cookie-Einstellungen</font></a>
+            <a href="#">Cookie-Einstellungen</a>
         </div>
-        <div class="col">
+        <div class="col text-end">
             <a href="#"
                 ><img
                     class="card-img-top"
-                    style="margin-top: 0px; max-width: 80%; height: auto"
+                    style="margin-top: 0px; max-width: 70%; height: auto"
                     src="{% static 'main/assets/img/new/grafik/Button_Kontakt.svg' %}"
-                    alt="Instagram"
+                    alt="Button_Kontakt"
             /></a>
         </div>
         <div class="col-sm-1 margin-pos-left"></div>
@@ -200,3 +173,18 @@
 <font size="+2">This is bigger text.</font>
 <font size="-1">This is smaller text.</font>
 -->
+<!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="160"
+                fill="currentColor"
+                class="bi bi-person-workspace"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                />
+                <path
+                    d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"
+                />
+            </svg> -->

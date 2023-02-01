@@ -2,6 +2,15 @@ html {
     font-size: 18px; /* default value would be 16*/
 }
 
+.bg-image1 {
+    width: 100%;
+    height: 700px;
+    /* background-image: url('image/background-image.jpg');  */
+    background-image: url("../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 /*
 mt-1 = .25rem
 mt-2 = .5rem
@@ -101,9 +110,29 @@ div.relative-spacer-bottom {
     position: relative;
     margin-bottom: 70px;
 }
+div.relative-spacer-card-bottom {
+    position: relative;
+    margin-bottom: 10px;
+}
+div.relative-spacer-card-top {
+    position: relative;
+    margin-top: 0px;
+}
+div.relative-spacer-card-top-lijana {
+    position: relative;
+    margin-top: 25px;
+}
+div.relative-spacer-card-top-albtraum {
+    position: relative;
+    margin-top: 0px;
+}
+div.relative-spacer-card-top-workshop {
+    position: relative;
+    margin-top: 25px;
+}
 div.relative-heart-spacer-top {
     position: relative;
-    margin-top: 630px;
+    margin-top: 650px;
 }
 div.relative-heart-spacer-bottom {
     position: relative;
@@ -148,12 +177,12 @@ div.relative-pos-bottom-titel-text {
 
 div.relative-pos-content-text {
     position: relative;
-    margin-top: 65px;
+    margin-top: 35px;
 }
 
 div.relative-pos-content-sub-text {
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 div.relative-pos-book-titel {
@@ -179,21 +208,22 @@ div.relative-pos-footer {
 div.relative-pos-footer-row {
     position: relative;
     margin-top: 0px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 div.relative-pos-footer-horizont-line {
     position: relative;
     margin-top: 42px;
     margin-bottom: 0px;
 }
-div.relative-pos-social-media-text {
+div.relative-pos-footer-social-media-text {
     position: relative;
-    margin-top: 42px;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
-div.relative-pos-social-media-icon {
+
+div.relative-pos-footer-social-media-icon {
     position: relative;
-    margin-top: 37px;
+    margin-top: 7px;
     margin-bottom: 0px;
 }
 
@@ -204,14 +234,22 @@ div.margin-pos-right {
     margin-right: 5rem;
 }
 
+div.footer-text {
+    font-size: 0.7rem;
+    font-weight: normal;
+    line-height: normal;
+}
+
 div.titel-text {
     font-size: 2.8rem;
+    color: white;
     font-weight: bold;
     line-height: normal;
 }
 
 div.titel-sub-text {
     font-size: 1.7rem;
+    color: white;
     font-weight: bold;
     line-height: normal;
 }
@@ -226,23 +264,27 @@ div.book-content-text {
 
 div.content-text {
     font-size: 2rem;
+    color: #94128a;
     font-weight: bold;
     line-height: normal;
 }
 
 div.content-sub-text {
     font-size: 1rem;
+    color: #94128a;
     font-weight: normal;
     line-height: normal;
 }
 
 div.book-titel-text {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    color: white;
     font-weight: bold;
     line-height: normal;
 }
 div.book-titel-sub-text {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    color: white;
     font-weight: normal;
     line-height: normal;
 }
@@ -262,6 +304,7 @@ h1 + p {
 body {
     background: #fafafa;
     color: #333333;
+    color: #94128a;
     margin-top: 5rem;
     font-size: 16px;
     font-style: normal;
