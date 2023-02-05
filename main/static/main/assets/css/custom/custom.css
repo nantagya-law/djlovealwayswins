@@ -22,18 +22,39 @@
             format("truetype");
 }
 
-* {
-    font-family: "Louis George Cafe", Helvetica, Arial, sans-serif;
-    /*color: white;*/
+.dropdown-toggle::after {
+    display: none;
 }
 
-html {
-    font-size: 18px; /* default value would be 16*/
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0.3em;
+    height: 0.3em;
+    margin: -0.3em 0 0 0.4em;
+    vertical-align: middle;
+    content: "";
+    border: 0.5em solid;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotateZ(45deg);
 }
-body {
+
+/* .dropdown-toggle:after {
+    display: inline;
+    padding-right: 3px;
+    vertical-align: middle;
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+} */
+
+/* Change the font of the menu */
+/* .dropdown-toggle {
+    font: 400 1.5rem/1.25 sans-serif;
     color: white;
-    /* font-weight: 300; */
-}
+    background: purple;
+    padding: 0.5em 1em;
+} */
 
 .bg-image1 {
     width: 100%;
@@ -102,18 +123,56 @@ body {
     padding: 16px;
     background-color: white;
 }
+/* Position of menu line */
+.position-menu-line {
+    position: absolute;
+    /* top: 20px; */
+    left: 100px;
+    top: 315px;
+    color: white;
+    z-index: 2;
+}
 
-/* Titel image text position*/
+/* Position of titel text in image */
 .position-text-block-titel {
     position: absolute;
     /* top: 20px; */
     left: 13rem;
-    bottom: 108px;
+    bottom: 2.5rem;
     color: #d8dcdf;
+}
+/* Position of heart in image */
+.absolute-position-heart-row {
+    position: absolute;
+    /* top: 20px; */
+    left: 35rem;
+    bottom: 2.5rem;
+    color: #d8dcdf;
+}
+.relative-position-heart-row {
+    position: relative;
+    /* top: 20px; */
+    left: 35rem;
+    bottom: 0px;
+    color: #d8dcdf;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* ############ Font ############### */
+span.font-sprach-text {
+    font-family: "Louis George Cafe";
+    font-size: 18pt;
+    color: black;
+    font-weight: normal;
+    line-height: normal;
 }
 div.font-titel-text {
     font-family: "Louis George Cafe";
-    font-size: 2.8rem;
+    font-size: 60pt;
     color: white;
     font-weight: bold;
     line-height: normal;
@@ -121,7 +180,7 @@ div.font-titel-text {
 
 div.font-titel-sub-text {
     font-family: "Louis George Cafe";
-    font-size: 1.7rem;
+    font-size: 36pt;
     color: #d8dcdf;
     font-weight: bold;
     line-height: normal;
@@ -129,14 +188,14 @@ div.font-titel-sub-text {
 
 div.font-content-text {
     font-family: "Louis George Cafe";
-    font-size: 2rem;
+    font-size: 60pt;
     color: #646469;
     font-weight: bold;
     line-height: normal;
 }
 div.font-content-sub-text {
     font-family: "Louis George Cafe";
-    font-size: 1rem;
+    font-size: 18pt;
     color: #646469;
     font-weight: normal;
     line-height: normal;
@@ -144,14 +203,14 @@ div.font-content-sub-text {
 
 div.font-book-titel-text {
     font-family: "Louis George Cafe";
-    font-size: 1.7rem;
+    font-size: 36pt;
     color: white;
     font-weight: bold;
     line-height: normal;
 }
 div.font-book-titel-presell-text {
     font-family: "Louis George Cafe";
-    font-size: 1.5rem;
+    font-size: 32pt;
     color: white;
     font-weight: normal;
     line-height: normal;
@@ -160,15 +219,9 @@ div.font-book-titel-presell-text {
 .navbar {
     background: #ebebeb;
     font-family: "Louis George Cafe";
-    font-size: 0.9rem;
+    font-size: 18pt;
     font-weight: bold;
 }
-
-/* .container {
-    position: relative;
-    text-align: center;
-    color: white;
-} */
 
 h1 {
     font-size: 4rem;
@@ -256,7 +309,49 @@ mt-5 = 3rem
     padding-right: 20px;
 }
 
-/* ###################### My work start here ########################################## */
+/* ###### Position setting ####### */
+div.margin-pos-left {
+    margin-left: 5rem;
+}
+div.margin-pos-right {
+    margin-right: 5rem;
+}
+
+/* Logo */
+.relative-logo-position {
+    position: relative;
+    top: 39px;
+    bottom: 39px;
+}
+.relative-donate-button-position {
+    position: relative;
+    top: 58px;
+    bottom: 39px;
+}
+
+/* Navbar Menu */
+div.relative-pos-navbar {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+div.relative-pos-content-text {
+    position: relative;
+    margin-top: 0px;
+}
+div.relative-pos-content-sub-text {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+div.relative-pos-card-top-bottom {
+    position: relative;
+    margin-top: 54px;
+    margin-bottom: 78px;
+}
+
 div.relative-line-spacer-top-bottom {
     position: relative;
     margin-top: 10px;
@@ -299,6 +394,7 @@ div.relative-spacer-bottom {
     position: relative;
     margin-bottom: 70px;
 }
+
 div.relative-spacer-card-bottom {
     position: relative;
     margin-bottom: 10px;
@@ -346,13 +442,6 @@ div.relative-pos-logo {
     height: auto;
 }
 
-div.relative-pos-navbar {
-    position: relative;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 10px;
-}
-
 div.relative-pos-top-titel-text {
     position: relative;
     margin-top: 380px;
@@ -369,16 +458,6 @@ div.relative-pos-bottom-titel-text {
     margin-bottom: 108px;
 }
 
-div.relative-pos-content-text {
-    position: relative;
-    margin-top: 35px;
-}
-
-div.relative-pos-content-sub-text {
-    position: relative;
-    margin-top: 10px;
-}
-
 div.relative-pos-book-titel {
     position: relative;
     margin-top: 56px;
@@ -388,11 +467,6 @@ div.relative-pos-book-sub-titel {
     margin-top: 28px;
 }
 
-div.relative-pos-book-button {
-    position: relative;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
 div.relative-pos-footer {
     position: relative;
     margin-top: 42px;
@@ -419,13 +493,6 @@ div.relative-pos-footer-social-media-icon {
     position: relative;
     margin-top: 7px;
     margin-bottom: 0px;
-}
-
-div.margin-pos-left {
-    margin-left: 5rem;
-}
-div.margin-pos-right {
-    margin-right: 5rem;
 }
 
 div.footer-text {
@@ -544,7 +611,7 @@ body {
 
 #cards_landscape_wrap-2 {
     text-align: left;
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
 }
 #cards_landscape_wrap-2 .container {
     padding-top: 5px;
@@ -558,7 +625,7 @@ body {
     border-radius: 5px;
 }
 #cards_landscape_wrap-2 .card-flyer .image-box {
-    background: #ffffff;
+    /* background: #ffffff; */
     overflow: hidden;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -586,7 +653,7 @@ body {
     padding: 20px 18px;
 }
 #cards_landscape_wrap-2 .card-flyer {
-    background: #ffffff;
+    /* background: #ffffff; */
     margin-top: 10px;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
@@ -596,7 +663,7 @@ body {
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
 }
 #cards_landscape_wrap-2 .card-flyer:hover {
-    background: #fff;
+    /* background: #fff; */
     box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
@@ -611,7 +678,7 @@ body {
     padding-bottom: 0px;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #000000;
+    /* color: #000000; */
 }
 #cards_landscape_wrap-2 .card-flyer .text-box h6 {
     margin-top: 0px;
@@ -621,7 +688,7 @@ body {
     text-transform: uppercase;
     font-family: "Roboto Black", sans-serif;
     letter-spacing: 1px;
-    color: #00acc1;
+    /* color: #00acc1; */
 }
 
 /*################# BOOK CSS ##############*/

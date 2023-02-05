@@ -1,7 +1,28 @@
 {% load static %}
 
+<!-- <div class="">
+    <img
+        src="../../static/main/assets/img/new/grafik/Linie-Menu.svg"
+        alt="Linie-Menu"
+        style="width: 100%; min-height: 10px; margin-bottom: -19px"
+    />
+</div> -->
+
+<!-- <div
+    class="bg-img"
+    style="
+        margin-top: -30px;
+        /* Control the height of the image */
+        min-height: 50px;
+        background-image: url('../../static/main/assets/img/new/grafik/Linie-Menu.svg');
+    "
+> -->
+
 <div class="row relative-pos-navbar">
-    <nav style="z-index: 10; min-height: 52px" class="navbar navbar-expand-lg">
+    <nav
+        style="z-index: 10; min-height: 52px; margin: 0; padding: 0"
+        class="navbar navbar-expand-lg"
+    >
         <button
             class="navbar-toggler"
             type="button"
@@ -13,8 +34,9 @@
         >
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="col-sm-1 margin-pos-right"></div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="col-lg-1 margin-pos-right"></div>
+        <div class="col collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <!-- Home menu point starts here-->
                 <li class="nav-item">
@@ -219,22 +241,22 @@
         </div>
 
         <div
-            class="col-sm-2 text-end"
+            class="col-lg-2 text-start"
             style="height: 52px d-flex align-items-center"
         >
             <img
+                style="margin-left: 30px; height: 20px"
                 src="{% static 'main/assets/img/new/grafik/Lupe-Suchen.svg' %}"
                 alt="Lupe"
-                width="60"
-                height="20"
             />
             <img
+                style="margin-left: 50px; height: 20px"
                 src="{% static 'main/assets/img/new/grafik/Sprachauswahl.svg' %}"
                 alt="Sprachauswahl"
-                width="60"
-                height="20"
             />
+            <span class="font-sprach-text">DE</span>
         </div>
+
         <!--
         <div
             class="col-sm-1 text-end"
@@ -248,9 +270,18 @@
             />
         </div>
         -->
-        <div class="col-sm-1 margin-pos-left"></div>
+        <div class="col-lg-1 margin-pos-left"></div>
     </nav>
 </div>
+<!-- <div class="row position-menu-line">
+    <img
+        src="../../static/main/assets/img/new/grafik/Menu-Herz.svg"
+        alt="Linie-Menu"
+        style="width: 10%; min-height: 1px; margin-bottom: 2px"
+    />
+    <p>taaataaataatatatatata</p>
+    <div class="col"><hr /></div>
+</div> -->
 
 <!-- ### Menu Navbar ### -->
 

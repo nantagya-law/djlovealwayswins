@@ -1,7 +1,33 @@
 {% load static %}
-<div class="row  relative-pos-logo">
+<div class="row" style="z-index: 10; height: 167px">
+    <div class="col-lg-1 margin-pos-right"></div>
+    <div class="col relative-logo-position">
+        <a class="float-start" href="{% url 'main-home' %}">
+            <img
+                class="card-img-top"
+                style="margin-top: 0px"
+                src="{% static 'main/assets/img/new/grafik/Logo_LAW_final.svg' %}"
+                alt="Logo"
+                width="300"
+                height="89"
+            />
+        </a>
+    </div>
+    <div class="col-lg-2 relative-donate-button-position text-end">
+        <a class="" href="{% url 'main-donate' %}">
+            <img
+                src="{% static 'main/assets/img/new/grafik/Button_Spenden.svg' %}"
+                alt="donate"
+                height="70"
+            />
+        </a>
+    </div>
+
+    <div class="col-lg-1 margin-pos-left"></div>
+</div>
+
+<!-- <div class="row relative-pos-logo">
     <div class="col-sm-1 margin-pos-right"></div>
-    <!-- <div class="col-sm-7 d-flex align-items-center"> -->
     <div class="col">
         <a class="float-start" href="{% url 'main-home' %}">
             <img
@@ -14,7 +40,6 @@
             />
         </a>
     </div>
-    
 
     <div class="col-sm-2 text-end">
         <a class="" href="{% url 'main-donate' %}">
@@ -200,9 +225,7 @@
         </a>
     </div>
     <div class="col-sm-1 margin-pos-left"></div>
-</div>
-
-</div>
+</div> -->
 
 <!--
     <div class="container  bg-info">
