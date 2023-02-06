@@ -162,13 +162,63 @@
     left: 16px;
 }
 
+/* ###### Position setting ####### */
+div.margin-pos-left {
+    margin-left: 5rem;
+}
+div.margin-pos-right {
+    margin-right: 5rem;
+}
+
+/* Logo */
+.relative-logo-position {
+    position: relative;
+    top: 39px;
+    bottom: 39px;
+}
+.relative-donate-button-position {
+    position: relative;
+    top: 58px;
+    bottom: 39px;
+}
+
+/* Navbar Menu */
+div.relative-pos-navbar {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+div.relative-pos-content-text {
+    position: relative;
+    margin-top: 65px;
+}
+div.relative-pos-content-sub-text {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+div.relative-pos-card-top-bottom {
+    position: relative;
+    margin-top: 54px;
+    margin-bottom: 78px;
+}
+
+div.relative-pos-book-top-bottom {
+    position: relative;
+    margin-top: 39px;
+    margin-bottom: 0px;
+}
+
 /* ############ Font ############### */
-span.font-sprach-text {
+div.font-sprach-text {
     font-family: "Louis George Cafe";
     font-size: 18pt;
-    color: black;
-    font-weight: normal;
-    line-height: normal;
+    color: #646469;
+    /* color: black;
+   font-weight: normal;
+    line-height: normal; */
 }
 div.font-titel-text {
     font-family: "Louis George Cafe";
@@ -198,6 +248,7 @@ div.font-content-sub-text {
     font-size: 18pt;
     color: #646469;
     font-weight: normal;
+    font-weight: bold;
     line-height: normal;
 }
 
@@ -225,6 +276,28 @@ div.font-book-titel-presell-text {
 
 h1 {
     font-size: 4rem;
+}
+
+h1 {
+    line-height: 1.2;
+    font-size: 4.5rem;
+}
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+h2,
+h3 {
+    font-size: 1.25rem;
+}
+.content-text h2 {
+    font-size: 1.45rem;
+}
+p {
+    font-size: 1.15rem;
+    margin: 0 0 16px;
 }
 
 .color-overly {
@@ -307,49 +380,6 @@ mt-5 = 3rem
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-/* ###### Position setting ####### */
-div.margin-pos-left {
-    margin-left: 5rem;
-}
-div.margin-pos-right {
-    margin-right: 5rem;
-}
-
-/* Logo */
-.relative-logo-position {
-    position: relative;
-    top: 39px;
-    bottom: 39px;
-}
-.relative-donate-button-position {
-    position: relative;
-    top: 58px;
-    bottom: 39px;
-}
-
-/* Navbar Menu */
-div.relative-pos-navbar {
-    position: relative;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-}
-
-div.relative-pos-content-text {
-    position: relative;
-    margin-top: 0px;
-}
-div.relative-pos-content-sub-text {
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-div.relative-pos-card-top-bottom {
-    position: relative;
-    margin-top: 54px;
-    margin-bottom: 78px;
 }
 
 div.relative-line-spacer-top-bottom {
@@ -460,7 +490,7 @@ div.relative-pos-bottom-titel-text {
 
 div.relative-pos-book-titel {
     position: relative;
-    margin-top: 56px;
+    margin-top: 106px;
 }
 div.relative-pos-book-sub-titel {
     position: relative;
@@ -517,27 +547,6 @@ div.book-content-text {
     line-height: 2.3rem;
     letter-spacing: 1px;
     text-align: justify;
-}
-
-h1 {
-    font-size: 5rem; /* 5 * 18px = 36px;*/
-    text-transform: capitalize;
-    text-shadow: 1px 1px 1px red, 2px 2px 1px red;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-h1 + p {
-    font-weight: bold;
-}
-
-body {
-    background: #fafafa;
-    color: #333333;
-    color: #94128a;
-    margin-top: 5rem;
-    font-size: 16px;
-    font-style: normal;
 }
 
 .btn {

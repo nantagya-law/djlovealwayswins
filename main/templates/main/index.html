@@ -1,6 +1,6 @@
-{% extends "../main/base_generic.html" %} {% block content %}
-<!-- ######## Titel bild block starts here ########-->
-<!-- Background image -->
+{% extends "../main/base_generic.html" %} {% load static %} {% block content %}
+
+<!--  ########  Header background-image ########- -->
 <div
     class="bg-img"
     style="
@@ -12,21 +12,20 @@
 >
     <div class="row">
         <!-- The left col with right side margin -->
-        <div class="col-sm-1 margin-pos-right"></div>
+        <div class="col-lg-1 margin-pos-right"></div>
 
         <!-- The col for the titel text-->
-        <div class="col-sm-4 relative-pos-top-titel-text">
-            <div class="font-titel-text">Love Always</div>
-            <div class="font-titel-text">Wins e.V.</div>
-
+        <div class="col-lg-4 relative-pos-top-titel-text">
+            <div class="font-titel-text">Love Always<br />Wins e.V.</div>
             <!-- The col for the sub titel text-->
             <div class="col relative-pos-book-button">
-                <div class="font-titel-sub-text">Mehr Selbstvertrauen für</div>
-                <div class="font-titel-sub-text">eine bessere Zukunft</div>
+                <div class="font-titel-sub-text">
+                    Mehr Selbstvertrauen für<br />eine bessere Zukunft
+                </div>
             </div>
         </div>
         <div
-            class="col-sm-2 text-start relative-heart-spacer-top relative-heart-spacer-bottom"
+            class="col-lg-2 text-start relative-heart-spacer-top relative-heart-spacer-bottom"
         >
             <img
                 style="margin-top: 0px; max-width: 10%; height: 18px"
@@ -47,49 +46,23 @@
                 alt="Herz-Kontur"
             />
         </div>
-        <!-- <div class="row relative-position-heart-row">
-            <div class="relative-position-heart-row">
-                <img
-                    style="margin-top: 0px; max-width: 10%; height: 18px"
-                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Flaeche.svg"
-                    class="card-img-top"
-                    alt="Herz-Flaeche"
-                />
-            </div>
-            <div class="relative-position-heart-row">
-                <img
-                    style="margin-left: 0px; max-width: 10%; height: 18px"
-                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
-                    class="card-img-top"
-                    alt="Herz-Kontur"
-                />
-            </div>
-            <div class="relative-position-heart-row">
-                <img
-                    style="margin-left: 0px; max-width: 10%; height: 18px"
-                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
-                    class="card-img-top"
-                    alt="Herz-Kontur"
-                />
-            </div>
-        </div> -->
-
-        <div class="col-sm-1 margin-pos-left"></div>
+        <div class="col-lg-1 margin-pos-left"></div>
     </div>
 </div>
-<!-- ######## Titel bild block ends here ########-->
+<!-- Header background-image ends here -->
 
 <!-- ######## Content block starts here ########-->
 <div class="row" style="height: auto">
-    <div class="col-sm-1 margin-pos-right"></div>
+    <div class="col-lg-1 margin-pos-right"></div>
     <div class="col relative-pos-content-text">
-        <div class="font-content-text">Willkommen bei uns!<br /></div>
-        <div class="font-content-text">Schön, dass du hier bist.<br /></div>
+        <div class="font-content-text">
+            Willkommen bei uns!<br />Schön, dass du hier bist.
+        </div>
         <div class="font-content-sub-text relative-pos-content-sub-text">
             Hier findest du alles Rund um Lijana und Love Always Wins e.V.
         </div>
     </div>
-    <div class="col-sm-1 margin-pos-left"></div>
+    <div class="col-lg-1 margin-pos-left"></div>
 </div>
 <!-- ######## Content block ends here ########-->
 
@@ -209,21 +182,12 @@
     style="
         margin-top: -15px;
         /* Control the height of the image */
-        /* min-height: 490px; */
+        max-height: 490px;
         max-width: 100%;
         height: auto;
         background-image: url('../../static/main/assets/img/new/grafik/Buch-Hintergrund-Banner.jpg');
     "
 >
-    <!-- <div class="position-text-block-titel">
-        <div class="font-titel-text">Love Always</div>
-        <div class="font-titel-text">Wins e.V.</div>
-        <div class="col relative-pos-book-button">
-            <div class="titel-sub-text">Mehr Selbstvertrauen für</div>
-            <div class="titel-sub-text">eine bessere Zukunft</div>
-        </div>
-    </div> -->
-
     <!-- <div
     class="masthead"
     style="
@@ -403,7 +367,16 @@
                 </a> -->
             </div>
         </div>
-
+        <div class="col-sm-3 d-flex align-items-center text-end">
+            <a class="" href="{% url 'main-book' %}">
+                <img
+                    class="card-img-top"
+                    style="margin-top: 0px; max-width: 100%; max-height: 100%"
+                    src="{% static 'main/assets/img/new/Buch.png' %}"
+                    alt="Book"
+                />
+            </a>
+        </div>
         <div class="col-sm-1 margin-pos-left"></div>
     </div>
 </div>

@@ -18,6 +18,9 @@
     "
 > -->
 
+<div class="col" style="height: 1px; margin: 0; padding: 0">
+    <hr />
+</div>
 <div class="row relative-pos-navbar">
     <nav
         style="z-index: 10; min-height: 52px; margin: 0; padding: 0"
@@ -239,22 +242,24 @@
                 <!-- SPENDE menu point ends here-->
             </ul>
         </div>
-
-        <div
-            class="col-lg-2 text-start"
-            style="height: 52px d-flex align-items-center"
-        >
-            <img
-                style="margin-left: 30px; height: 20px"
-                src="{% static 'main/assets/img/new/grafik/Lupe-Suchen.svg' %}"
-                alt="Lupe"
-            />
-            <img
-                style="margin-left: 50px; height: 20px"
-                src="{% static 'main/assets/img/new/grafik/Sprachauswahl.svg' %}"
-                alt="Sprachauswahl"
-            />
-            <span class="font-sprach-text">DE</span>
+        <div class="hstack gap-5 text-start">
+            <div class="vr"></div>
+            <div class="">
+                <img
+                    style="margin-left: 5px; height: 20px"
+                    src="{% static 'main/assets/img/new/grafik/Lupe-Suchen.svg' %}"
+                    alt="Lupe"
+                />
+            </div>
+            <div class="ms-auto">
+                <img
+                    style="margin-left: 5px; height: 20px"
+                    src="{% static 'main/assets/img/new/grafik/Sprachauswahl.svg' %}"
+                    alt="Sprachauswahl"
+                />
+            </div>
+            <div class="font-sprach-text">DE</div>
+            <div class="vr"></div>
         </div>
 
         <!--

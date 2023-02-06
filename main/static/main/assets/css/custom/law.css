@@ -1,0 +1,140 @@
+/* <header class="header">
+    <div class="container">
+        <div class="logo"> */
+
+@font-face {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url(../fonts/roboto-condensed-v24-latin-regular.woff2) format("woff2"),
+        url(../fonts/roboto-condensed-v24-latin-regular.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+        url(../fonts/roboto-condensed-v24-latin-700.woff2) format("woff2"),
+        url(../fonts/roboto-condensed-v24-latin-700.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Louis George Cafe";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Louis George Cafe-Bold")
+        url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold.ttf")
+        format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Louis George Cafe";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Louis George Cafe-BoldItalic")
+        url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold-Italic.ttf")
+        format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Louis George Cafe";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Louis George Cafe-Regular")
+        url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Regular.ttf")
+        format("truetype");
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: "Louis George Cafe";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Louis George Cafe-Bold")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold.ttf")
+            format("truetype"),
+        local("Louis George Cafe-BoldItalic")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold-Italic.ttf")
+            format("truetype"),
+        local("Louis George Cafe-Italic")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Italic.ttf")
+            format("truetype"),
+        local("Louis George Cafe-Light")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Light.ttf")
+            format("truetype"),
+        local("Louis George Cafe-LightItalic")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Light-Italic.ttf")
+            format("truetype"),
+        local("Louis George Cafe-Regular")
+            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Regular.ttf")
+            format("truetype");
+} */
+
+* {
+    margin: 0;
+}
+body,
+html {
+    height: 100%;
+}
+body {
+    background: #fff;
+    font-family: Roboto Condensed, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    color: var(--text-color);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    min-width: 320px;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+
+.header {
+    background-color: var(--header-bg);
+    height: 167px;
+}
+
+.logo {
+    left: 10px;
+    top: 39px;
+    width: 300px;
+}
+
+.logo,
+.logo-ksb {
+    position: absolute;
+}
+
+.logo-ksb {
+    right: 10px;
+    top: 10px;
+}
+
+h1 {
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+h2,
+h3 {
+    font-size: 1.25rem;
+}
+.content-text h2 {
+    font-size: 1.45rem;
+}
+p {
+    font-size: 1.15rem;
+    margin: 0 0 16px;
+}
