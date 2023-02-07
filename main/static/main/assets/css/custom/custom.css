@@ -1,25 +1,21 @@
-@font-face {
-    font-family: "Louis George Cafe";
-    font-style: normal;
-    font-weight: 300;
-    src: local("Louis George Cafe-Bold")
-            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold.ttf")
-            format("truetype"),
-        local("Louis George Cafe-BoldItalic")
-            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Bold-Italic.ttf")
-            format("truetype"),
-        local("Louis George Cafe-Italic")
-            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Italic.ttf")
-            format("truetype"),
-        local("Louis George Cafe-Light")
-            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Light.ttf")
-            format("truetype"),
-        local("Louis George Cafe-LightItalic")
-            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Light-Italic.ttf")
-            format("truetype"),
-        local("Louis George Cafe-Regular")
-            url("../../fonts/louis-george-cafe/LouisGeorgeCafe-Regular.ttf")
-            format("truetype");
+@import url("https://fonts.cdnfonts.com/css/louis-george-cafe?styles=21450,21449,21448,21447,21452,21451");
+
+/* body,
+html {
+    height: 100%;
+}
+ */
+
+body {
+    background: #fff;
+    font-family: "Louis George Café", sans-serif;
+    /* font-family: 'Louis George Café Light', sans-serif; 
+
+    font-size: 100%;
+    color: var(--text-color);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    min-width: 320px;*/
 }
 
 .dropdown-toggle::after {
@@ -182,6 +178,11 @@ div.margin-pos-right {
     bottom: 39px;
 }
 
+.relative-buy-button-position {
+    position: relative;
+    bottom: -40px;
+}
+
 /* Navbar Menu */
 div.relative-pos-navbar {
     position: relative;
@@ -213,7 +214,6 @@ div.relative-pos-book-top-bottom {
 
 /* ############ Font ############### */
 div.font-sprach-text {
-    font-family: "Louis George Cafe";
     font-size: 18pt;
     color: #646469;
     /* color: black;
@@ -221,7 +221,6 @@ div.font-sprach-text {
     line-height: normal; */
 }
 div.font-titel-text {
-    font-family: "Louis George Cafe";
     font-size: 60pt;
     color: white;
     font-weight: bold;
@@ -229,7 +228,6 @@ div.font-titel-text {
 }
 
 div.font-titel-sub-text {
-    font-family: "Louis George Cafe";
     font-size: 36pt;
     color: #d8dcdf;
     font-weight: bold;
@@ -237,30 +235,25 @@ div.font-titel-sub-text {
 }
 
 div.font-content-text {
-    font-family: "Louis George Cafe";
     font-size: 60pt;
     color: #646469;
     font-weight: bold;
     line-height: normal;
 }
 div.font-content-sub-text {
-    font-family: "Louis George Cafe";
     font-size: 18pt;
     color: #646469;
     font-weight: normal;
-    font-weight: bold;
     line-height: normal;
 }
 
 div.font-book-titel-text {
-    font-family: "Louis George Cafe";
     font-size: 36pt;
     color: white;
     font-weight: bold;
     line-height: normal;
 }
 div.font-book-titel-presell-text {
-    font-family: "Louis George Cafe";
     font-size: 32pt;
     color: white;
     font-weight: normal;
@@ -269,10 +262,88 @@ div.font-book-titel-presell-text {
 
 .navbar {
     background: #ebebeb;
-    font-family: "Louis George Cafe";
+    /* font-family: "Louis George Café", sans-serif; */
     font-size: 18pt;
     font-weight: bold;
 }
+
+.nav-link {
+    color: navy;
+    opacity: 0.8;
+}
+.nav-link:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: #cc0000 !important;
+}
+.nav-link:active {
+    text-decoration: none;
+}
+.nav-link:focus {
+    text-decoration: none;
+    color: #ff8800 !important;
+}
+.nav-link:visited {
+    text-decoration: none !important;
+    color: #0099cc !important;
+}
+
+.navbar.navbar-dark .nav-item .nav-link:hover {
+    color: #cc0000 !important;
+}
+.navbar.navbar-dark .nav-item .nav-link:focus {
+    color: #ff8800 !important;
+}
+.navbar.navbar-dark .nav-item .nav-link:active {
+    color: #007e33 !important;
+}
+.navbar.navbar-dark .nav-item .nav-link:visited {
+    color: #0099cc !important;
+}
+
+/* a {
+    color: #d99a30 !important;
+   
+}
+a:active {
+    color: #0f5058 !important;
+}
+
+a:visited {
+    color: #a71e9b !important;
+}
+a:hover {
+    color: #880e0e !important;
+} */
+.main-nav {
+    border-top: 2px solid var(--bg-grey);
+    background-color: var(--main-nav-bg);
+}
+.main-nav_list {
+    margin: 0;
+    padding: 0;
+}
+.main-nav_item {
+    display: inline-block;
+    padding: 0 10px;
+}
+.main-nav_link {
+    color: var(--main-nav-color);
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 0;
+    display: block;
+}
+.main-nav_link.active,
+.main-nav_link:hover {
+    color: var(--text-color-blue);
+}
+
+/* .nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: transparent;
+} */
 
 h1 {
     font-size: 4rem;
@@ -403,7 +474,7 @@ div.relative-spacer-footer-top {
 
 div.relative-spacer-top {
     position: relative;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 div.relative-spacer-top-video {
@@ -490,7 +561,7 @@ div.relative-pos-bottom-titel-text {
 
 div.relative-pos-book-titel {
     position: relative;
-    margin-top: 106px;
+    margin-top: 80px;
 }
 div.relative-pos-book-sub-titel {
     position: relative;
@@ -537,7 +608,7 @@ div.landingpage-book-titel-text {
     line-height: normal;
 }
 div.landingpage-book-titel-sub-text {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-weight: bold;
     line-height: normal;
 }
@@ -637,7 +708,7 @@ div.book-content-text {
     /* background: #ffffff; */
     overflow: hidden;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 0px;
 }
 #cards_landscape_wrap-2 .card-flyer .image-box img {
     -webkit-transition: all 0.9s ease;
@@ -720,7 +791,7 @@ div.book-content-text {
     background: #ffffff;
     /* overflow: hidden; */
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 0px;
 }
 #cards_landscape_wrap-3 .card-flyer .image-box img {
     -webkit-transition: all 0.9s ease;
