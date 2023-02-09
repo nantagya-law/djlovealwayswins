@@ -1,30 +1,280 @@
 {% load static %}
-
-<!-- <div class="">
-    <img
-        src="../../static/main/assets/img/new/grafik/Linie-Menu.svg"
-        alt="Linie-Menu"
-        style="width: 100%; min-height: 10px; margin-bottom: -19px"
-    />
+<!-- <div class="col" style="height: 1px; margin: 0; padding: 0">
+    <hr />
 </div> -->
+<div class="row relative-pos-navbar">
+    <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="z-index: 12; max-height: 52px; margin: 0; padding: 0"
+    >
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-lg-1 margin-pos-right"></div>
+            <div
+                class="col collapse navbar-collapse"
+                id="navbarSupportedContent"
+            >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Home menu point starts here-->
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="{% url 'main-home' %}"
+                            >HOME</a
+                        >
+                    </li>
 
-<!-- <div
-    class="bg-img"
-    style="
-        margin-top: -30px;
-        /* Control the height of the image */
-        min-height: 50px;
-        background-image: url('../../static/main/assets/img/new/grafik/Linie-Menu.svg');
-    "
-> -->
+                    <!-- Lijana menu point-->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            LIJANA
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-about' %}"
+                                    >Das bin ich</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-setcard' %}"
+                                    >Setcard</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-autogram' %}"
+                                    >Autogramme</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Lijana menu point ends here-->
 
+                    <!-- CYBERMOBBING menu point starts here-->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            CYBERMOBBING
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-portalhelp' %}"
+                                    >Hilfestellenportal</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-poesiealbum' %}"
+                                    >Poesiealbum</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- CYBERMOBBING menu point ends here-->
+
+                    <!-- SCHULBESUCHE menu point starts here-->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            SCHULBESUCHE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-gallery' %}"
+                                    >Bildergalerie</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-booking' %}"
+                                    >Buchnungen</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- SCHULBESUCHE menu point ends here-->
+
+                    <!-- PROJEKTE menu point starts here-->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            PROJEKTE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-school' %}"
+                                    >Schule in Uganda</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-coffee' %}"
+                                    >Geruga Kaffee</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-donate' %}"
+                                    >Unterstürze Uns</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- PROJEKTE menu point ends here-->
+
+                    <!-- BUCH menu point starts here-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'main-book' %}"
+                            >BUCH</a
+                        >
+                    </li>
+                    <!-- BUCH menu point ends here-->
+
+                    <!-- SPENDE menu point starts here-->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            SPENDE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="{% url 'main-donate' %}"
+                                    >So kannst du spenden</a
+                                >
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- SPENDE menu point ends here-->
+                </ul>
+
+                <!-- <form class="d-flex align-items-center" role="search">
+                    <input
+                        style="max-height: 52px"
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form> -->
+            </div>
+            <!-- Search form -->
+            <div class="col-sm-2 d-flex align-items-center">
+                <div class="input-group ps-1 d-flex align-items-center">
+                    <div id="navbar-search-autocomplete" class="form-outline">
+                        <input type="search" id="form1" class="form-control" />
+                        <!-- <label class="form-label" for="form1">Search</label> -->
+                    </div>
+                    <button type="button" class="btn btn-info">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-1 margin-pos-left"></div>
+        </div>
+    </nav>
+</div>
+
+<!-- 
 <div class="col" style="height: 1px; margin: 0; padding: 0">
     <hr />
 </div>
 <div class="row relative-pos-navbar">
     <nav
-        style="z-index: 10; min-height: 52px; margin: 0; padding: 0"
         class="navbar navbar-expand-lg"
+        style="z-index: 10; max-height: 52px; margin: 0; padding: 0"
     >
         <button
             class="navbar-toggler"
@@ -40,12 +290,11 @@
 
         <div class="col-lg-1 margin-pos-right"></div>
         <div class="col collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <!-- Home menu point starts here-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'main-home' %}">HOME</a>
                 </li>
-                <!-- Lijana menu point-->
+
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -86,9 +335,7 @@
                         </li>
                     </ul>
                 </li>
-                <!-- Lijana menu point ends here-->
 
-                <!-- CYBERMOBBING menu point starts here-->
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -122,9 +369,7 @@
                         </li>
                     </ul>
                 </li>
-                <!-- CYBERMOBBING menu point ends here-->
 
-                <!-- SCHULBESUCHE menu point starts here-->
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -158,9 +403,7 @@
                         </li>
                     </ul>
                 </li>
-                <!-- SCHULBESUCHE menu point ends here-->
 
-                <!-- PROJEKTE menu point starts here-->
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -201,15 +444,11 @@
                         </li>
                     </ul>
                 </li>
-                <!-- PROJEKTE menu point ends here-->
 
-                <!-- BUCH menu point starts here-->
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'main-book' %}">BUCH</a>
                 </li>
-                <!-- BUCH menu point ends here-->
 
-                <!-- SPENDE menu point starts here-->
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -239,7 +478,6 @@
                         </li>
                     </ul>
                 </li>
-                <!-- SPENDE menu point ends here-->
             </ul>
         </div>
         <div class="hstack gap-5 text-start">
@@ -261,31 +499,8 @@
             <div class="font-sprach-text">DE</div>
             <div class="vr"></div>
         </div>
-
-        <!--
-        <div
-            class="col-sm-1 text-end"
-            style="height: 52px d-flex align-items-center"
-        >
-            <img
-                src="{% static 'main/assets/img/new/grafik/Sprachauswahl.svg' %}"
-                alt="Sprachauswahl"
-                width="60"
-                height="20"
-            />
-        </div>
-        -->
         <div class="col-lg-1 margin-pos-left"></div>
     </nav>
-</div>
-<!-- <div class="row position-menu-line">
-    <img
-        src="../../static/main/assets/img/new/grafik/Menu-Herz.svg"
-        alt="Linie-Menu"
-        style="width: 10%; min-height: 1px; margin-bottom: 2px"
-    />
-    <p>taaataaataatatatatata</p>
-    <div class="col"><hr /></div>
 </div> -->
 
 <!-- ### Menu Navbar ### -->
