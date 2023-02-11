@@ -4,15 +4,18 @@
 <div
     class="bg-img"
     style="
-        margin-top: 0px;
+        margin-top: -25px;
         /* Control the height of the image */
         height: 700px;
         background-image: url('../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg');
     "
 >
-    <div class="row law_main">
+    <div class="row">
+        <!-- The left col with right side margin -->
+        <div class="col-lg-1 margin-pos-right"></div>
+
         <!-- The col for the titel text-->
-        <div class="col-lg-5 relative-pos-top-titel-text">
+        <div class="col-lg-4 relative-pos-top-titel-text">
             <div class="font-titel-text">Love Always<br />Wins e.V.</div>
             <!-- The col for the sub titel text-->
             <div class="col relative-pos-book-button">
@@ -25,12 +28,7 @@
             class="col-lg-2 text-start relative-heart-spacer-top relative-heart-spacer-bottom"
         >
             <img
-                style="
-                    margin-top: 0px;
-                    margin-left: 50px;
-                    max-width: 10%;
-                    height: 18px;
-                "
+                style="margin-top: 0px; max-width: 10%; height: 18px"
                 src="../../static/main/assets/img/new/grafik/Swipe-Herz-Flaeche.svg"
                 class="card-img-top"
                 alt="Herz-Flaeche"
@@ -48,12 +46,14 @@
                 alt="Herz-Kontur"
             />
         </div>
+        <div class="col-lg-1 margin-pos-left"></div>
     </div>
 </div>
 <!-- Header background-image ends here -->
 
 <!-- ######## Content block starts here ########-->
-<div class="row law_main" style="height: auto">
+<div class="row" style="height: auto">
+    <div class="col-lg-1 margin-pos-right"></div>
     <div class="col relative-pos-content-text">
         <div class="font-content-text">
             Willkommen bei uns!<br />Schön, dass du hier bist.
@@ -62,13 +62,15 @@
             Hier findest du alles Rund um Lijana und Love Always Wins e.V.
         </div>
     </div>
+    <div class="col-lg-1 margin-pos-left"></div>
 </div>
 <!-- ######## Content block ends here ########-->
 
 <!-- ######## History block starts here ########-->
 <!-- #cards_landscape_wrap-2 .card-flyer:hover .image-box img  -->
 <div id="cards_landscape_wrap-2">
-    <div class="row law_main relative-pos-card-top-bottom" style="height: auto">
+    <div class="row relative-pos-card-top-bottom" style="height: auto">
+        <div class="col-lg-1 margin-pos-right"></div>
         <div class="col">
             <a href="">
                 <div class="card-flyer h-100" style="height: auto">
@@ -168,6 +170,7 @@
                 </div>
             </a>
         </div>
+        <div class="col-lg-1 margin-pos-left"></div>
     </div>
 </div>
 <!-- ######## History block ends here ########-->
@@ -185,8 +188,9 @@
         background-image: url('../../static/main/assets/img/new/grafik/Buch-Hintergrund-Banner.jpg');
     "
 >
-    <div class="row law_main" style="height: 490px">
-        <div class="col-lg-8 relative-pos-book-titel">
+    <div class="row" style="max-width: 100%; height: 490px">
+        <div class="col-lg-1 margin-pos-right"></div>
+        <div class="col-lg-6 relative-pos-book-titel">
             <div class="font-book-titel-text">
                 Du verdienst den Tod!<br />Trotzdem lebe ich weiter.
             </div>
@@ -241,3 +245,9 @@
 <!-- ######## Buy Book block ends here ########-->
 
 {% endblock %}
+
+<!--
+<font size="1">This is really tiny text.</font>
+<font size="+2">This is bigger text.</font>
+<font size="-1">This is smaller text.</font>
+-->

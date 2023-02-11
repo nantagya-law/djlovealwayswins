@@ -475,6 +475,21 @@ html {
     height: 100%;
 }
  */
+
+div.law_main {
+    max-width: 1160px;
+    margin: auto;
+    /* border: 3px solid #73ad21; */
+}
+
+.law_logo {
+    max-height: 167px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 body {
     background: #fff;
     font-family: louis_george_caferegular, sans-serif;
@@ -684,51 +699,58 @@ div.relative-pos-book-top-bottom {
 /* ############ Font ############### */
 div.font-sprach-text {
     font-family: louis_george_caferegular, sans-serif;
-    font-size: 18pt;
+    font-size: 18px;
     color: #646469;
 }
 div.font-titel-text {
-    font-family: louis_george_cafebold, sans2-serif;
-    /* font-family: "Louis George Cafe", sans1-serif; */
-    /* font-family: "Louis George Café", sans1-serif2; */
-    /* font-family: 'Louis George Café Light', sans-serif; */
-
-    font-size: 40pt;
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 60px;
     color: white;
 }
 
 div.font-titel-sub-text {
     font-family: louis_george_cafebold, sans-serif;
-    font-size: 26pt;
+    font-size: 36px;
     color: #d8dcdf;
 }
 
 div.font-content-text {
     font-family: louis_george_cafebold, sans-serif;
-    font-size: 40pt;
+    font-size: 40px;
     color: #646469;
 }
 div.font-content-sub-text {
     font-family: louis_george_caferegular, sans-serif;
-    font-size: 18pt;
+    font-size: 18px;
     color: #646469;
 }
 
 div.font-book-titel-text {
     font-family: louis_george_cafebold, sans-serif;
-    font-size: 26pt;
+    font-size: 36px;
     color: white;
 }
 div.font-book-titel-presell-text {
     font-family: louis_george_caferegular, sans-serif;
-    font-size: 22pt;
+    font-size: 32px;
+    color: white;
+}
+
+div.font-footer-titel-text {
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+div.font-footer-text {
+    font-family: louis_george_caferegular, sans-serif;
+    font-size: 16px;
     color: white;
 }
 
 .navbar {
     background: #ebebeb;
     font-family: louis_george_cafebold, sans-serif;
-    font-size: 18pt;
+    font-size: 18px;
 }
 
 /* .nav-link {
@@ -808,6 +830,15 @@ a:hover {
 .nav > li > a:focus {
     background-color: transparent;
 } */
+
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
 
 h1 {
     font-size: 4rem;
@@ -1009,7 +1040,7 @@ div.relative-pos-logo {
 
 div.relative-pos-top-titel-text {
     position: relative;
-    margin-top: 380px;
+    margin-top: 330px;
 }
 
 div.absolute-pos-top-titel-text {
@@ -1097,33 +1128,6 @@ div.book-content-text {
     transition: 0.8s;
     position: relative;
     overflow: hidden;
-}
-
-.navbar-brand {
-    padding: 0 15px;
-    height: 80px;
-    line-height: 80px;
-}
-.font-size-60b {
-    font-size: 3.3rem;
-    font-weight: bold;
-    line-height: normal;
-}
-.font-size-36b {
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: normal;
-}
-
-.font-size-18n {
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: normal;
-}
-.font-size-32n {
-    font-size: 1.8rem;
-    font-weight: normal;
-    line-height: normal;
 }
 
 /*
