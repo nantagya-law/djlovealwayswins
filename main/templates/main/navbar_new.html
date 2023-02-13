@@ -1,13 +1,92 @@
 {% load static %}
-<div class="row">
-    <nav
-        margin-top:
-        0px
-        class="navbar navbar-expand-lg bg-body-tertiary"
-        style="z-index: 2; max-height: 52px; margin: 0; padding: 0"
+<!-- <div class="wrapper">
+    <nav class="shadow">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div> -->
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
     >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link disabled"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Disabled</a
+                >
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+   
+    <div class="container-fluid law_main">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+            class="col-lg-8 collapse navbar-collapse"
+            id="navbarSupportedContent"
+        >
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                >
+                <a class="nav-item nav-link" href="#">Lijana</a>
+                <a class="nav-item nav-link" href="#">Cybermobbing</a>
+                <a class="nav-item nav-link" href="#">Schulebesuche</a>
+                <a class="nav-item nav-link" href="#">Projekte</a>
+                <a class="nav-item nav-link" href="#">Buch</a>
+                <a class="nav-item nav-link" href="#">Spende</a>
+            </div>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+</nav>-->
+
+<div class="row">
+    <nav class="navbar navbar-expand-lg navbar-custom text-center">
         <div class="container-fluid law_main">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button
                 class="navbar-toggler"
                 type="button"
@@ -23,8 +102,7 @@
                 class="col-sm-8 collapse navbar-collapse"
                 id="navbarSupportedContent"
             >
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- Home menu point starts here-->
+                <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
                         <a
                             class="nav-link active"
@@ -34,7 +112,6 @@
                         >
                     </li>
 
-                    <!-- Lijana menu point-->
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -75,9 +152,7 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- Lijana menu point ends here-->
 
-                    <!-- CYBERMOBBING menu point starts here-->
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -111,9 +186,7 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- CYBERMOBBING menu point ends here-->
 
-                    <!-- SCHULBESUCHE menu point starts here-->
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -147,9 +220,7 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- SCHULBESUCHE menu point ends here-->
 
-                    <!-- PROJEKTE menu point starts here-->
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -190,17 +261,13 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- PROJEKTE menu point ends here-->
 
-                    <!-- BUCH menu point starts here-->
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'main-book' %}"
                             >BUCH</a
                         >
                     </li>
-                    <!-- BUCH menu point ends here-->
 
-                    <!-- SPENDE menu point starts here-->
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -232,18 +299,16 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- SPENDE menu point ends here-->
                 </ul>
             </div>
-            <!-- Search form -->
-            <div class="col-sm-4 d-flex align-items-center">
+
+            <div class="col-sm-4">
                 <div
                     class="input-group d-flex align-items-center"
                     style="margin-left: 80px"
                 >
                     <div id="navbar-search-autocomplete" class="form-outline">
                         <input type="search" id="form1" class="form-control" />
-                        <!-- <label class="form-label" for="form1">Search</label> -->
                     </div>
                     <button type="button" class="btn btn-info">
                         <i class="fas fa-search"></i>

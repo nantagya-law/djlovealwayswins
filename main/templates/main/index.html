@@ -1,28 +1,20 @@
 {% extends "../main/base_generic.html" %} {% load static %} {% block content %}
 
 <!--  ########  Header background-image ########- -->
-<div
-    class="bg-img"
-    style="
-        margin-top: 0px;
-        /* Control the height of the image */
-        height: 700px;
-        background-image: url('../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg');
-    "
->
+<div class="bg-img">
     <div class="row law_main">
         <!-- The col for the titel text-->
-        <div class="col-lg-5 relative-pos-top-titel-text">
-            <div class="font-titel-text">Love Always<br />Wins e.V.</div>
+        <div class="col-sm-6 relative-pos-top-titel-text">
+            <div id="maintitel">Love Always<br />Wins e.V.</div>
             <!-- The col for the sub titel text-->
-            <div class="col relative-pos-book-button">
-                <div class="font-titel-sub-text">
+            <div class="col relative-pos-bottom-titel-text">
+                <div id="subtitel">
                     Mehr Selbstvertrauen für<br />eine bessere Zukunft
                 </div>
             </div>
         </div>
         <div
-            class="col-lg-2 text-start relative-heart-spacer-top relative-heart-spacer-bottom"
+            class="col-sm-2 text-start relative-heart-spacer-top relative-heart-spacer-bottom"
         >
             <img
                 style="
@@ -55,10 +47,10 @@
 <!-- ######## Content block starts here ########-->
 <div class="row law_main" style="height: auto">
     <div class="col relative-pos-content-text">
-        <div class="font-content-text">
+        <div id="maincontent">
             Willkommen bei uns!<br />Schön, dass du hier bist.
         </div>
-        <div class="font-content-sub-text relative-pos-content-sub-text">
+        <div class="relative-pos-content-sub-text" id="subcontent">
             Hier findest du alles Rund um Lijana und Love Always Wins e.V.
         </div>
     </div>
@@ -92,10 +84,11 @@
                                 </a>
                             </div>
                             <div
-                                class="content-sub-text relative-pos-content-sub-text"
+                                class="relative-pos-content-sub-text"
+                                id="subcontent"
                             >
-                                Lijana Kaggwa (25) gab ihr Mathestudium für eine
-                                Modelkarriere auf.
+                                Lijana Kaggwa (25) gab ihr Mathe-<br />studium
+                                für eine Modelkarriere auf.
                             </div>
                         </div>
                     </div>
@@ -124,11 +117,12 @@
                                 </a>
                             </div>
                             <div
-                                class="content-sub-text relative-pos-content-sub-text"
+                                class="relative-pos-content-sub-text"
+                                id="subcontent"
                             >
-                                Was als großer Traum begann, mündete in einem
-                                Albtraum. Aus der Favoritin der Sendung wurde
-                                eine Zielscheibe.
+                                Was als großer Traum begann, mündete<br />in
+                                einem Albtraum. Aus der Favoritin der<br />Sendung
+                                wurde eine Zielscheibe.
                             </div>
                         </div>
                     </div>
@@ -158,9 +152,10 @@
                                 </a>
                             </div>
                             <div
-                                class="relative-pos-content-sub-text content-sub-text"
+                                class="relative-pos-content-sub-text"
+                                id="subcontent"
                             >
-                                Erhalte Einblicke in unserer Vorträge und
+                                Erhalte Einblicke in unserer Vorträge und<br />
                                 Workshops an Schulen.
                             </div>
                         </div>
@@ -187,12 +182,15 @@
 >
     <div class="row law_main" style="height: 490px">
         <div class="col-lg-8 relative-pos-book-titel">
-            <div class="font-book-titel-text">
-                Du verdienst den Tod!<br />Trotzdem lebe ich weiter.
+            <!-- <div class="font-book-titel-text">
+                >>Du verdienst den Tod!<br />Trotzdem lebe ich weiter<<
+            </div> -->
+            <div id="booktitel">
+                >>Du verdienst den Tod!<br />Trotzdem lebe ich weiter<<
             </div>
 
             <div class="col relative-pos-book-sub-titel">
-                <div class="font-book-titel-presell-text">
+                <div id="bookordertext">
                     Bestellt Buch bis 03.04.2023 vor und<br />erhaltet eine
                     kleine Überraschung!
                 </div>
@@ -234,7 +232,6 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-1 margin-pos-left"></div>
     </div>
 </div>
 

@@ -1,0 +1,1602 @@
+/* @font-face {
+    font-family: "louis_george_cafebold_italic";
+    src: url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_bold_italic-webfont.woff2")
+            format("woff2"),
+        url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_bold_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafebold";
+    src: url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_bold-webfont.woff2")
+            format("woff2"),
+        url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_bold-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafeitalic";
+    src: url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_italic-webfont.woff2")
+            format("woff2"),
+        url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafe_lightitalic";
+    src: url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_light_italic-webfont.woff2")
+            format("woff2"),
+        url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_light_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafe_lightRg";
+    src: url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_light-webfont.woff2")
+            format("woff2"),
+        url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe_light-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_caferegular";
+    src: url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe-webfont.woff2")
+            format("woff2"),
+        url("https://www.lovealwayswins.de/static/main/assets/fonts/webfontkit/louis_george_cafe-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: "louis_george_cafebold_italic";
+    src: url("../../fonts/webfontkit/louis_george_cafe_bold_italic-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe_bold_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafebold";
+    src: url("../../fonts/webfontkit/louis_george_cafe_bold-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe_bold-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafeitalic";
+    src: url("../../fonts/webfontkit/louis_george_cafe_italic-webfont.woff2")
+            format("woff2"),
+        url("../.../fonts/webfontkit/louis_george_cafe_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafe_lightitalic";
+    src: url("../.../fonts/webfontkit/louis_george_cafe_light_italic-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe_light_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafe_lightRg";
+    src: url("../../fonts/webfontkit/louis_george_cafe_light-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe_light-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_caferegular";
+    src: url("../../fonts/webfontkit/louis_george_cafe-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+    margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+    display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+    background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+    font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+    display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+    display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+    display: none;
+}
+
+/* body,
+html {
+    height: 100%;
+}
+ */
+
+div.law_main {
+    max-width: 1160px;
+    margin: auto;
+    border: 3px solid #73ad21;
+}
+
+.law_logo {
+    max-height: 167px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    background: #fff;
+    font-family: louis_george_caferegular, sans-serif;
+    /* font-family: 'Louis George Café Light', sans-serif; 
+
+    font-size: 100%;
+    color: var(--text-color);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    min-width: 320px;*/
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0.3em;
+    height: 0.3em;
+    margin: -0.3em 0 0 0.4em;
+    vertical-align: middle;
+    content: "";
+    border: 0.5em solid;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotateZ(45deg);
+}
+
+/* .dropdown-toggle:after {
+    display: inline;
+    padding-right: 3px;
+    vertical-align: middle;
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+} */
+
+/* Change the font of the menu */
+/* .dropdown-toggle {
+    font: 400 1.5rem/1.25 sans-serif;
+    color: white;
+    background: purple;
+    padding: 0.5em 1em;
+} */
+
+.bg-image1 {
+    width: 100%;
+    height: 700px;
+    /* background-image: url('image/background-image.jpg');  */
+    background-image: url("../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.masthead {
+    /* ######### Good one ###########
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
+    min-height: 10vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    ############## Good one ends ##### */
+    background-repeat: no-repeat;
+
+    /* background-image: url("../images/bg.png"); */
+
+    /* 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+     */
+
+    /* top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    position: absolute;
+    z-index: 1;
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;*/
+
+    /* opacity: 0.2; */
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("../../img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg");
+    margin-top: 0px;
+    /* Control the height of the image */
+    height: 700px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+/* Position of menu line */
+.position-menu-line {
+    position: absolute;
+    /* top: 20px; */
+    left: 100px;
+    top: 315px;
+    color: white;
+    z-index: 2;
+}
+
+/* Position of titel text in image */
+.position-text-block-titel {
+    position: absolute;
+    /* top: 20px; */
+    left: 13rem;
+    bottom: 2.5rem;
+    color: #d8dcdf;
+}
+/* Position of heart in image */
+.absolute-position-heart-row {
+    position: absolute;
+    /* top: 20px; */
+    left: 35rem;
+    bottom: 2.5rem;
+    color: #d8dcdf;
+}
+.relative-position-heart-row {
+    position: relative;
+    /* top: 20px; */
+    left: 35rem;
+    bottom: 0px;
+    color: #d8dcdf;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* ###### Position setting ####### */
+div.margin-pos-left {
+    margin-left: 5rem;
+}
+div.margin-pos-right {
+    margin-right: 5rem;
+}
+
+/* Logo */
+.relative-logo-position {
+    position: relative;
+    top: 39px;
+    bottom: 39px;
+}
+.relative-donate-button-position {
+    position: relative;
+    top: 58px;
+    bottom: 39px;
+}
+
+.relative-buy-button-position {
+    position: relative;
+    bottom: -40px;
+}
+
+/* Navbar Menu */
+div.relative-pos-navbar {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+div.relative-pos-content-text {
+    position: relative;
+    margin-top: 65px;
+}
+div.relative-pos-content-sub-text {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+div.relative-pos-card-top-bottom {
+    position: relative;
+    margin-top: 54px;
+    margin-bottom: 78px;
+}
+
+div.relative-pos-book-top-bottom {
+    position: relative;
+    margin-top: 39px;
+    margin-bottom: 0px;
+}
+
+/* ############ Font ############### */
+.slider-content h1 {
+    font-size: 3rem;
+}
+.slider-content p,
+.teaser-map_text h3 {
+    font-size: 2.25rem;
+}
+.teaser-map_text p {
+    font-size: 2rem;
+}
+.footer-info_item:last-child {
+    margin: 0 0 0 400px;
+}
+
+@media screen and (min-width: 1600px) {
+    .slider-content {
+        top: 140px;
+    }
+    .slider-content_home {
+        top: 320px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .teaser-map {
+        background-size: cover;
+    }
+    .swiper img {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+div.font-sprach-text {
+    font-family: louis_george_caferegular, sans-serif;
+    font-size: 18px;
+    color: #646469;
+}
+div.font-titel-text {
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 3.75em;
+    color: white;
+}
+
+div.font-titel-sub-text {
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 2.25em;
+    color: #d8dcdf;
+}
+
+div.font-content-text {
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 40px;
+    color: #646469;
+}
+div.font-content-sub-text {
+    font-family: louis_george_caferegular, sans-serif;
+    font-size: 18px;
+    color: #646469;
+}
+
+div.font-book-titel-text {
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 36px;
+    color: white;
+}
+div.font-book-titel-presell-text {
+    font-family: louis_george_caferegular, sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+div.font-footer-titel-text {
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+div.font-footer-text {
+    font-family: louis_george_caferegular, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.navbar {
+    background: #ebebeb;
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 18px;
+}
+.navbar-custom {
+    height: 52px;
+}
+/* nav {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    height: 50px;
+    background: bisque;
+    margin-top: 20%;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 19px;
+    color: #262626;
+    font-weight: bold;
+    font-family: poppins;
+}
+nav ul li a:hover {
+    background: chocolate;
+    color: #fff;
+    transition: 0.6s;
+}
+.shadow {
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.shadow:before,
+.shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-radius: 100px / 10px;
+}
+
+div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 19px;
+    color: #262626;
+    font-family: louis_george_cafebold, sans-serif;
+    font-size: 18px;
+    line-height: 30px; 
+}
+div a:hover {
+    background: purple;
+    color: #fff;
+    transition: 0.6s;
+} */
+
+/* Do not forget to change links in your navbar appropriately. 
+    If you are not creating a one-page website, an active page
+    needs to have a .active class in the navbar to be properly
+    highlighted. Unfortunately, there is no easy way to do this 
+    automatically in HTML, so you have to do it manually.  */
+
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:focus,
+.navbar .navbar-nav > .open > a:hover {
+    background-color: red;
+}
+.navbar .dropdown-toggle:active {
+    background-color: inherit;
+}
+
+/* .nav-link {
+    color: navy;
+    opacity: 0.8;
+}
+.nav-link:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: #cc0000 !important;
+}
+.nav-link:active {
+    text-decoration: none;
+}
+.nav-link:focus {
+    text-decoration: none;
+    color: #ff8800 !important;
+}
+.nav-link:visited {
+    text-decoration: none !important;
+    color: #0099cc !important;
+}
+
+.navbar.navbar-dark .nav-item .nav-link:hover {
+    color: #cc0000 !important;
+}
+.navbar.navbar-dark .nav-item .nav-link:focus {
+    color: #ff8800 !important;
+}
+.navbar.navbar-dark .nav-item .nav-link:active {
+    color: #007e33 !important;
+}
+.navbar.navbar-dark .nav-item .nav-link:visited {
+    color: #0099cc !important;
+} */
+
+/* a {
+    color: #d99a30 !important;
+   
+}
+a:active {
+    color: #0f5058 !important;
+}
+
+a:visited {
+    color: #a71e9b !important;
+}
+a:hover {
+    color: #880e0e !important;
+} */
+.main-nav {
+    border-top: 2px solid var(--bg-grey);
+    background-color: var(--main-nav-bg);
+}
+.main-nav_list {
+    margin: 0;
+    padding: 0;
+}
+.main-nav_item {
+    display: inline-block;
+    padding: 0 10px;
+}
+.main-nav_link {
+    color: var(--main-nav-color);
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 0;
+    display: block;
+}
+.main-nav_link.active,
+.main-nav_link:hover {
+    color: var(--text-color-blue);
+}
+
+/* .nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: transparent;
+} */
+
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h1 {
+    line-height: 1.2;
+    font-size: 4.5rem;
+}
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+h2,
+h3 {
+    font-size: 1.25rem;
+}
+.content-text h2 {
+    font-size: 1.45rem;
+}
+p {
+    font-size: 1.15rem;
+    margin: 0 0 16px;
+}
+
+.color-overly {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, rgba(0, 0, 0, 0.2));
+}
+
+/*
+mt-1 = .25rem
+mt-2 = .5rem
+mt-3 = 1rem
+mt-4 = 1.5rem
+mt-5 = 3rem
+*/
+#openPopup {
+    padding: 20px 30px;
+    background-color: #a2238e;
+    border-color: #a2238e;
+    box-shadow: 1px 1px 1px #999;
+    white-space: normal;
+    font-size: smaller;
+    letter-spacing: 0.2px;
+}
+
+#openPopup:hover,
+#openPopup:active,
+#openPopup:focus {
+    background-color: #912284 !important;
+    border-color: #912284 !important;
+}
+
+#openPopup:focus {
+    outline: none;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.relative-line-spacer-top-bottom {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.relative-line-spacer-top {
+    position: relative;
+    margin-top: 10px;
+}
+div.relative-footer-spacer-bottom {
+    position: relative;
+    margin-bottom: 20px;
+}
+div.relative-spacer-footer-top {
+    position: relative;
+    margin-top: 20px;
+}
+
+div.relative-spacer-top {
+    position: relative;
+    margin-top: 100px;
+}
+
+div.relative-spacer-top-video {
+    position: relative;
+    margin-top: 50px;
+}
+div.relative-spacer-top-bottom {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+div.relative-spacer-top-bottom-equal {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+div.relative-spacer-bottom {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+div.relative-spacer-card-bottom {
+    position: relative;
+    margin-bottom: 10px;
+}
+div.relative-spacer-card-top {
+    position: relative;
+    margin-top: 0px;
+}
+div.relative-spacer-card-top-lijana {
+    position: relative;
+    margin-top: 25px;
+}
+div.relative-spacer-card-top-albtraum {
+    position: relative;
+    margin-top: 0px;
+}
+div.relative-spacer-card-top-workshop {
+    position: relative;
+    margin-top: 25px;
+}
+div.relative-heart-spacer-top {
+    position: relative;
+    margin-top: 650px;
+}
+div.relative-heart-spacer-bottom {
+    position: relative;
+    margin-bottom: 45px;
+}
+div.relative-heart-spacer-left-right {
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div.relative-spacer-left-right {
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+div.relative-pos-logo {
+    position: relative;
+    margin-top: 39px;
+    margin-bottom: 39px;
+    height: auto;
+}
+
+div.relative-pos-top-titel-text {
+    position: relative;
+    margin-top: 330px;
+}
+
+div.absolute-pos-top-titel-text {
+    position: absolute;
+    margin-top: 380px;
+}
+
+div.relative-pos-bottom-titel-text {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 108px;
+}
+
+div.relative-pos-book-titel {
+    position: relative;
+    margin-top: 80px;
+}
+div.relative-pos-book-sub-titel {
+    position: relative;
+    margin-top: 28px;
+}
+
+div.relative-pos-footer {
+    position: relative;
+    margin-top: 42px;
+    margin-bottom: 11px;
+}
+
+div.relative-pos-footer-row {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+div.relative-pos-footer-horizont-line {
+    position: relative;
+    margin-top: 42px;
+    margin-bottom: 0px;
+}
+div.relative-pos-footer-social-media-text {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+div.relative-pos-footer-social-media-icon {
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+
+div.footer-text {
+    font-size: 0.7rem;
+    font-weight: normal;
+    line-height: normal;
+}
+
+div.landingpage-book-titel-text {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: normal;
+}
+div.landingpage-book-titel-sub-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: normal;
+}
+div.book-content-text {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 2.3rem;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.btn {
+    border: 1px solid #c0aeae;
+    background: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    /* border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070; */
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+.card{
+	transition: all 0.4s ease-in-out;;
+}
+.card:hover{
+	transform: scale(1.2);
+}
+*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.HoverDiv {
+    position: relative;
+    overflow: hidden;
+    border: 0px solid black;
+    /*width: 360px;
+	margin: 10px;*/
+}
+
+/*########### Example2 hover #############*/
+
+#cards_landscape_wrap-2 {
+    text-align: left;
+    background: #f7f7f7;
+}
+#cards_landscape_wrap-2 .container {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+#cards_landscape_wrap-2 a {
+    text-decoration: none;
+    outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box {
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    width: 100%;
+    height: 100%;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box {
+    text-align: left;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+    padding: 20px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer {
+    background: #ffffff;
+    margin-top: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+#cards_landscape_wrap-2 .card-flyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 10px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    /* color: #000000; */
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto Black", sans-serif;
+    letter-spacing: 1px;
+    /* color: #00acc1; */
+}
+/* ########### Second example hover ########### */
+/* #cards_landscape_wrap-2 {
+    text-align: center;
+    background: #f7f7f7;
+}
+#cards_landscape_wrap-2 .container {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+#cards_landscape_wrap-2 a {
+    text-decoration: none;
+    outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box {
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    width: 100%;
+    height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box {
+    text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+    padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer {
+    background: #ffffff;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+#cards_landscape_wrap-2 .card-flyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto Black", sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+} */
+
+/*################# BOOK CSS ##############*/
+/* #cards_landscape_wrap-3 {
+    text-align: left;
+    background: #f7f7f7;
+}
+#cards_landscape_wrap-3 .container {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+#cards_landscape_wrap-3 a {
+    text-decoration: none;
+    outline: none;
+}
+#cards_landscape_wrap-3 .card-flyer {
+    border-radius: 5px;
+}
+#cards_landscape_wrap-3 .card-flyer .image-box {
+    background: #ffffff;
+    /* overflow: hidden; 
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+}
+#cards_landscape_wrap-3 .card-flyer .image-box img {
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    width: 100%;
+    height: 100%;
+}
+#cards_landscape_wrap-3 .card-flyer:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+#cards_landscape_wrap-3 .card-flyer .text-box {
+    text-align: left;
+}
+#cards_landscape_wrap-3 .card-flyer .text-box .text-container {
+    padding: 20px 18px;
+}
+#cards_landscape_wrap-3 .card-flyer {
+    background: #ffffff;
+    margin-top: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+#cards_landscape_wrap-3 .card-flyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 10px;
+}
+#cards_landscape_wrap-3 .card-flyer .text-box p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+#cards_landscape_wrap-3 .card-flyer .text-box h6 {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto Black", sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+} */
+
+/* ######################### Example hover ############################## */
+
+/* h1,
+h1 + p {
+    margin: 30px 15px 0;
+    font-weight: 300;
+}
+h1 + p a {
+    color: #333;
+}
+h1 + p a:hover {
+    text-decoration: none;
+}
+h2 {
+    margin: 60px 15px 0;
+    padding: 0;
+    font-weight: 300;
+}
+h2 span {
+    margin-left: 1em;
+    color: #aaa;
+    font-size: 85%;
+}
+.column {
+    margin: 15px 15px 0;
+    padding: 0;
+}
+.column:last-child {
+    padding-bottom: 60px;
+}
+.column::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.column div {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+.column div:first-child {
+    margin-left: 0;
+}
+.column div span {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+figure {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+figure:hover + span {
+    bottom: -36px;
+    opacity: 1;
+} */
