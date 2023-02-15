@@ -1,31 +1,21 @@
 {% extends "../main/base_generic.html" %} {% load static %} {% block content %}
 <!-- Header background-image -->
-<div
-    class="bg-img"
-    style="
-        margin-top: -30px;
-        /* Control the height of the image */
-        min-height: 700px;
-        background-image: url('../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg');
-    "
->
-    <div class="row relative-pos-top" style="height: auto">
-        <!-- The left col with right side margin -->
-        <div class="col-lg-1 margin-pos-right"></div>
-        <!-- The col for the titel text-->
-        <div class="col-lg-4 relative-pos-top-titel-text">
-            <div class="font-titel-text">Lorem <br />Ipsums</div>
-            <!-- The col for the sub titel text-->
-            <div class="col relative-pos-book-button">
-                <div class="font-titel-sub-text">
-                    Lorem ipsum dolor<br />sit amet, consectetur
-                </div>
-            </div>
+<div class="main-image-container">
+    <div class="container">
+        <div class="slider-content">
+            <h1>Love Always<br />Wins e.V.</h1>
+            <p>Mehr Selbstvertrauen für<br />eine bessere Zukunft.</p>
         </div>
-        <div class="col-lg-1 margin-pos-left"></div>
+    </div>
+    <div class="main-image main-image-10">
+        <img
+            src="../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg"
+            width="1920"
+            height="500"
+            alt="KSB Pumpen kaufen von KLAWA-Service"
+        />
     </div>
 </div>
-<!-- Header background-image ends here -->
 
 <!-- ######## Content first block starts here ########-->
 <div class="row relative-pos-content-text" style="height: auto">
