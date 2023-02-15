@@ -108,11 +108,11 @@ body {
 }
 
 .logo,
-.logo-ksb {
+.action-button {
     position: absolute;
 }
 
-.logo-ksb {
+.action-button {
     right: 10px;
     top: 10px;
 }

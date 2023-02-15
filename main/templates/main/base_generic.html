@@ -35,7 +35,7 @@
 
         <link
             rel="stylesheet"
-            href="{% static 'main/assets/css/custom/custom.css' %}"
+            href="{% static 'main/assets/css/custom/custom_new.css' %}"
         />
 
         {% if title %}
@@ -50,7 +50,9 @@
         <!-- ########## -->
         {%include '../main/navbar_new.html'%}
         <!-- <br /> -->
-        {% block content %} {% endblock %} {% include '../main/footer.html' %}
+        {% block content %} {% endblock %}
+        <!-- ########## -->
+        {% include '../main/my_footer.html'%}
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

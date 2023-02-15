@@ -1,34 +1,36 @@
 {% load static %}
-<div class="row law_main" style="height: 167px">
-    <div class="col-lg-10 relative-logo-position">
-        <a class="float-start" href="{% url 'main-home' %}">
-            <img
-                class="card-img-top"
-                style="margin-top: 0px"
-                src="{% static 'main/assets/img/new/grafik/Logo_LAW_final.svg' %}"
-                alt="Logo"
-                width="300"
-                height="89"
-            />
-        </a>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="{% url 'main-home' %}">
+                <img
+                    src="{% static 'main/assets/img/new/grafik/Logo_LAW_final.svg' %}"
+                    width="300"
+                    height="90"
+                    alt="LOGO LoveAlwaysWins"
+                />
+            </a>
+        </div>
+        <div class="action-button">
+            {% if title == "Buch" %}
+            <a href="{% url 'main-donate' %}">
+                <img
+                    src="{% static 'main/assets/img/new/grafik/Button_Spenden.svg' %}"
+                    width="124"
+                    height="100"
+                    alt="Spenden Button"
+                />
+            </a>
+            {% else %}
+            <a href="{% url 'main-book' %}">
+                <img
+                    src="{% static 'main/assets/img/new/grafik/Button_Bestellen.svg' %}"
+                    width="124"
+                    height="100"
+                    alt="Buy Button"
+                />
+            </a>
+            {% endif %}
+        </div>
     </div>
-    <div class="col-lg-2 relative-donate-button-position text-center">
-        {% if title == "Buch" %}
-        <a class="" href="{% url 'main-donate' %}">
-            <img
-                style="margin-left: 10px; max-height: 30%"
-                src="{% static 'main/assets/img/new/grafik/Button_Spenden.svg' %}"
-                alt="donate"
-            />
-        </a>
-        {% else %}
-        <a class="" href="{% url 'main-book' %}">
-            <img
-                style="margin-left: 10px; width: 200; max-height: 30%"
-                src="{% static 'main/assets/img/new/grafik/Button_Bestellen.svg' %}"
-                alt="donate"
-            />
-        </a>
-        {% endif %}
-    </div>
-</div>
+</header>

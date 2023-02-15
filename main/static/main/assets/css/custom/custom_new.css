@@ -603,18 +603,79 @@ button.swiper-pagination-bullet {
         url(../fonts/roboto-condensed-v24-latin-700.woff) format("woff");
     font-display: swap;
 }
+
+/* ######################## My Font ######################################### */
+@font-face {
+    font-family: "louis_george_cafebold_italic";
+    src: url("../../fonts/webfontkit/louis_george_cafe_bold_italic-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe_bold_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafebold";
+    src: url("../../fonts/webfontkit/louis_george_cafe_bold-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe_bold-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafeitalic";
+    src: url("../../fonts/webfontkit/louis_george_cafe_italic-webfont.woff2")
+            format("woff2"),
+        url("../.../fonts/webfontkit/louis_george_cafe_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafe_lightitalic";
+    src: url("../.../fonts/webfontkit/louis_george_cafe_light_italic-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe_light_italic-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_cafe_lightRg";
+    src: url("../../fonts/webfontkit/louis_george_cafe_light-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe_light-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "louis_george_caferegular";
+    src: url("../../fonts/webfontkit/louis_george_cafe-webfont.woff2")
+            format("woff2"),
+        url("../../fonts/webfontkit/louis_george_cafe-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     --text-color: #575e62;
     --text-color-blue: #0081c7;
     --text-color-blue-light: #7dafdf;
-    --main-nav-color: #575e62;
+    --main-menu-color: #575e62;
     --footer-nav-color: #fff;
     --bg-blue: #0081c7;
     --bg-blue-light: #7dafdf;
     --bg-grey: #b2b2b2;
     --header-bg: #fff;
     --footer-bg: #373a3b;
-    --main-nav-bg: #ebedee;
+    --main-menu-bg: #ebedee;
 }
 *,
 :after,
@@ -631,7 +692,7 @@ html {
 }
 body {
     background: #fff;
-    font-family: Roboto Condensed, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: louis_george_caferegular, sans-serif;
     font-size: 100%;
     color: var(--text-color);
     line-height: 1.4;
@@ -658,6 +719,7 @@ p {
     margin: 0 auto;
     padding: 0 10px;
     position: relative;
+    border: 3px solid #73ad21;
 }
 .main ul {
     margin: 0 0 16px;
@@ -691,11 +753,11 @@ a {
 }
 .header {
     background-color: var(--header-bg);
-    height: 168px;
+    height: 167px;
 }
 .logo {
     left: 10px;
-    top: 25px;
+    top: 10px;
     width: 180px;
 }
 .logo,
@@ -722,28 +784,28 @@ a {
 .header-info a {
     padding: 0 0 0 10px;
 }
-.main-nav {
+.main-menu {
     border-top: 2px solid var(--bg-grey);
-    background-color: var(--main-nav-bg);
+    background-color: var(--main-menu-bg);
 }
-.main-nav_list {
+.main-menu_list {
     margin: 0;
     padding: 0;
 }
-.main-nav_item {
+.main-menu_item {
     display: inline-block;
     padding: 0 10px;
 }
-.main-nav_link {
-    color: var(--main-nav-color);
+.main-menu_link {
+    color: var(--main-menu-color);
     font-size: 1.15rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 8px 0;
     display: block;
 }
-.main-nav_link.active,
-.main-nav_link:hover {
+.main-menu_link.active,
+.main-menu_link:hover {
     color: var(--text-color-blue);
 }
 .slider-content_link {
@@ -813,9 +875,7 @@ a {
     display: block;
     position: absolute;
     z-index: 1;
-    top: 20px;
-    border-top: 5px solid var(--bg-blue);
-    border-bottom: 5px solid var(--bg-blue);
+    top: 50px;
     padding: 10px;
     max-width: 580px;
 }
@@ -882,10 +942,7 @@ a {
     padding: 25px;
     min-height: 160px;
 }
-.teaser-map {
-    background: url(../images/home/KSB-SupremeServ-von-der-KLAWA-Service-GmbH-Hessen-Kassel-Goettingen.jpg)
-        0 no-repeat #fff;
-}
+
 .teaser-map_text {
     padding: 20px 0;
 }
@@ -958,9 +1015,12 @@ a {
     .logo {
         width: auto;
     }
-    .logo,
+    .logo {
+        top: 39px;
+    }
+
     .action-button {
-        top: 30px;
+        top: 58px;
     }
     .header-info {
         left: auto;
@@ -975,54 +1035,28 @@ a {
         display: block;
         padding: 0;
     }
-    .main-nav_list {
-        margin: 0 0 0 140px;
+    .main-menu_list {
+        margin: 0 0 0 0px;
     }
-    .main-nav {
+    .main-menu {
         height: 58px;
     }
-    .main-nav_item {
+    .main-menu_item {
         padding: 0 20px;
     }
-    .main-nav_link {
+    .main-menu_link {
         padding: 14px 0 12px;
     }
-    .main-nav_link.active,
-    .main-nav_link:hover {
+    .main-menu_link.active,
+    .main-menu_link:hover {
         border-bottom: 4px solid var(--text-color-blue);
     }
-    .swiper-pagination {
-        display: block;
-        text-align: right;
-        padding: 0 50px 0 0;
-    }
-    .swiper-pagination-bullet {
-        width: 50px;
-        height: 8px;
-        border-radius: 0;
-        background-color: var(--bg-blue-light);
-        opacity: 1;
-    }
-    .swiper-pagination-bullet-active {
-        background-color: var(--bg-blue);
-    }
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        font-size: 80px;
-    }
-    .swiper-button-prev {
-        left: 40px;
-    }
-    .swiper-button-next {
-        right: 60px;
-    }
+
     .slider-content {
         display: block;
         position: absolute;
         z-index: 1;
-        top: 20px;
-        border-top: 5px solid var(--bg-blue);
-        border-bottom: 5px solid var(--bg-blue);
+        top: 50px;
         padding: 10px;
         max-width: 580px;
     }
@@ -1044,12 +1078,7 @@ a {
     .teaser-container {
         margin: 30px 0 85px;
     }
-    .teaser-map {
-        background: url(../images/home/KSB-SupremeServ-von-der-KLAWA-Service-GmbH-Hessen-Kassel-Goettingen.jpg)
-            50% no-repeat #fff;
-        min-height: 490px;
-        max-height: 490px;
-    }
+
     .teaser-map_text {
         position: absolute;
         top: 80px;
@@ -1087,13 +1116,7 @@ a {
     .container {
         padding: 0;
     }
-    .swiper-pagination {
-        padding: 0 200px 0 0;
-    }
-    .swiper-pagination-bullet {
-        width: 100px;
-        height: 10px;
-    }
+
     .slider-content_link {
         display: block;
         position: absolute;
@@ -1111,9 +1134,7 @@ a {
         text-transform: uppercase;
     }
     .slider-content {
-        top: 60px;
-        border-top: 10px solid var(--bg-blue);
-        border-bottom: 10px solid var(--bg-blue);
+        top: 150px;
         padding: 20px;
     }
     .slider-content h1 {
@@ -1132,18 +1153,9 @@ a {
 }
 @media screen and (min-width: 1600px) {
     .slider-content {
-        top: 140px;
+        top: 350px;
     }
     .slider-content_home {
-        top: 320px;
-    }
-}
-@media screen and (min-width: 1900px) {
-    .teaser-map {
-        background-size: cover;
-    }
-    .swiper img {
-        max-width: none;
-        width: 100%;
+        top: 420px;
     }
 }
