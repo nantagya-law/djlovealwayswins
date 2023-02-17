@@ -1,7 +1,7 @@
 {% extends "../main/base_generic.html" %} {% load static %} {% block content %}
-<div class="main-image-container">
+<div class="bg-image-container">
     <div class="container">
-        <div class="slider-content">
+        <div class="titel-content">
             <h1>Love Always<br />Wins e.V.</h1>
             <p>Mehr Selbstvertrauen für<br />eine bessere Zukunft.</p>
         </div>
@@ -10,16 +10,20 @@
         <img
             src="../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg"
             width="1920"
-            height="500"
-            alt="KSB Pumpen kaufen von KLAWA-Service"
+            height="700"
+            alt="BG_Titel"
         />
     </div>
 </div>
 
 <div class="main">
     <div class="container">
-        <h1>Willkommen bei uns!<br />Schön, dass du hier bist.</h1>
-        <p>Hier findest du alles Rund um Lijana und Love Always Wins e.V.</p>
+        <div class="main-text" style="margin-top: 65px; margin-bottom: 54px">
+            <h1>Willkommen bei uns!<br />Schön, dass du hier bist.</h1>
+            <p>
+                Hier findest du alles Rund um Lijana und Love Always Wins e.V.
+            </p>
+        </div>
 
         <div class="teaser-container">
             <div class="teaser">
@@ -27,79 +31,143 @@
                     ><div class="teaser_img">
                         <img
                             src="../../static/main/assets/img/new/01-Lijana.jpg"
-                            width="360"
-                            height="275"
+                            width="100%"
+                            height="100%"
                             alt="Lijana-model"
                             loading="lazy"
                         />
-                        <span class="teaser_tag">Model Karriere</span>
+                        <span class="card_label">Model Karriere</span>
                     </div>
-                    <div class="teaser_text">
-                        <p>
-                            Lijana Kaggwa (25) gab ihr Mathe-<br />studium für
-                            eine Modelkarriere auf.
-                        </p>
-                    </div></a
-                >
+                </a>
+                <div class="teaser_text">
+                    <p>
+                        Lijana Kaggwa (25) gab ihr Mathe-<br />studium für eine
+                        Modelkarriere auf.
+                    </p>
+                </div>
             </div>
             <div class="teaser">
                 <a href="/hilfe/"
                     ><div class="teaser_img">
                         <img
                             src="../../static/main/assets/img/new/02-Cybermobbing.jpg"
-                            width="360"
-                            height="275"
+                            width="100%"
+                            height="100%"
                             alt="Cybermobbing-Lijana"
                             loading="lazy"
                         />
-                        <span class="teaser_tag">Albtraum</span>
+                        <span class="card_label">Albtraum</span>
                     </div>
-                    <div class="teaser_text">
-                        <p>
-                            Was als großer Traum begann, mündete<br />in einem
-                            Albtraum. Aus der Favoritin der<br />Sendung wurde
-                            eine Zielscheibe.
-                        </p>
-                    </div></a
-                >
+                </a>
+                <div class="teaser_text">
+                    <p>
+                        Was als großer Traum begann, mündete in einem Albtraum.
+                        Aus der Favoritin der Sendung wurde eine Zielscheibe.
+                    </p>
+                </div>
             </div>
             <div class="teaser">
                 <a href="/gallery/"
                     ><div class="teaser_img">
                         <img
                             src="../../static/main/assets/img/new/03-Schulbesuche.jpg"
-                            width="360"
-                            height="275"
+                            width="100%"
+                            height="100%"
                             alt="Schulbesuche-Lijana"
                             loading="lazy"
                         />
-                        <span class="teaser_tag">Workshops</span>
-                    </div>
-                    <div class="teaser_text">
-                        <p>
-                            Erhalte Einblicke in unserer Vorträge und<br />
-                            Workshops an Schulen.
-                        </p>
+                        <span class="card_label">Workshops</span>
                     </div>
                 </a>
+                <div class="teaser_text">
+                    <p>
+                        Erhalte Einblicke in unserer Vorträge und Workshops an
+                        Schulen.
+                    </p>
+                </div>
             </div>
         </div>
+    </div>
+</div>
+<header class="book">
+    <div class="container">
+        <div class="logo">
+            <img
+                src="../../static/main/assets/img/new/grafik/Buch-text-Banner.svg"
+                width="600"
+                height="350"
+                alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
+            />
+
+            <a href="{% url 'main-book' %}">
+                <img
+                    style="margin-top: 56px"
+                    src="../../static/main/assets/img/new/grafik/Button_Bestellen.svg"
+                    alt="Button_Bestellen"
+                    width="180"
+                    height="80"
+                />
+            </a>
+        </div>
+        <div class="action-button">
+            <a href="{% url 'main-book' %}">
+                <img
+                    src="../../static/main/assets/img/new/Buch.png"
+                    width="360"
+                    height="700"
+                    alt="BOOK CYBERMOBBING LoveAlwaysWins"
+                />
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- <div class="bg-img">
+    <div class="container">
         <div class="container-image-text">
             <div class="content-text">
-                <h2>>>Du verdienst den Tod!<br />Trotzdem lebe ich weiter<<</h2>
+                <h1>>>Du verdienst den Tod! Trotzdem lebe ich weiter<<</h1>
                 <p>
-                    Bestellt Buch bis 03.04.2023 vor und<br />erhaltet eine
-                    kleine Überraschung!
+                    Bestellt Buch bis 03.04.2023 vor und erhaltet eine kleine
+                    Überraschung!
                 </p>
             </div>
             <div class="content-image">
                 <img
                     src="../../static/main/assets/img/new/Buch.png"
-                    alt="Buch von Lijana"
+                    width="350"
+                    height="700"
+                    alt="Lijana's Book"
                     loading="lazy"
                 />
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<!-- <div class="bg-img">
+    <div class="container">
+        <div class="container-image-text">
+            <div class="content-image">
+                <img
+                    src="../../static/main/assets/img/new/Buch.png"
+                    width="321"
+                    height="560"
+                    alt="KSB Pumpe kaufen Vorteile bei KLAWA"
+                    loading="lazy"
+                />
+            </div>
+            <div class="content-image">
+                <img
+                    src="../../static/main/assets/img/new/Buch.png"
+                    width="321"
+                    height="560"
+                    alt="KSB Pumpe kaufen Vorteile bei KLAWA"
+                    loading="lazy"
+                />
+            </div>
+        </div>
+    </div>
+</div> -->
+
 {% endblock %}
