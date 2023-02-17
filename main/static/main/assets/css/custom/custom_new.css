@@ -305,6 +305,17 @@ a {
     padding: 10px;
     max-width: 580px;
 }
+.titel-hearts {
+    display: block;
+    position: relative;
+    z-index: 1;
+    /* top: 10px;
+    margin-left: -490px; */
+
+    /* padding: 20px; */
+    padding: -50px;
+    max-width: 600px;
+}
 .book-content {
     display: block;
     position: absolute;
@@ -541,8 +552,8 @@ a {
         display: block;
         position: absolute;
         z-index: 1;
-        top: 50px;
-        padding: 10px;
+        top: 10px;
+        padding: 100px;
         max-width: 580px;
     }
 
@@ -643,7 +654,7 @@ a {
         text-transform: uppercase;
     }
     .titel-content {
-        top: 150px;
+        top: 200px;
         padding: 20px;
     }
     .book-content {
@@ -677,7 +688,7 @@ a {
 }
 @media screen and (min-width: 1600px) {
     .titel-content {
-        top: 350px;
+        top: 300px;
     }
 
     .book-content {
