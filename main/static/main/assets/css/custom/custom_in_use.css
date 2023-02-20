@@ -148,7 +148,7 @@ p {
     margin: 0 auto;
     padding: 0 10px;
     position: relative;
-    /* border: 3px solid #73ad21; */
+    border: 3px solid #73ad21;
 }
 .main ul {
     margin: 0 0 16px;
@@ -686,13 +686,13 @@ a {
     flex-wrap: wrap;
 }
 
-.nav1 {
+.footer {
     background-color: var(--footer-bg);
     /* border-top: 1px solid var(--bg-grey); */
     /* border-bottom: 1px solid var(--bg-grey); */
     /* height: 5.73vh; */
     height: 0rem;
-    min-height: 40vh;
+    min-height: 41.9vh;
     padding: 0 0rem;
     /* font-size: 1.8vmin;
     text-transform: uppercase;
@@ -700,59 +700,64 @@ a {
     /* overflow: hidden; */
 }
 
-.nav1-footer .nav1-items {
+.footer-info-protection .footer-info-items {
     display: flex;
     margin: 0;
 }
 
-.nav1 .nav1-items .nav1-link {
-    padding: 1.6rem 1rem;
+.footer .footer-info-items .footer-info-link {
+    padding: 0rem 0rem;
     font-size: 1.1rem;
     position: relative;
     font-weight: bold;
 }
 
-.nav1 .nav1-contact a {
+.footer .footer-info-contact a {
     font-size: 1.6rem;
     padding: 1.6rem 0;
     display: block;
 }
 
 /*--------- Social css ----------*/
+.footer-info-social {
+    border-top: 1px solid var(--bg-grey);
+    border-bottom: 1px solid var(--bg-grey);
+    margin-top: 4.63vh;
+}
 
 .footer-info-text span {
     font-size: 1.15rem;
     color: #fff;
 }
 
-.nav1 .footer-info-text {
+.footer .footer-info-text {
     margin-top: 4.63vh;
+    margin-bottom: 4.63vh;
 }
 
-.footer-social-icon a {
+/* .footer-social-icon img {
     display: inline-block;
-}
-
-/* .nav1 .social {
-    padding: 1.6rem 0;
+    margin: 0 10px;
 } */
 
-.nav1 .footer-social-icon {
-    margin-top: 4.08vh;
-    margin-left: 45vmin;
+.footer-social-icons {
+    display: flex;
+    /* justify-content: flex-end; */
 }
-.nav1 .footer-info-logo {
+
+.footer-social-icons .footer-social-link {
+    margin-top: 4.5vh;
+    /* margin-left: 58vmin; */
+}
+.footer-social-link {
+    padding: 0px 34px 0px 0;
+}
+.footer .footer-info-logo {
     margin-top: 3.1vh;
     margin-left: 2rem;
+    margin-right: 33.2rem;
 }
-
-/* .nav .nav-items .nav-link {
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
-    position: relative;
-    font-weight: bold;
-  
-} */
+/*-----x--- Social css ----x-----*/
 
 .footer-nav_link.active,
 .footer-nav_link:hover {
@@ -780,11 +785,7 @@ a {
     padding: 10px 30px 10px 0;
     display: block;
 }
-.footer-info {
-    padding: 20px 0;
-    border-top: 1px solid var(--bg-grey);
-    border-bottom: 1px solid var(--bg-grey);
-}
+
 .footer-info_item {
     padding: 0 0 10px;
 }

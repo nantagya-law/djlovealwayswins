@@ -1,0 +1,89 @@
+{% extends "../main/base.html" %} {% load static %} {% block content %}
+
+<header>
+    <div class="header-content">
+        <h1>Love Always Wins e.V.</h1>
+        <div class="line"></div>
+        <h2>Mehr Selbstvertrauen für eine bessere Zukunft.</h2>
+        <!-- <a href="#" class="ctn">Learn More</a> -->
+    </div>
+</header>
+
+<!-- == Events == -->
+<section class="events">
+    <div class="title">
+        <h1>Willkommen bei uns!</h1>
+        <h1>Schön, dass du hier bist.</h1>
+        <p>Hier findest du alles Rund um Lijana und Love Always Wins e.V.</p>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img
+                src="../../static/main/assets/img/new/01-Lijana.jpg"
+                alt="Lijana"
+            />
+            <h4>Model Karriere</h4>
+            <p>
+                Lijana Kaggwa (25) gab ihr Mathe-studium für eine Modelkarriere
+                auf.
+            </p>
+            <a href="{% url 'main-about' %}" class="ctn">LIJANA</a>
+        </div>
+        <div class="col">
+            <img
+                src="../../static/main/assets/img/new/02-Cybermobbing.jpg"
+                alt="Cybermobbing"
+            />
+            <h4>Albtraum</h4>
+            <p>
+                Was als großer Traum begann, mündete in einem Albtraum. Aus der
+                Favoritin der Sendung wurde eine Zielscheibe.
+            </p>
+            <a href="#" class="ctn">CYBERMOBBING</a>
+        </div>
+        <div class="col">
+            <img
+                src="../../static/main/assets/img/new/03-Schulbesuche.jpg"
+                alt="Schulbesuche"
+            />
+            <h4>Workshops</h4>
+            <p>
+                Erhalte Einblicke in unserer Vorträge und Workshops an Schulen.
+            </p>
+            <a href="#" class="ctn">SCHULEBESUCHE</a>
+        </div>
+    </div>
+</section>
+
+<div class="book">
+    <section class="book-content">
+        <div class="row">
+            <div class="col">
+                <h1>
+                    >>Du verdienst den Tod!<br />
+                    Trotzdem lebe ich weiter<<
+                </h1>
+                <p>
+                    Bestellt Buch bis 03.04.2023 vor und erhaltet eine kleine
+                    Überraschung!
+                </p>
+                <a href="{% url 'main-book' %}" class="ctn">Vorbestellen</a>
+            </div>
+            <div class="col">
+                <img
+                    src="../../static/main/assets/img/new/Buch.png"
+                    alt="Schulbesuche"
+                />
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- <section class="footer">
+    <p>
+        Bergstr. 39, 3564 Kassel, Germany | Phone: 800-456-789 | Email:
+        contact@LoveAlwaysWins.de
+    </p>
+    <p>Copyright © 2022 Love Always Wins e.V.</p>
+</section> -->
+{% endblock %}

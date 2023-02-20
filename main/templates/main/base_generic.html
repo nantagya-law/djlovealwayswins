@@ -35,8 +35,12 @@
 
         <link
             rel="stylesheet"
-            href="{% static 'main/assets/css/custom/custom_new.css' %}"
+            href="{% static 'main/assets/css/custom/custom_in_use.css' %}"
         />
+        <!-- <link
+            rel="stylesheet"
+            href="{% static 'main/assets/css/custom/custom_new.css' %}"
+        /> -->
 
         {% if title %}
         <title>LoveAlwaysWins - {{ title }}</title>
@@ -52,7 +56,8 @@
         <!-- <br /> -->
         {% block content %} {% endblock %}
         <!-- ########## -->
-        {% include '../main/my_footer.html'%}
+        {% include '../main/footer_in_use.html'%}
+        <!-- {% include '../main/my_footer.html'%} -->
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
