@@ -121,7 +121,7 @@ body {
     background: #ffffff;
     font-family: louis_george_caferegular, sans-serif;
     font-size: 100%;
-    color: var(--text-color);
+    color: var(--text-color-white);
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     min-width: 120px;
@@ -144,11 +144,11 @@ p {
     overflow-wrap: break-word;
 }
 .container {
-    max-width: 1160px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
     position: relative;
-    border: 3px solid #73ad21;
+    /* border: 3px solid #73ad21; */
 }
 .main ul {
     margin: 0 0 16px;
@@ -186,7 +186,7 @@ a {
 }
 .book {
     background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
-    height: 490px;
+    height: 990px;
 }
 .logo {
     left: 10px;
@@ -688,41 +688,52 @@ a {
 
 .footer {
     background-color: var(--footer-bg);
-    /* border-top: 1px solid var(--bg-grey); */
-    /* border-bottom: 1px solid var(--bg-grey); */
-    /* height: 5.73vh; */
-    height: 0rem;
-    min-height: 41.9vh;
-    padding: 0 0rem;
-    /* font-size: 1.8vmin;
-    text-transform: uppercase;
-    font-weight: 700; */
-    /* overflow: hidden; */
+    height: 41.9vh;
+    /* height: 0rem;
+    min-height: 41.9vh; */
+    overflow: hidden;
 }
 
-.footer-info-protection .footer-info-items {
+/*-----x--- Nav css ----x-----*/
+.footer-nav-link.active,
+.footer-nav-link:hover {
+    color: var(--main-menu-color-active);
+}
+
+.footer-nav {
+    padding: 20px 0;
+    min-height: 120px;
+}
+
+/*  */
+
+.footer-nav .footer-nav-items {
     display: flex;
-    margin: 0;
+    flex-wrap: wrap;
 }
 
-.footer .footer-info-items .footer-info-link {
-    padding: 0rem 0rem;
-    font-size: 1.1rem;
+.footer .footer-nav-items .footer-nav-link {
+    margin-top: 4.63vh;
+    margin-right: 3.5rem;
+    /* font-size: 1.98vh;
+    color: var(--text-color-white); */
     position: relative;
     font-weight: bold;
 }
 
-.footer .footer-info-contact a {
-    font-size: 1.6rem;
-    padding: 1.6rem 0;
-    display: block;
+.footer-nav-link a {
+    font-weight: 700;
+    color: var(--text-color-white);
+    font-size: 1.98vh;
 }
+/*-----x--- Nav css ----x-----*/
 
 /*--------- Social css ----------*/
 .footer-info-social {
     border-top: 1px solid var(--bg-grey);
     border-bottom: 1px solid var(--bg-grey);
     margin-top: 4.63vh;
+    /* margin-bottom: 4.63vh; */
 }
 
 .footer-info-text span {
@@ -733,6 +744,12 @@ a {
 .footer .footer-info-text {
     margin-top: 4.63vh;
     margin-bottom: 4.63vh;
+}
+
+.footer .footer-info-logo {
+    margin-top: 3.1vh;
+    margin-left: 2rem;
+    margin-right: 33.3rem;
 }
 
 /* .footer-social-icon img {
@@ -746,58 +763,57 @@ a {
 }
 
 .footer-social-icons .footer-social-link {
-    margin-top: 4.5vh;
+    /* margin-top: 4.5vh;
+    margin: 0 10px; */
     /* margin-left: 58vmin; */
 }
 .footer-social-link {
-    padding: 0px 34px 0px 0;
+    padding: 40px 0px 0px 34px;
 }
-.footer .footer-info-logo {
-    margin-top: 3.1vh;
-    margin-left: 2rem;
-    margin-right: 33.2rem;
-}
+
 /*-----x--- Social css ----x-----*/
 
-.footer-nav_link.active,
-.footer-nav_link:hover {
-    color: var(--main-menu-color-active);
-}
-.footer {
-    background-color: var(--footer-bg);
-    min-height: 300px;
-}
-.footer-nav {
-    padding: 20px 0;
-    min-height: 120px;
-}
-.footer-nav_list {
-    margin: 0;
-    padding: 0;
-}
-.footer-nav_item {
-    display: inline-block;
-}
-.footer-nav_link {
-    font-weight: 700;
-    color: var(--footer-nav-color);
-    font-size: 1.15rem;
-    padding: 10px 30px 10px 0;
-    display: block;
+/*-------- Protection css ---------*/
+.footer-info-protection .footer-info-items {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.footer-info_item {
-    padding: 0 0 10px;
+.footer .footer-info-items .footer-info-link {
+    /* padding: 0rem 0rem; */
+    margin-top: 4.63vh;
+    margin-right: 1rem;
+    /* font-size: 1.98vh; */
+    position: relative;
+    /* font-weight: bold; */
 }
-.footer-info span {
-    font-size: 1.15rem;
-    color: #fff;
-}
-.footer-nav_link-bottom {
+.footer-info-link a {
     font-weight: 400;
-    padding: 10px 20px 10px 0;
+    color: var(--text-color-white);
+    font-size: 1.575vh;
 }
-.footer-icons img {
-    display: inline-block;
-    margin: 0 8px;
+
+.footer .footer-info-contact {
+    margin-top: 3vh;
+    margin-left: 11rem;
+    /* margin-left: 20rem; */
+    /* margin-right: 30.2rem; */
+    /* display: block; */
 }
+
+.footer .footer-info-contact a {
+    /* font-size: 1.6rem; */
+    margin-top: 1.5vh;
+    /* margin-left: 20rem; */
+    /* margin-right: 30.2rem; */
+    /* display: block; */
+}
+
+/*-----x--- Protection css ----x-----*/
+
+/*--------- Landing page css ---------*/
+.order-button-link {
+    margin-top: 15vh;
+}
+
+/*-----x--- Landing page css ----x-----*/
