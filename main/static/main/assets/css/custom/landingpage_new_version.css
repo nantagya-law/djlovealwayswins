@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background-color: rgb(230, 179, 71);
+  border-radius: 6px;
+  outline: none;
+}
+
+.button:hover {
+  background: var(--bg-landing-page4);
+  border: 2px solid var(--bg-landing-page4);
+}
+
+.rcontainer {
+  padding: 50px;
+}
+
+.contentbook {
+  width: 80%;
+  margin: auto;
+}
+
+.headerbook {
+  display: none;
+}
+
+.titelbook {
+  display: flex;
+  flex-direction: row;
+}
+.titelbook__image {
+  width: 55%;
+  justify-content: center;
+}
+.titelbook__text {
+  width: 45%;
+  margin-top: auto;
+}
+.titelbook__text h1 {
+  font-size: 3.1vw;
+  font-weight: 700;
+  color: #daa520 !important;
+}
+.titelbook__text p {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.notes {
+  margin-top: 5%;
+}
+.notes__text {
+  width: 100%;
+}
+.notes__text img {
+  display: none;
+}
+.notes__text h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.notes__text p {
+  font-size: 1.3vw;
+  text-align: justify;
+}
+.notes .button {
+  display: none;
+}
+
+.buchstapel {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.buchstapel__image {
+  width: 50%;
+}
+.buchstapel__text {
+  width: 50%;
+  color: black;
+}
+.buchstapel__text h1 {
+  font-size: 2.3vw;
+  font-weight: 700;
+  text-align: center;
+  color: #daa520 !important;
+}
+.buchstapel__text p {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.love {
+  align-items: center;
+}
+.love__text {
+  width: 100%;
+}
+.love h1 {
+  font-size: 5vw;
+  font-weight: 700;
+  text-align: center;
+  color: #daa520 !important;
+}
+.love__text p {
+  font-size: 1.8vw;
+  text-align: center;
+}
+
+.video {
+  height: 20%;
+  margin-bottom: 10vh;
+  align-items: center;
+}
+.video__image {
+  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-10%);
+}
+.video__image .embed-responsive-item {
+  justify-content: center;
+}
+
+.order {
+  height: 5%;
+}
+.order__text {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.order__text h1 {
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+.shops {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.shops [class^=shops__] img {
+  width: 15.3vw;
+}
+
+@media (max-width: 650px) {
+  .rcontainer {
+    padding: 30px;
+  }
+  .contentbook {
+    width: 100%;
+    margin: auto;
+  }
+  .headerbook {
+    display: initial;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .headerbook__logo img {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  .titelbook {
+    flex-direction: column;
+    align-items: center;
+  }
+  .titelbook__image {
+    width: 80%;
+  }
+  .titelbook__text {
+    width: 100%;
+  }
+  .titelbook__text img {
+    margin-left: 50vw;
+    width: 30vw;
+  }
+  .titelbook h1 {
+    font-size: 24px;
+    text-align: center !important;
+  }
+  .titelbook p {
+    font-size: 3.8vw;
+  }
+  .notes {
+    margin-top: 0px;
+  }
+  .notes__text h1 {
+    font-size: 30px;
+  }
+  .notes__text p {
+    font-size: 2.9vw;
+    text-align: justify;
+  }
+  .notes__text img {
+    display: initial;
+    margin-left: 25vw;
+    width: 30vw;
+  }
+  .buchstapel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buchstapel__image {
+    width: 100%;
+  }
+  .buchstapel__image .action img {
+    margin-left: 50vw;
+    width: 30vw;
+  }
+  .buchstapel__text {
+    width: 100%;
+  }
+  .buchstapel__text h1 {
+    font-size: 24px;
+  }
+  .buchstapel__text p {
+    font-size: 2.95vw;
+  }
+  .buchstapel .button {
+    margin-left: 25vw;
+  }
+  .love__text h1 {
+    font-size: 24px;
+  }
+  .love__text p {
+    font-size: 2vw;
+  }
+  .video {
+    margin-bottom: 50px;
+  }
+  .video__image {
+    margin-left: 50%;
+    transform: translateX(-40%);
+  }
+  .order__text {
+    text-align: center;
+  }
+  .order__text h1 {
+    font-size: 4vw;
+  }
+  .shops {
+    margin-bottom: 20px;
+  }
+  .shops [class^=shops__] img {
+    width: 60px;
+    height: 15px;
+  }
+}/*# sourceMappingURL=landingpage_new_version.css.map */

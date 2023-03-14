@@ -1,6 +1,8 @@
+{%load static %}
+
 <footer class="footer">
     <nav class="nav footer-nav">
-        <div class="container">
+        <div class="main">
             <ul class="footer-nav_list">
                 <li class="footer-nav_item">
                     <a class="footer-nav_link" href="{% url 'main-home' %}"
@@ -42,8 +44,8 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="footer-info">
+    <div class="main">
+        <div class="footer-info flex-row">
             <div class="footer-info_item">
                 <span style="margin-bottom: 310px"
                     >Hier findest du Lijana:</span
@@ -53,7 +55,7 @@
                 <a href="{% url 'main-home' %}">
                     <img
                         style="margin-left: 10px; margin-right: 150px"
-                        src="../../static/main/assets/img/new/grafik/Logo_LAW_final.svg"
+                        src="{% static 'main/assets/img/new/grafik/Logo_LAW_final.svg' %}"
                         width="200"
                         height="100"
                         loading="lazy"
@@ -68,7 +70,7 @@
                         target="blank"
                     >
                         <img
-                            src="../../static/main/assets/img/new/grafik/Icon-Instagram.svg"
+                            src="{% static 'main/assets/img/new/grafik/Icon-Instagram.svg' %}"
                             width="28"
                             height="29"
                             alt="LIJANA Instagram Icon"
@@ -80,7 +82,7 @@
                         target="blank"
                     >
                         <img
-                            src="../../static/main/assets/img/new/grafik/Icon-TikTok.svg"
+                            src="{% static 'main/assets/img/new/grafik/Icon-TikTok.svg' %}"
                             width="30"
                             height="31"
                             alt="LIJANA TikTok Icon"
@@ -92,7 +94,7 @@
                         target="blank"
                     >
                         <img
-                            src="../../static/main/assets/img/new/grafik/Icon-YouTube.svg"
+                            src="{% static 'main/assets/img/new/grafik/Icon-YouTube.svg' %}"
                             width="30"
                             height="36"
                             alt="LIJANA YouTube Icon"
@@ -103,8 +105,8 @@
             </div>
         </div>
     </div>
-    <div class="flex-row">
-        <div class="container">
+    <div class="main flex-row">
+        <div class="footer-terms">
             <ul class="footer-nav_list">
                 <li class="footer-nav_item">
                     <a class="footer-nav_link footer-nav_link-bottom" href="#"
@@ -136,7 +138,7 @@
         <div>
             <a class="footer-nav_link footer-nav_link-bottom" href="#"
                 ><img
-                    src=" ../../static/main/assets/img/new/grafik/Button_Kontakt.svg"
+                    src="{% static 'main/assets/img/new/grafik/Button_Kontakt.svg' %}"
                     width="150"
                     height="70"
                     alt="Kontakt LoveAlwaysWins"

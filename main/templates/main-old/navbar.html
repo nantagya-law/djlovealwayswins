@@ -1,0 +1,23 @@
+{% load static %}
+<!-- Navbar -->
+<nav class="navbar">
+    <h1 class="logo">Love Always Wins</h1>
+    <ul class="nav-links">
+        <li class="active"><a href="{% url 'main-home' %}"></a>Home</li>
+        <li><a href="{% url 'main-about' %}"></a>Lijana</li>
+        <li><a href="{% url 'main-portalhelp' %}"></a>Cybermobbing</li>
+        <li><a href="{% url 'main-gallery' %}"></a>Schulbesuche</li>
+        <li><a href="{% url 'main-school' %}"></a>Projekte</li>
+        <li><a href="{% url 'main-book' %}"></a>Buch</li>
+        <li><a href="{% url 'main-donate' %}"></a>Spende</li>
+        <li class="ctn"><a href="{% url 'main-book' %}"></a>Vorbestellen</li>
+    </ul>
+    <div class="mobile-nav">
+        <img
+            src="../../static/main/assets/img/new/menu-btn.png"
+            alt=""
+            class="menu-btn"
+        />
+        <h1 class="close-btn">X</h1>
+    </div>
+</nav>

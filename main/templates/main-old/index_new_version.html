@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- js divnks -->
+        <script src="https://ajax.googleapis.com/ajax/divbs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- bootstrap -->
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdedivvr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <!-- Font Awesome CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="../../static/main/assets/css/custom/custom_new_version.css"
+        />
+        <title>Love always wins</title>
+    </head>
+    <body>
+        <container class="container">
+            <div class="main">
+                <div class="header">
+                    <div class="header__logo">
+                        <a href="{% url 'main-home' %}">
+                            <img
+                                src="../../static/main/assets/img/new/grafik/Logo_LAW_final.svg"
+                                alt="LOGO LoveAlwaysWins"
+                            />
+                        </a>
+                    </div>
+                    <div class="header__button">
+                        <a href="{% url 'main-donate' %}">
+                            <img
+                                src="../../static/main/assets/img/new/grafik/Button_Spenden.svg"
+                                alt="Spenden Button"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="main">
+                    <div class="menu">
+                        <div class="menu__item">
+                            <a
+                                class="menu__item-link"
+                                href="{% url 'main-home' %}"
+                                >Home</a
+                            >
+                        </div>
+                        <div class="menu__item">
+                            <a
+                                class="menu__item-link"
+                                href="{% url 'main-about' %}"
+                                >Lijana</a
+                            >
+                        </div>
+                        <div class="menu__item">
+                            <a
+                                class="menu__item-link"
+                                href="{% url 'main-portalhelp' %}"
+                                >Cybermobbing</a
+                            >
+                        </div>
+                        <div class="menu__item">
+                            <a
+                                class="menu__item-link"
+                                href="{% url 'main-gallery' %}"
+                                >Schulbesuche</a
+                            >
+                        </div>
+                        <div class="menu__item">
+                            <a
+                                class="menu__item-link"
+                                href="{% url 'main-school' %}"
+                                >Projekte</a
+                            >
+                        </div>
+                        <div class="menu__item">
+                            <a
+                                class="menu__item-link"
+                                href="{% url 'main-book' %}"
+                                >Buch</a
+                            >
+                        </div>
+                        <div class="menu__item">
+                            <a class="menu__item-link" href="#">Spende</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="main-image-container">
+                <div class="container">
+                    <div class="slider-content">
+                        <h1>Love Always<br />Wins e.V.</h1>
+                        <p>
+                            Mehr Selbstvertrauen für<br />eine bessere Zukunft.
+                        </p>
+                    </div>
+                </div>
+                <div class="main-image main-image-40">
+                    <img
+                        src="../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg"
+                        width="1920"
+                        height="500"
+                        alt="KSB Pumpen kaufen von KLAWA-Service"
+                    />
+                </div>
+            </div> -->
+
+            <div class="titel__bg-image">
+                <div class="main">
+                    <div class="titel__text">
+                        <h1>Love Always<br />Wins e.V.</h1>
+                        <p>
+                            Mehr Selbstvertrauen für<br />eine bessere Zukunft.
+                        </p>
+
+                        <div class="titel__hearts">
+                            <div class="titel__hearts-1">
+                                <img
+                                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Flaeche.svg"
+                                    class="card-img-top"
+                                    alt="Herz-Flaeche"
+                                />
+                            </div>
+
+                            <div class="titel__hearts-2">
+                                <img
+                                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
+                                    class="card-img-top"
+                                    alt="Herz-Kontur"
+                                />
+                            </div>
+
+                            <div class="titel__hearts-3">
+                                <img
+                                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
+                                    class="card-img-top"
+                                    alt="Herz-Kontur"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="titel__image main-image-10">
+                    <img
+                        src="../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg"
+                        width="1920"
+                        height="700"
+                        alt="BG_Titel"
+                    />
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="content">
+                    <div class="content__text">
+                        <h1>
+                            Willkommen bei uns!<br />Schön, dass du hier bist.
+                        </h1>
+                        <p>
+                            Hier findest du alles Rund um Lijana und Love Always
+                            Wins e.V.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="teaser-container">
+                    <div class="teaser">
+                        <div class="teaser__image">
+                            <img
+                                src="../../static/main/assets/img/new/01-lijana.jpg"
+                                alt="divjana-model"
+                                loading="lazy"
+                            />
+
+                            <span class="card_label">Model Karriere</span>
+                        </div>
+                        <div class="teaser__button-Lijana">
+                            <a href="/about/">
+                                <img
+                                    style="margin-top: 28px; margin-left: 20px"
+                                    src="../../static/main/assets/img/new/grafik/01-Lijana.svg"
+                                    alt="Button_Lijana."
+                                    loading="lazy"
+                                />
+                            </a>
+                        </div>
+                        <div class="teaser__text">
+                            <p>
+                                Lijana Kaggwa (25) gab ihr Mathe-<br />studium
+                                für eine Modelkarriere auf.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="teaser">
+                        <div class="teaser__image">
+                            <img
+                                src="../../static/main/assets/img/new/02-Cybermobbing.jpg"
+                                alt="Cybermobbing-Lijana"
+                                loading="lazy"
+                            />
+
+                            <span class="card_label">Albtraum</span>
+                        </div>
+                        <div class="teaser__button-Cybermobbing">
+                            <a href="/hilfe/">
+                                <img
+                                    style="margin-top: 28px; margin-left: 20px"
+                                    src="../../static/main/assets/img/new/grafik/02-Cybermobbing.svg"
+                                    alt="Button_Cybermobbing"
+                                    loading="lazy"
+                                />
+                            </a>
+                        </div>
+                        <div class="teaser__text">
+                            <p>
+                                Was als großer Traum begann, mündete in einem
+                                Albtraum. Aus der Favoritin der Sendung wurde
+                                eine Zielscheibe.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="teaser">
+                        <div class="teaser__image">
+                            <img
+                                src="../../static/main/assets/img/new/03-Schulbesuche.jpg"
+                                alt="Schdivbesuche-divjana"
+                                loading="lazy"
+                            />
+
+                            <span class="card_label">Workshops</span>
+                        </div>
+                        <div class="teaser__button-Schulbesuche">
+                            <a href="/gallery/">
+                                <img
+                                    style="margin-top: 28px; margin-left: 20px"
+                                    src="../../static/main/assets/img/new/grafik/03-Schulbesuche.svg"
+                                    alt="Button_Schulbesuche"
+                                    loading="lazy"
+                                />
+                            </a>
+                        </div>
+                        <div class="teaser__text">
+                            <p>
+                                Erhalte Einbdivcke in unserer Vorträge und
+                                Workshops an Schulen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book__bg-image">
+                <div class="main">
+                    <div class="book">
+                        <div class="book__text">
+                            <img
+                                src="../../static/main/assets/img/new/grafik/Buch-text-Banner.svg"
+                                alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
+                                loading="lazy"
+                            />
+
+                            <a href="{% url 'main-book' %}">
+                                <img
+                                    style="margin-top: 56px"
+                                    src="../../static/main/assets/img/new/grafik/Button_Bestellen.svg"
+                                    alt="Button_Bestellen"
+                                    width="180"
+                                    loading="lazy"
+                                />
+                            </a>
+                        </div>
+                        <div class="book__image">
+                            <a href="{% url 'main-book' %}">
+                                <img
+                                    src="../../static/main/assets/img/new/Buch.png"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </container>
+
+        <script>
+            $("a[href*='" + location.pathname + "']").addClass("active");
+        </script>
+    </body>
+</html>

@@ -6,7 +6,9 @@ def home(request):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'main/index.html', context)
+    
+    return render(request, 'main/index_new_version.html', context)
+    # return render(request, 'main/index.html', context)
 def about(request):
     return render(request, 'main/about.html', {'title': 'About'})
 def setcard(request):
@@ -38,9 +40,19 @@ def gallery(request):
     return render(request, 'main/gallery.html', {'title': 'Gallery'})
 def projects(request):
     return render(request, 'main/projects.html', {'title': 'Projects'})
+# def book(request):
+#     return render(request, 'main/landingpage.html', {'title': 'Buch'})
+   
+# def book(request):
+#      return render(request, 'main/landingpage_test.html', {'title': 'Buch'})
+
+# def book(request):
+#      return render(request, 'main/landingpage_responsive.html', {'title': 'Buch'})
 def book(request):
-    return render(request, 'main/landingpage.html', {'title': 'Buch'})
-    #return render(request, 'main/book.html', {'title': 'Buch'})
+     return render(request, 'main/landingpage_new_version.html', {'title': 'Buch'})
+
+
+     
 def donate(request):
     return render(request, 'main/donate.html', {'title': 'Spende'})
 def chat(request):

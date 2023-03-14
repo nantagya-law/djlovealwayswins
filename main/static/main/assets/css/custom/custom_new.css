@@ -1,101 +1,18 @@
-/* ######################## My Font ######################################### */
-@font-face {
-    font-family: "louis_george_cafebold_italic";
-    src: url("../../fonts/webfontkit/louis_george_cafe_bold_italic-webfont.woff2")
-            format("woff2"),
-        url("../../fonts/webfontkit/louis_george_cafe_bold_italic-webfont.woff")
-            format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
+/* ####### My imports ######## */
+@import url(./fonts.css);
+@import url(./global.css);
+@import url(./landingpage_new_version.css);
+/* @import url(./landingpage_responsive.css); */
+/* @import url(./landingpage.css); */
+/* ###x### My imports ####x### */
 
-@font-face {
-    font-family: "louis_george_cafebold";
-    src: url("../../fonts/webfontkit/louis_george_cafe_bold-webfont.woff2")
-            format("woff2"),
-        url("../../fonts/webfontkit/louis_george_cafe_bold-webfont.woff")
-            format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "louis_george_cafeitalic";
-    src: url("../../fonts/webfontkit/louis_george_cafe_italic-webfont.woff2")
-            format("woff2"),
-        url("../.../fonts/webfontkit/louis_george_cafe_italic-webfont.woff")
-            format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "louis_george_cafe_lightitalic";
-    src: url("../.../fonts/webfontkit/louis_george_cafe_light_italic-webfont.woff2")
-            format("woff2"),
-        url("../../fonts/webfontkit/louis_george_cafe_light_italic-webfont.woff")
-            format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "louis_george_cafe_lightRg";
-    src: url("../../fonts/webfontkit/louis_george_cafe_light-webfont.woff2")
-            format("woff2"),
-        url("../../fonts/webfontkit/louis_george_cafe_light-webfont.woff")
-            format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "louis_george_caferegular";
-    src: url("../../fonts/webfontkit/louis_george_cafe-webfont.woff2")
-            format("woff2"),
-        url("../../fonts/webfontkit/louis_george_cafe-webfont.woff")
-            format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-:root {
-    --text-color: #575e62;
-    --text-color-blue: #0081c7;
-    --text-color-blue-light: #7dafdf;
-    --text-color-white: #ffffff;
-    --text-color-subtitel: #d8dcdf;
-    --text-color-content: #646469;
-    --main-menu-color: #575e62;
-    --main-menu-color-active: #a82ca8;
-    --footer-nav-color: #fff;
-    --main-menu-bg: #ebebeb;
-    --header-bg: #ffffff;
-    --footer-bg: #373a3b;
-    --bg-blue: #0081c7;
-    --bg-blue-light: #7dafdf;
-    --bg-grey: #b2b2b2;
-}
-/* -------------- Global Classes -------------- */
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-/* -------x------ Global Classes ------x------- */
 .bg-img {
     /* The image used */
     background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
     margin-top: 0px;
     /* Control the height of the image */
-    height: 490px;
+    /* height: 490px; */
+    width: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -110,8 +27,13 @@ ul {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-* {
+/* * {
     margin: 0;
+} */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 body,
 html {
@@ -143,7 +65,7 @@ h6,
 p {
     overflow-wrap: break-word;
 }
-.container {
+.my-container {
     max-width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
@@ -176,10 +98,7 @@ p {
     font-size: 1.15rem;
     margin: 0 0 16px;
 }
-a {
-    color: var(--text-color);
-    text-decoration: none;
-}
+
 .header {
     background-color: var(--header-bg);
     height: 167px;
@@ -257,11 +176,11 @@ a {
     text-transform: uppercase;
 }
 
-.bg-image-container,
+.bg-image-my-container,
 .bg-image-book {
     position: relative;
 }
-.bg-image-container:after,
+.bg-image-my-container:after,
 .bg-image-book:after {
     content: "";
     position: absolute;
@@ -271,7 +190,7 @@ a {
     -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5);
 }
-.bg-image-container:after {
+.bg-image-my-container:after {
     height: 10px;
 }
 
@@ -389,7 +308,7 @@ a {
 .main {
     margin: 30px 0 0;
 }
-.container-image-text {
+.my-container-image-text {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 40px;
@@ -398,12 +317,7 @@ a {
 .content-text {
     margin-top: 36px;
 }
-.teaser-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-gap: 40px;
-    margin: 30px 0;
-}
+
 .teaser {
     position: relative;
     -webkit-box-shadow: 0 0 20px var(--bg-grey);
@@ -455,7 +369,52 @@ a {
     color: #fff;
     font-size: 1.25rem;
 }
-
+.footer-nav_link.active,
+.footer-nav_link:hover {
+    color: var(--main-menu-color-active);
+}
+.footer {
+    background-color: var(--footer-bg);
+    min-height: 300px;
+}
+.footer-nav {
+    padding: 20px 0;
+    min-height: 120px;
+}
+.footer-nav_list {
+    margin: 0;
+    padding: 0;
+}
+.footer-nav_item {
+    display: inline-block;
+}
+.footer-nav_link {
+    font-weight: 700;
+    color: var(--footer-nav-color);
+    font-size: 1.15rem;
+    padding: 10px 30px 10px 0;
+    display: block;
+}
+.footer-info {
+    padding: 20px 0;
+    border-top: 1px solid var(--bg-grey);
+    border-bottom: 1px solid var(--bg-grey);
+}
+.footer-info_item {
+    padding: 0 0 10px;
+}
+.footer-info span {
+    font-size: 1.15rem;
+    color: #fff;
+}
+.footer-nav_link-bottom {
+    font-weight: 400;
+    padding: 10px 20px 10px 0;
+}
+.footer-icons img {
+    display: inline-block;
+    margin: 0 8px;
+}
 @media screen and (min-width: 780px) {
     .content-text {
         margin-top: 70px;
@@ -562,7 +521,7 @@ a {
     .main {
         margin: 66px 0 0;
     }
-    .teaser-container {
+    .teaser-my-container {
         margin: 30px 0 85px;
     }
 
@@ -575,7 +534,7 @@ a {
     .teaser-map_text p {
         font-size: 1.7rem;
     }
-    .container-image-text {
+    .my-container-image-text {
         margin: 85px 0;
     }
     .footer-info {
@@ -603,7 +562,7 @@ a {
     .action-button {
         right: 0;
     }
-    .container {
+    .my-container {
         padding: 0;
     }
 
@@ -677,126 +636,4 @@ a {
 #navigation li a.current {
     color: #ffffff;
     background: #f1d74c;
-}
-
-/* -------- Footer css ------------ */
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.nav1 {
-    background-color: var(--footer-bg);
-    /* border-top: 1px solid var(--bg-grey); */
-    /* border-bottom: 1px solid var(--bg-grey); */
-    /* height: 5.73vh; */
-    height: 0rem;
-    min-height: 40vh;
-    padding: 0 0rem;
-    /* font-size: 1.8vmin;
-    text-transform: uppercase;
-    font-weight: 700; */
-    /* overflow: hidden; */
-}
-
-.nav1-footer .nav1-items {
-    display: flex;
-    margin: 0;
-}
-
-.nav1 .nav1-items .nav1-link {
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
-    position: relative;
-    font-weight: bold;
-}
-
-.nav1 .nav1-contact a {
-    font-size: 1.6rem;
-    padding: 1.6rem 0;
-    display: block;
-}
-
-/*--------- Social css ----------*/
-
-.footer-info-text span {
-    font-size: 1.15rem;
-    color: #fff;
-}
-
-.nav1 .footer-info-text {
-    margin-top: 4.63vh;
-}
-
-.footer-social-icon a {
-    display: inline-block;
-}
-
-/* .nav1 .social {
-    padding: 1.6rem 0;
-} */
-
-.nav1 .footer-social-icon {
-    margin-top: 4.08vh;
-    margin-left: 45vmin;
-}
-.nav1 .footer-info-logo {
-    margin-top: 3.1vh;
-    margin-left: 2rem;
-}
-
-/* .nav .nav-items .nav-link {
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
-    position: relative;
-    font-weight: bold;
-  
-} */
-
-.footer-nav_link.active,
-.footer-nav_link:hover {
-    color: var(--main-menu-color-active);
-}
-.footer {
-    background-color: var(--footer-bg);
-    min-height: 300px;
-}
-.footer-nav {
-    padding: 20px 0;
-    min-height: 120px;
-}
-.footer-nav_list {
-    margin: 0;
-    padding: 0;
-}
-.footer-nav_item {
-    display: inline-block;
-}
-.footer-nav_link {
-    font-weight: 700;
-    color: var(--footer-nav-color);
-    font-size: 1.15rem;
-    padding: 10px 30px 10px 0;
-    display: block;
-}
-.footer-info {
-    padding: 20px 0;
-    border-top: 1px solid var(--bg-grey);
-    border-bottom: 1px solid var(--bg-grey);
-}
-.footer-info_item {
-    padding: 0 0 10px;
-}
-.footer-info span {
-    font-size: 1.15rem;
-    color: #fff;
-}
-.footer-nav_link-bottom {
-    font-weight: 400;
-    padding: 10px 20px 10px 0;
-}
-.footer-icons img {
-    display: inline-block;
-    margin: 0 8px;
 }

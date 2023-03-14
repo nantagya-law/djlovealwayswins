@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        font-family: "Poppins", sans-serif;
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 100vh;
+    }
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(230, 179, 71);
+    border-radius: 6px;
+    outline: none;
+}
+
+.button:hover {
+    background: var(--bg-landing-page4);
+    border: 2px solid var(--bg-landing-page4);
+}
+
+.rcontainer {
+    // height: 100vh;
+    padding: 50px;
+}
+
+.contentbook {
+    width: 80%;
+    margin: auto;
+}
+
+.headerbook {
+    // height: 5%;
+    // border: 2px solid red;
+    // margin-bottom: 60px;
+    display: none;
+}
+
+.titelbook {
+    // height: 30%;
+    // margin-bottom: 50vh;
+    // border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    // align-items: last baseline;
+
+    &__image {
+        width: 55%;
+        justify-content: center;
+        // border: 2px solid red;
+    }
+
+    &__text {
+        width: 45%;
+        // height: 10%;
+        margin-top: auto;
+        // border: 2px solid red;
+
+        h1 {
+            font-size: 3.1vw;
+            font-weight: 700;
+            color: #daa520 !important;
+        }
+
+        p {
+            font-size: 1.2vw;
+            font-weight: 500;
+            // color: black;
+        }
+    }
+}
+
+.notes {
+    // height: 40%;
+    margin-top: 5%;
+    // margin-bottom: 50vh;
+    // border: 2px solid red;
+
+    &__text {
+        width: 100%;
+        img {
+            display: none;
+        }
+    }
+
+    &__text h1 {
+        font-size: 4vw;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    &__text p {
+        font-size: 1.3vw;
+        text-align: justify;
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+.buchstapel {
+    // height: 30%;
+    // border: 2px solid green;
+
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    // align-items: center;
+    // margin-bottom: 10vh;
+
+    &__image {
+        width: 50%;
+        // border: 2px solid red;
+    }
+
+    &__text {
+        width: 50%;
+        // border: 2px solid red;
+        color: black;
+
+        h1 {
+            font-size: 2.3vw;
+            font-weight: 700;
+            text-align: center;
+            color: #daa520 !important;
+        }
+
+        p {
+            font-size: 1.1vw;
+            font-weight: 500;
+        }
+    }
+}
+
+.love {
+    // height: 40%;
+    // margin-top: 5%;
+    align-items: center;
+
+    // border: 2px solid red;
+
+    &__text {
+        width: 100%;
+        // border: 2px solid red;
+    }
+
+    h1 {
+        font-size: 5vw;
+        font-weight: 700;
+        text-align: center;
+        color: #daa520 !important;
+    }
+
+    &__text p {
+        font-size: 1.8vw;
+        text-align: center;
+    }
+}
+
+.video {
+    height: 20%;
+    margin-bottom: 10vh;
+    // border: 2px solid red;
+    align-items: center;
+    &__image {
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-10%);
+    }
+
+    &__image .embed-responsive-item {
+        // border: 2px solid red;
+        justify-content: center;
+    }
+}
+.order {
+    height: 5%;
+    // border: 2px solid blue;
+    &__text {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        h1 {
+            font-size: 3.5vw;
+            text-align: center;
+        }
+    }
+}
+
+.shops {
+    height: 10%;
+    // background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
+    [class^="shops__"] {
+        img {
+            width: 15.3vw;
+        }
+    }
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    // border: 2px solid blue;
+}
+
+@media (max-width: 650px) {
+    .rcontainer {
+        padding: 30px;
+    }
+
+    .contentbook {
+        width: 100%;
+        margin: auto;
+    }
+
+    .headerbook {
+        display: initial;
+        margin-bottom: 0px;
+        width: 100%;
+        // height: 5%;
+
+        &__logo img {
+            // display: initial;
+            width: 200px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .titelbook {
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        // margin-bottom: 50px;
+
+        &__image {
+            width: 80%;
+            // height: 200px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__text img {
+            margin-left: 50vw;
+            width: 30vw;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center !important;
+        }
+
+        p {
+            // font-size: 18px;
+            font-size: 3.8vw;
+        }
+    }
+
+    .notes {
+        margin-top: 0px;
+        // margin-bottom: 50px;
+        &__text h1 {
+            font-size: 30px;
+        }
+        &__text p {
+            // font-size: 18px;
+            font-size: 2.9vw;
+            text-align: justify;
+        }
+
+        &__text img {
+            display: initial;
+            margin-left: 25vw;
+            width: 30vw;
+        }
+    }
+
+    .buchstapel {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // margin-bottom: 210px;
+
+        &__image {
+            width: 100%;
+        }
+
+        &__image .action img {
+            margin-left: 50vw;
+            width: 30vw;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__text h1 {
+            font-size: 24px;
+        }
+
+        &__text p {
+            // font-size: 18px;
+            font-size: 2.95vw;
+        }
+
+        .button {
+            margin-left: 25vw;
+        }
+    }
+
+    .love {
+        &__text h1 {
+            font-size: 24px;
+        }
+
+        &__text p {
+            // font-size: 18px;
+            font-size: 2vw;
+        }
+    }
+
+    .video {
+        margin-bottom: 50px;
+        &__image {
+            // margin-left: 10%;
+            margin-left: 50%;
+            transform: translateX(-40%);
+        }
+    }
+
+    .order {
+        &__text {
+            text-align: center;
+        }
+
+        &__text h1 {
+            font-size: 4vw;
+        }
+    }
+    .shops {
+        margin-bottom: 20px;
+
+        [class^="shops__"] {
+            img {
+                width: 60px;
+                height: 15px;
+            }
+        }
+    }
+}

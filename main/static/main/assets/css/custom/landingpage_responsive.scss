@@ -1,0 +1,274 @@
+* {
+    margin: 5px 7px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    body {
+        font-family: sans-serif;
+    }
+}
+
+.rcontainer {
+    height: 100vh;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    height: 5%;
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        font-size: 4vw;
+    }
+
+    &__menu {
+        font-size: 2.5vw;
+        // gap: 15px;
+    }
+}
+
+.titel {
+    height: 30%;
+    background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
+    // border: 2px solid green;
+
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+
+    &__image {
+        width: 30%;
+
+        // border: 2px solid red;
+        // border-radius: 5%;
+    }
+
+    &__text {
+        width: 70%;
+        // border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+
+        &-1 {
+            font-size: 3vw;
+            font-weight: 700;
+        }
+
+        &-2,
+        &-3,
+        &-4 {
+            font-size: 3vw;
+        }
+    }
+}
+
+.notes {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    // border: 2px solid red;
+    &__image {
+        width: 30%;
+    }
+
+    &__text {
+        width: 70%;
+    }
+
+    [class^="notes__"] {
+        img {
+            width: 14vw;
+        }
+    }
+
+    &__text p {
+        font-size: 1.2vw;
+        text-align: justify;
+    }
+}
+
+.video {
+    height: 20%;
+    // border: 2px solid red;
+    align-items: center;
+    &__image {
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-10%);
+    }
+
+    &__image .embed-responsive-item {
+        // border: 2px solid red;
+        justify-content: center;
+    }
+
+    &__text {
+        width: 100%;
+        // border: 2px solid red;
+        font-size: 1.2vw;
+    }
+}
+.order {
+    height: 5%;
+    // border: 2px solid blue;
+    &__text {
+        margin-top: 5%;
+    }
+}
+
+.shops {
+    height: 10%;
+    background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
+    [class^="shops__"] {
+        img {
+            width: 15.3vw;
+        }
+    }
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    // border: 2px solid blue;
+}
+
+.bookfooter {
+    height: 5%;
+    // border: 2px solid red;
+    // background-color: cadetblue;
+    background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
+
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    justify-content: end;
+    align-items: center;
+    gap: 35px;
+
+    [class^="bookfooter__"] {
+        img {
+            width: 3.3vw;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    * {
+        margin: 2px 1px;
+    }
+
+    .content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .header {
+        justify-content: center;
+        &__logo {
+        }
+
+        &__menu {
+            display: none;
+        }
+    }
+
+    .titel {
+        background-image: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+            width: 300px;
+            // height: 200px;
+        }
+
+        &__text {
+            display: none;
+        }
+    }
+
+    .notes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+
+        [class^="notes__"] {
+            img {
+                width: 300px;
+                height: 400px;
+            }
+        }
+
+        &__text p {
+            font-size: 14px;
+            text-align: justify;
+        }
+    }
+
+    .cover img {
+        display: none;
+    }
+    .ibook img {
+        width: 100%;
+    }
+
+    .video {
+        &__image {
+            // margin-left: 10%;
+            margin-left: 50%;
+            transform: translateX(-30%);
+        }
+
+        &__text p {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    .order {
+        &__text {
+            text-align: center;
+        }
+    }
+    .shops {
+        background-image: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // gap: 5px;
+
+        [class^="shops__"] {
+            img {
+                width: 100px;
+                height: 45px;
+            }
+        }
+    }
+
+    .bookfooter {
+        justify-content: center;
+        align-items: center;
+        [class^="bookfooter__"] {
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}

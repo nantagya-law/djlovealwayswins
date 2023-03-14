@@ -1,0 +1,49 @@
+:root {
+    /*      Theme font-family   */
+    --Abel: "Abel", cursive;
+    --Anton: "Anton", cursive;
+    --Josefin: "Josefin", cursive;
+    --Lexend: "Lexend", cursive;
+    --Livvic: "Livvic", cursive;
+    --Cafe: "louis_george_caferegular", sans-serif;
+
+    --love: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --text-color: #575e62;
+    --text-color-blue: #0081c7;
+    --text-color-blue-light: #7dafdf;
+    --text-color-white: #ffffff;
+    --text-color-subtitel: #d8dcdf;
+    --text-color-content: #646469;
+    --main-menu-color: #575e62;
+    --main-menu-color-active: #a82ca8;
+    --footer-nav-color: #fff;
+    --main-menu-bg: #ebebeb;
+    --header-bg: #ffffff;
+    --footer-bg: #373a3b;
+    --bg-blue: #0081c7;
+    --bg-blue-light: #7dafdf;
+    --bg-grey: #b2b2b2;
+    --bg-landing-page1: #ffcdb2;
+    --bg-landing-page2: #ffb4a2;
+    --bg-landing-page3: #e5989b;
+    --bg-landing-page4: #b5838d;
+    --bg-landing-page5: #6d6875;
+    --text-color-titel: #daa520;
+}
+/* -------------- Global Classes -------------- */
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* -------x------ Global Classes ------x------- */

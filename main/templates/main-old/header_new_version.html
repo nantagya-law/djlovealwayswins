@@ -1,0 +1,36 @@
+{% load static %}
+<container class="container">
+    <div class="main">
+        <div class="header">
+            <div class="header__logo">
+                <a href="{% url 'main-home' %}">
+                    <img
+                        src="{% static 'main/assets/img/new/grafik/Logo_LAW_final.svg' %}"
+                        alt="LOGO LoveAlwaysWins"
+                    />
+                </a>
+            </div>
+            <div class="header__button">
+                {% if title == "Buch" %}
+                <a href="{% url 'main-donate' %}">
+                    <img
+                        src="{% static 'main/assets/img/new/grafik/Button_Spenden.svg' %}"
+                        width="124"
+                        height="100"
+                        alt="Spenden Button"
+                    />
+                </a>
+                {% else %}
+                <a href="{% url 'main-book' %}">
+                    <img
+                        src="{% static 'main/assets/img/new/grafik/Button_Bestellen.svg' %}"
+                        width="124"
+                        height="100"
+                        alt="Buy Button"
+                    />
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</container>
