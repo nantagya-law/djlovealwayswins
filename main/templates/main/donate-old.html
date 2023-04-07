@@ -1,0 +1,222 @@
+{% extends "../main/base_generic_new_version.html" %}
+<!-- ######################## -->
+{% load static %}
+<!-- ######################### -->
+{% block content %}
+<!-- ######################### -->
+
+<!-- <div class="main-titel titel__bg-image">
+    <div class="main">
+        <div class="titel__text">
+            <h1>Love Always<br />Wins e.V.</h1>
+            <p>Mehr Selbstvertrauen für<br />eine bessere Zukunft.</p>
+
+            <div class="titel__hearts">
+                <div class="titel__hearts-1">
+                    <img
+                        src="{% static 'main/assets/img/new/grafik/Swipe-Herz-Flaeche.svg' %}"
+                        class="card-img-top"
+                        alt="Herz-Flaeche"
+                    />
+                </div>
+
+                <div class="titel__hearts-2">
+                    <img
+                        src="{% static 'main/assets/img/new/grafik/Swipe-Herz-Kontur.svg' %}"
+                        class="card-img-top"
+                        alt="Herz-Kontur"
+                    />
+                </div>
+
+                <div class="titel__hearts-3">
+                    <img
+                        src="{% static 'main/assets/img/new/grafik/Swipe-Herz-Kontur.svg' %}"
+                        class="card-img-top"
+                        alt="Herz-Kontur"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="titel__image main-image-10">
+        <img
+            src="{% static 'main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg' %}"
+            width="1920"
+            height="700"
+            alt="BG_Titel"
+        />
+    </div>
+</div> -->
+<div class="donate-nav">
+    <div class="main">
+        <div class="nav">
+            <div class="nav__text">
+                <h1>Spendenformular<br /></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="donate-heading">
+    <div class="main">
+        <div class="heading">
+            <div class="heading__text">
+                <h1>
+                    Unterstützen Sie die Arbeit<br />
+                    des LoveAlwaysWins e.v. (LAW)
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="donate-reason">
+    <div class="main">
+        <div class="reason">
+            <div class="reason__text">
+                <h1>Spendenzweck</h1>
+                <p>
+                    <b>Ich spende für<br /></b>
+                </p>
+            </div>
+        </div>
+        <div class="reason">
+            <div class="reason__formular">
+                <p>
+                    <b>Here comes the formualar<br /></b>
+                </p>
+            </div>
+        </div>
+        <div class="reason">
+            <div class="reason__text">
+                <h1>Spendenbetrag</h1>
+                <p>
+                    <b
+                        >Spenden Sie Ihren Wunschbetrag für Menschen in Not:<br
+                    /></b>
+                </p>
+            </div>
+        </div>
+        <div class="reason">
+            <div class="reason__formular">
+                <p>
+                    <b>Here comes the formualar<br /></b>
+                </p>
+            </div>
+        </div>
+        <div class="art">
+            <div class="art__text">
+                <h1>Art der Spende</h1>
+            </div>
+            <div class="art__formular">
+                <h1>Private Spende</h1>
+            </div>
+            <div class="art__formular">
+                <h1>Anonyme Spende</h1>
+            </div>
+            <div class="art__formular">
+                <h1>Unternehmenspende</h1>
+            </div>
+        </div>
+        <div class="rhythmus">
+            <div class="rhythmus__text">
+                <h1>Spenden-Rhythmus</h1>
+            </div>
+            <div class="rhythmus__formular">
+                <h1>Einmalig</h1>
+            </div>
+            <div class="rhythmus__formular">
+                <h1>Monatlich</h1>
+            </div>
+            <div class="rhythmus__formular">
+                <h1>Jährlich</h1>
+            </div>
+        </div>
+        <div class="person">
+            <div class="person__text">
+                <h1>Persönlichen Daten</h1>
+                <p>
+                    <b
+                        >Bitte geben Sie Ihre persönlichen Daten ein. Mit einem
+                        Stern gekenn-<br />zeichnete Felder sind
+                        Pflichtfelder.</b
+                    >
+                </p>
+            </div>
+        </div>
+        <div class="person">
+            <div class="person__anrede">
+                <div class="anrede">Anrede*</div>
+                <div class="titel">Titel*</div>
+            </div>
+            <div class="person__name">
+                <div class="vorname">Vorname*</div>
+                <div class="nachname">Nachname*</div>
+            </div>
+            <div class="person__email">
+                <div class="e-mail-adresse">E-Mail-Adresse*</div>
+            </div>
+        </div>
+        <div class="bescheinigung">
+            <div class="bescheinigung__text">
+                <p>
+                    <br />Optional können sie mit einer Spendenbescheinigung
+                    jede Spende <br />beim Finanzamt geltend machen, dazu
+                    benötigen wir weitere <br />Angaben.
+                </p>
+            </div>
+        </div>
+        <div class="beformular">
+            <div class="beformular__input">
+                <p>Spendenbescheinigung</p>
+            </div>
+        </div>
+        <div class="zahlungsmethode">
+            <div class="zahlungsmethode__text">
+                <h1>Ihre Bezahlmethoden</h1>
+                <p>
+                    <b
+                        >Bitte wählen Sie Ihre bevorzugte Zahlungsmethode aus.
+                    </b>
+                </p>
+            </div>
+            <div class="zahlungsmethode__formular">
+                <h1>zahlungsmethode1</h1>
+            </div>
+            <div class="zahlungsmethode__formular">
+                <h1>zahlungsmethode2</h1>
+            </div>
+            <div class="zahlungsmethode__formular">
+                <h1>zahlungsmethode3</h1>
+            </div>
+            <div class="zahlungsmethode__formular">
+                <h1>zahlungsmethode4</h1>
+            </div>
+            <div class="zahlungsmethode__formular">
+                <h1>zahlungsmethode5</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="donate-main">
+    <div class="main">
+        <div class="donate__text">
+            <h1>
+                Du möchtest unseren Verein unterstützen?<br />
+                Wir freuen uns über jede Spende!<br />
+                Die Spenden fließen direkt in unsere Projekte mit Kindern- und
+                Jugendlichen an Schulen.
+            </h1>
+            <p>
+                <br />
+                <b>Spendenkonto:<br /></b>
+                Love Always Wins e. V.<br />
+                IBAN: DE04 5205 0353 0011 8578 28<br />
+                BIC: HELADEF1KAS<br />
+                <br />Du brauchst eine Spendenquittung?<br />
+                Schreib uns Management@lijanarisen.de<br />Wir sind immer auf
+                der Suche nach Sponsoren für Großprojekte :
+                Management@lijanarisen.de
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

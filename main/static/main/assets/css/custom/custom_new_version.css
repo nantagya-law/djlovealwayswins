@@ -1,9 +1,59 @@
 @charset "UTF-8";
 /* ######################## My Font ######################################### */
 @import url(./fonts.css);
-@import url(./global.css);
 @import url(./landingpage_new_version.css);
 @import url(./footer_new_version.css);
+:root {
+  /*      Theme font-family   */
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
+  --Cafe: "louis_george_caferegular", sans-serif;
+  --love: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  --text-color: #575e62;
+  --text-color-blue: #0081c7;
+  --text-color-blue-light: #7dafdf;
+  --text-color-white: #ffffff;
+  --text-color-subtitel: #d8dcdf;
+  --text-color-content: #646469;
+  --main-menu-color: #575e62;
+  --main-menu-color-active: #a82ca8;
+  --footer-nav-color: #fff;
+  --main-menu-bg: #ebebeb;
+  --header-bg: #ffffff;
+  --footer-bg: #373a3b;
+  --bg-blue: #0081c7;
+  --bg-blue-light: #7dafdf;
+  --bg-grey: #b2b2b2;
+  --bg-grey2: #aa96a0;
+  --bg-landing-page1: #ffcdb2;
+  --bg-landing-page2: #ffb4a2;
+  --bg-landing-page3: #e5989b;
+  --bg-landing-page4: #b5838d;
+  --bg-landing-page5: #6d6875;
+  --text-color-titel: #daa520;
+}
+
+/* -------------- Global Classes -------------- */
+a {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+
+ul {
+  margin-left: 50px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* -------x------ Global Classes ------x------- */
 * {
   margin: 0;
   padding: 0;
@@ -16,10 +66,17 @@
   color: var(--text-color-white);
 }
 
+.container {
+  width: 100%;
+}
+
+.main-header {
+  width: 100%;
+}
+
 .main {
-  width: 60%;
-  margin: 0 auto;
-  margin: 0 auto;
+  width: 70%;
+  margin: auto;
   position: relative;
 }
 
@@ -63,6 +120,9 @@
   color: var(--main-menu-color-active);
 }
 
+.titel {
+  width: 100%;
+}
 .titel__image:after {
   content: "";
   position: absolute;
@@ -71,11 +131,35 @@
   top: 0;
   bottom: 0;
 }
-
 .titel__image img {
   max-width: none;
   width: 100%;
   height: 100%;
+}
+.titel__text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 30vh;
+  z-index: 1;
+  color: var(--text-color-white);
+}
+.titel__text h1 {
+  font-size: 3.57vw;
+}
+.titel__text p {
+  font-size: 2.14vw;
+  margin-bottom: 11.91vh;
+}
+.titel__hearts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  z-index: 1;
+  width: 5%;
+  margin-top: -10.003vh;
+  margin-left: 32vw;
 }
 
 .titel__bg-image {
@@ -93,34 +177,6 @@
 
 .titel__bg-image:after {
   height: 10px;
-}
-
-.titel__text {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  margin-top: 44.101vh;
-  margin-top: 33.08vh;
-  z-index: 1;
-  color: var(--text-color-white);
-}
-.titel__text h1 {
-  font-size: 3.57vw;
-}
-.titel__text p {
-  font-size: 2.14vw;
-  margin-bottom: 11.91vh;
-}
-
-.titel__hearts {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 20%;
-       column-gap: 20%;
-  z-index: 1;
-  width: 20%;
-  margin-top: -10.003vh;
-  margin-left: 28.242vw;
 }
 
 .main-image-50:after {
@@ -152,6 +208,113 @@
 }
 .content__text p {
   font-size: 1.0714vw;
+}
+
+.donate {
+  margin-bottom: 5.95vh;
+  color: var(--text-color-content);
+}
+.donate__text h1 {
+  font-size: 2.6vw;
+}
+.donate__text p {
+  font-size: 2vw;
+}
+
+.donate-heading {
+  border: 2px solid var(--bg-grey2);
+  background-color: var(--bg-grey2);
+}
+
+.heading__text h1 {
+  text-align: center;
+  font-size: 4.5vw;
+  font-weight: 800;
+  color: var(--text-color-white);
+}
+
+.donate-reason .reason__text {
+  width: 100%;
+  text-align: center;
+}
+.donate-reason .reason__text h1 {
+  font-size: 3.5vw;
+  font-weight: 800;
+  color: rebeccapurple;
+}
+.donate-reason .reason__text p {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+.donate-reason .art__text {
+  width: 100%;
+  text-align: center;
+}
+.donate-reason .art__text h1 {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.donate-reason .rhythmus__text {
+  width: 100%;
+  text-align: center;
+}
+.donate-reason .rhythmus__text h1 {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.donate-reason .person__text {
+  width: 100%;
+  text-align: center;
+}
+.donate-reason .person__text h1 {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.donate-reason .person__text p {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.donate-reason .person__anrede {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.donate-reason .person__anrede .anrede,
+.donate-reason .person__anrede .titel {
+  width: 50%;
+  font-size: 1.5vw;
+}
+.donate-reason .person__name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.donate-reason .person__name .vorname,
+.donate-reason .person__name .nachname {
+  width: 50%;
+  font-size: 1.5vw;
+}
+.donate-reason .person__email {
+  width: 100%;
+}
+.donate-reason .person__email .e-mail-adresse {
+  width: 100%;
+  font-size: 1.5vw;
+}
+.donate-reason .bescheinigung {
+  width: 100%;
+  text-align: center;
+}
+.donate-reason .bescheinigung__text p {
+  font-size: 1.5vw;
+}
+.donate-reason .beformular {
+  width: 100%;
+}
+.donate-reason .beformular__input p {
+  font-size: 1.5vw;
 }
 
 .teaser-container {
@@ -214,7 +377,7 @@
   font-weight: 600;
 }
 
-.book__bg-image {
+.main-book {
   background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
   width: 100%;
 }
@@ -234,6 +397,110 @@
   max-width: none;
   width: 100%;
   margin-left: 20.95vw;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  font-size: 1vw;
+}
+
+.schulbesuche {
+  display: flex;
+  flex-direction: row;
+  margin-top: 11.69vh;
+  margin-bottom: 11.69vh;
+}
+.schulbesuche__text1 h1 {
+  margin-left: 50px;
+  font-size: 2vw;
+}
+.schulbesuche__text1 li {
+  width: 100%;
+  font-size: 1.0714vw;
+}
+.schulbesuche__text2 h1 {
+  font-size: 2vw;
+}
+.schulbesuche__text2 p {
+  margin-right: 20px;
+  font-size: 1.0714vw;
+}
+.schulbesuche__text3 h1 {
+  margin-left: 50px;
+  font-size: 2vw;
+}
+.schulbesuche__text3 p {
+  margin-left: 50px;
+  font-size: 1.0714vw;
+}
+.schulbesuche__image {
+  max-width: none;
+  width: 50%;
+}
+
+.termin {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+}
+
+.card-title {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+.schulbesuche__text5 p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+.schulbesuche-reasonwhy {
+  border: 2px solid var(--bg-grey2);
+  background-color: var(--bg-grey2);
+}
+
+.reason {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.reason__text p {
+  font-size: 1.1vw;
+  margin-right: 100px;
+}
+
+.reason-titel {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.button-buchen1 {
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.button-buchen2 {
+  text-align: center;
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 500px;
+}
+
+.schulbesuche__button {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1400px) {
@@ -259,6 +526,9 @@
   }
 }
 @media (max-width: 800px) {
+  ul {
+    margin-left: 15px;
+  }
   .titel__text {
     margin-top: 8.5vh;
   }
@@ -267,6 +537,56 @@
   }
   .titel__text p {
     font-size: 2.14vw;
+  }
+  .schulbesuche {
+    display: flex;
+    flex-direction: column;
+  }
+  .schulbesuche__text1 h1 {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .schulbesuche__text1 li {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .schulbesuche__text2 h1 {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .schulbesuche__text2 p {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .schulbesuche__text3 h1 {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .schulbesuche__text3 p {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .termin {
+    display: flex;
+    flex-direction: column;
+  }
+  .reason {
+    display: flex;
+    flex-direction: column;
+  }
+  .reason__text p {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .button-buchen1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .button-buchen2 {
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 650px) {
@@ -279,28 +599,37 @@
   }
   .header {
     grid-template-columns: 1fr;
+    margin-left: 10px;
   }
   .header__logo {
     width: 200px;
+    margin-bottom: 0px;
   }
   .header__button {
-    width: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100px;
     justify-self: left;
   }
   .menu {
     flex-direction: column;
+    margin-left: 10px;
   }
   .menu__item .menu__item-link {
     font-size: 12px;
   }
   .titel__text {
     margin-top: 4vh;
+    margin-left: 10px;
   }
   .titel__text h1 {
     font-size: 3.57vw;
   }
   .titel__text p {
     font-size: 2.14vw;
+  }
+  .content {
+    margin-left: 10px;
   }
   .content__text h1 {
     font-size: 24px;

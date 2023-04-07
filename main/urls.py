@@ -15,9 +15,11 @@ urlpatterns = [
     path('vanilla/', views.vanilla, name='main-vanilla'),
     path('community/', views.community, name='main-community'),
     path('events/', views.events, name='main-events'),
-    path('gallery/', views.gallery, name='main-gallery'),
+    path('schulbesuche/', views.schulbesuche, name='main-schulbesuche'),
     path('projekte/', views.projects, name='main-projects'),
     path('buch/', views.book, name='main-book'),
     path('spende/', views.donate, name='main-donate'),
+    path('charge/', views.charge, name='main-charge'),
+    path('success/<str:args>/', views.successMsg, name='main-success'),
     path('chat/', views.chat, name='main-chat'),
 ]

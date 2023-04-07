@@ -3,12 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-* body {
-  font-family: "Poppins", sans-serif;
-  max-width: 1440px;
-  margin: 0 auto;
-  height: 100vh;
-}
 
 .button {
   display: inline-block;
@@ -113,13 +107,13 @@
   width: 100%;
 }
 .love h1 {
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: 700;
   text-align: center;
   color: #daa520 !important;
 }
 .love__text p {
-  font-size: 1.8vw;
+  font-size: 1.2vw;
   text-align: center;
 }
 

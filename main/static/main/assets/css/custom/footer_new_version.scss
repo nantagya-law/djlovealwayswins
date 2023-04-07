@@ -1,53 +1,158 @@
-// .my-container {
-//     max-width: 1160px;
-//     margin: 0 auto;
-//     padding: 0 10px;
-//     position: relative;
-//     /* border: 3px solid #73ad21; */
+.main-footer {
+    border: 2px solid var(--footer-bg);
+    background-color: var(--footer-bg);
+}
+.footer-menu {
+    // height: 5.73vh;
+    // border: 2px solid yellow;
+    margin-top: 42px;
+    // margin-top: 4.63vh;
+    // margin-bottom: 42px;
+    margin-bottom: 4.63vh;
+    display: flex;
+    flex-direction: row;
+    // gap: 15px;
+    gap: 0.89vw;
+
+    &__item {
+        .footer__item-link {
+            color: var(--text-color-white);
+            font-size: 1.07vw;
+            font-weight: 600;
+            // text-transform: uppercase;
+            // padding: 8px 0;
+            display: block;
+        }
+
+        .footer__item-link.active,
+        .footer__item-link:hover {
+            color: var(--main-menu-color-active);
+        }
+    }
+}
+
+.footer-info {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // // gap: 34px;
+    // gap: 2.02vw;
+
+    display: flex;
+    flex-direction: row;
+    // gap: 15px;
+
+    // margin-bottom: 42px;
+    margin-bottom: 4.63vh;
+    border-top: 1px solid var(--bg-grey);
+    border-bottom: 1px solid var(--bg-grey);
+}
+
+.footer-info__social {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // gap: 4px;
+    // gap: 2.02vw;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.footer-info__item {
+    width: 100%;
+    // margin-top: 42px;
+    margin-top: 4.63vh;
+    // margin-bottom: 42px;
+    margin-bottom: 4.63vh;
+    margin-right: 2vw;
+}
+
+.footer-info__item p {
+    color: var(--text-color-white);
+    font-size: 1.07vw;
+}
+
+.footer-info__logo {
+    margin-right: 33.74vw;
+}
+.footer-info__social {
+    // margin-top: 37px;
+    margin-top: 4.08vh;
+}
+// .footer__icons {
+//     // margin-left: 150px;
+//     // margin-left: 8vw;
 // }
+
+.footer-term {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // gap: 10px;
+    // gap: 0.6vw;
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    // margin-bottom: 42px;
+    margin-bottom: 4.63vh;
+}
+
+.footer-term__items a {
+    color: var(--text-color-white);
+    font-size: 1.07vw;
+}
+
+.footer-term__contact {
+    // margin-top: -20px;
+    margin-top: -1.21vh;
+    // margin-left: 50px;
+    margin-left: 8.5vw;
+}
+// ######### X ########## FOOTER ############ X #######
+
 .footer-nav_link.active,
 .footer-nav_link:hover {
     color: var(--main-menu-color-active);
 }
-.footer {
-    background-color: var(--footer-bg);
-    min-height: 300px;
+
+@media (max-width: 1400px) {
+    .footer-info__logo {
+        margin-right: 30vw;
+    }
 }
-.footer-nav {
-    padding: 20px 0;
-    min-height: 120px;
+
+@media (max-width: 1200px) {
+    .footer-info__logo {
+        margin-right: 15vw;
+    }
 }
-.footer-nav_list {
-    margin: 0;
-    padding: 0;
-}
-.footer-nav_item {
-    display: inline-block;
-}
-.footer-nav_link {
-    font-weight: 700;
-    color: var(--footer-nav-color);
-    font-size: 1.15rem;
-    padding: 10px 30px 10px 0;
-    display: block;
-}
-.footer-info {
-    padding: 20px 0;
-    border-top: 1px solid var(--bg-grey);
-    border-bottom: 1px solid var(--bg-grey);
-}
-.footer-info_item {
-    padding: 0 0 10px;
-}
-.footer-info span {
-    font-size: 1.15rem;
-    color: #fff;
-}
-.footer-nav_link-bottom {
-    font-weight: 400;
-    padding: 10px 20px 10px 0;
-}
-.footer-icons img {
-    display: inline-block;
-    margin: 0 8px;
+
+@media (max-width: 650px) {
+    .footer-menu {
+        &__item {
+            .footer__item-link {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-info__logo {
+        margin-left: 0;
+    }
+
+    .footer-info__item p {
+        font-size: 14px;
+    }
+
+    .footer-term {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-term__items a {
+        font-size: 14px;
+    }
 }

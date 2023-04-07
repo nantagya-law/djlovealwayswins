@@ -15,7 +15,11 @@
                     <a class="menu__item-link" href="#">Cybermobbing</a>
                 </div>
                 <div class="menu__item">
-                    <a class="menu__item-link" href="#">Schulbesuche</a>
+                    <a
+                        class="menu__item-link"
+                        href="{% url 'main-schulbesuche' %}"
+                        >Schulbesuche</a
+                    >
                 </div>
                 <div class="menu__item">
                     <a class="menu__item-link" href="#">Projekte</a>
@@ -26,7 +30,9 @@
                     >
                 </div>
                 <div class="menu__item">
-                    <a class="menu__item-link" href="#">Spende</a>
+                    <a class="menu__item-link" href="{% url 'main-donate' %}"
+                        >Spende</a
+                    >
                 </div>
             </div>
         </div>

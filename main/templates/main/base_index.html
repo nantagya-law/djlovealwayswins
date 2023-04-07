@@ -29,7 +29,8 @@
         <title>Love always wins</title>
     </head>
     <body>
-        <container class="container">
+        <!-- <container class="container"> -->
+        <div class="main-header">
             <div class="main">
                 <div class="header">
                     <div class="header__logo">
@@ -50,103 +51,97 @@
                     </div>
                 </div>
             </div>
-            <div class="main-menu">
-                <div class="main">
-                    <div class="menu">
-                        <div class="menu__item">
-                            <a
-                                class="menu__item-link"
-                                href="{% url 'main-home' %}"
-                                >Home</a
-                            >
+        </div>
+        <!-- </container> -->
+        <div class="main-menu">
+            <div class="main">
+                <div class="menu">
+                    <div class="menu__item">
+                        <a class="menu__item-link" href="{% url 'main-home' %}"
+                            >Home</a
+                        >
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__item-link" href="{% url 'main-about' %}"
+                            >Lijana</a
+                        >
+                    </div>
+                    <div class="menu__item">
+                        <a
+                            class="menu__item-link"
+                            href="{% url 'main-portalhelp' %}"
+                            >Cybermobbing</a
+                        >
+                    </div>
+                    <div class="menu__item">
+                        <a
+                            class="menu__item-link"
+                            href="{% url 'main-gallery' %}"
+                            >Schulbesuche</a
+                        >
+                    </div>
+                    <div class="menu__item">
+                        <a
+                            class="menu__item-link"
+                            href="{% url 'main-school' %}"
+                            >Projekte</a
+                        >
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__item-link" href="{% url 'main-book' %}"
+                            >Buch</a
+                        >
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__item-link" href="#">Spende</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-titel titel__bg-image">
+            <div class="main">
+                <div class="titel__text">
+                    <h1>Love Always<br />Wins e.V.</h1>
+                    <p>Mehr Selbstvertrauen für<br />eine bessere Zukunft.</p>
+
+                    <div class="titel__hearts">
+                        <div class="titel__hearts-1">
+                            <img
+                                src="../../static/main/assets/img/new/grafik/Swipe-Herz-Flaeche.svg"
+                                class="card-img-top"
+                                alt="Herz-Flaeche"
+                            />
                         </div>
-                        <div class="menu__item">
-                            <a
-                                class="menu__item-link"
-                                href="{% url 'main-about' %}"
-                                >Lijana</a
-                            >
+
+                        <div class="titel__hearts-2">
+                            <img
+                                src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
+                                class="card-img-top"
+                                alt="Herz-Kontur"
+                            />
                         </div>
-                        <div class="menu__item">
-                            <a
-                                class="menu__item-link"
-                                href="{% url 'main-portalhelp' %}"
-                                >Cybermobbing</a
-                            >
-                        </div>
-                        <div class="menu__item">
-                            <a
-                                class="menu__item-link"
-                                href="{% url 'main-gallery' %}"
-                                >Schulbesuche</a
-                            >
-                        </div>
-                        <div class="menu__item">
-                            <a
-                                class="menu__item-link"
-                                href="{% url 'main-school' %}"
-                                >Projekte</a
-                            >
-                        </div>
-                        <div class="menu__item">
-                            <a
-                                class="menu__item-link"
-                                href="{% url 'main-book' %}"
-                                >Buch</a
-                            >
-                        </div>
-                        <div class="menu__item">
-                            <a class="menu__item-link" href="#">Spende</a>
+
+                        <div class="titel__hearts-3">
+                            <img
+                                src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
+                                class="card-img-top"
+                                alt="Herz-Kontur"
+                            />
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="titel__bg-image">
-                <div class="main">
-                    <div class="titel__text">
-                        <h1>Love Always<br />Wins e.V.</h1>
-                        <p>
-                            Mehr Selbstvertrauen für<br />eine bessere Zukunft.
-                        </p>
-
-                        <div class="titel__hearts">
-                            <div class="titel__hearts-1">
-                                <img
-                                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Flaeche.svg"
-                                    class="card-img-top"
-                                    alt="Herz-Flaeche"
-                                />
-                            </div>
-
-                            <div class="titel__hearts-2">
-                                <img
-                                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
-                                    class="card-img-top"
-                                    alt="Herz-Kontur"
-                                />
-                            </div>
-
-                            <div class="titel__hearts-3">
-                                <img
-                                    src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
-                                    class="card-img-top"
-                                    alt="Herz-Kontur"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="titel__image main-image-10">
-                    <img
-                        src="../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg"
-                        width="1920"
-                        height="700"
-                        alt="BG_Titel"
-                    />
-                </div>
+            <div class="titel__image main-image-10">
+                <img
+                    src="../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg"
+                    width="1920"
+                    height="700"
+                    alt="BG_Titel"
+                />
             </div>
-
+        </div>
+        <div class="main-content">
             <div class="main">
                 <div class="content">
                     <div class="content__text">
@@ -160,6 +155,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="main-teaser">
             <div class="main">
                 <div class="teaser-container">
                     <div class="teaser">
@@ -246,37 +243,204 @@
                     </div>
                 </div>
             </div>
-            <div class="book__bg-image">
-                <div class="main">
-                    <div class="book">
-                        <div class="book__text">
+        </div>
+        <div class="main-book">
+            <div class="main">
+                <div class="book">
+                    <div class="book__text">
+                        <img
+                            src="../../static/main/assets/img/new/grafik/Buch-text-Banner.svg"
+                            alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
+                            loading="lazy"
+                        />
+
+                        <a href="{% url 'main-book' %}">
                             <img
-                                src="../../static/main/assets/img/new/grafik/Buch-text-Banner.svg"
-                                alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
+                                style="margin-top: 56px"
+                                src="../../static/main/assets/img/new/grafik/Button_Bestellen.svg"
+                                alt="Button_Bestellen"
+                                width="180"
                                 loading="lazy"
                             />
+                        </a>
+                    </div>
+                    <div class="book__image">
+                        <a href="{% url 'main-book' %}">
+                            <img
+                                src="../../static/main/assets/img/new/Buch.png"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                            <a href="{% url 'main-book' %}">
+        <div class="main-footer">
+            <div class="main">
+                <div class="footer-menu">
+                    <div class="footer-menu__item">
+                        <a
+                            class="footer__item-link"
+                            href="{% url 'main-home' %}"
+                            >Home</a
+                        >
+                    </div>
+                    <div class="footer-menu__item">
+                        <a
+                            class="footer__item-link"
+                            href="{% url 'main-about' %}"
+                            >Lijana</a
+                        >
+                    </div>
+                    <div class="footer-menu__item">
+                        <a
+                            class="footer__item-link"
+                            href="{% url 'main-portalhelp' %}"
+                            >Cybermobbing</a
+                        >
+                    </div>
+                    <div class="footer-menu__item">
+                        <a
+                            class="footer__item-link"
+                            href="{% url 'main-gallery' %}"
+                            >Schulbesuche</a
+                        >
+                    </div>
+                    <div class="footer-menu__item">
+                        <a
+                            class="footer__item-link"
+                            href="{% url 'main-school' %}"
+                            >Projekte</a
+                        >
+                    </div>
+                    <div class="footer-menu__item">
+                        <a
+                            class="footer__item-link"
+                            href="{% url 'main-book' %}"
+                            >Buch</a
+                        >
+                    </div>
+                    <div class="footer-menu__item">
+                        <a
+                            class="footer__item-link"
+                            href="{% url 'main-donate' %}"
+                            >Spende</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="footer-info flex-row">
+                    <div class="footer-info__item">
+                        <p>Hier findest du Lijana:</p>
+                    </div>
+                    <div class="footer-info__logo">
+                        <a href="{% url 'main-home' %}">
+                            <img
+                                src="../../static/main/assets/img/new/grafik/Logo_LAW_final.svg"
+                                width="200"
+                                height="100"
+                                loading="lazy"
+                                alt="LOGO LoveAlwaysWins"
+                            />
+                        </a>
+                    </div>
+                    <div class="footer-info__social">
+                        <div class="footer__icons1">
+                            <a
+                                href="https://instagram.com/lijanarisen?igshid=YmMyMTA2M2Y="
+                                target="blank"
+                            >
                                 <img
-                                    style="margin-top: 56px"
-                                    src="../../static/main/assets/img/new/grafik/Button_Bestellen.svg"
-                                    alt="Button_Bestellen"
-                                    width="180"
+                                    src="../../static/main/assets/img/new/grafik/Icon-Instagram.svg"
+                                    width="28"
+                                    height="29"
+                                    alt="LIJANA Instagram Icon"
                                     loading="lazy"
                                 />
                             </a>
                         </div>
-                        <div class="book__image">
-                            <a href="{% url 'main-book' %}">
+                        <div class="footer__icons2">
+                            <a
+                                href=" https://www.tiktok.com/@lijanarisen?_t=8ZSj27fX0YX&_r=1"
+                                target="blank"
+                            >
                                 <img
-                                    src="../../static/main/assets/img/new/Buch.png"
+                                    src="../../static/main/assets/img/new/grafik/Icon-TikTok.svg"
+                                    width="30"
+                                    height="31"
+                                    alt="LIJANA TikTok Icon"
+                                    loading="lazy"
+                                />
+                            </a>
+                        </div>
+                        <div class="footer__icons3">
+                            <a
+                                href="https://youtube.com/@lijanarisen8955"
+                                target="blank"
+                            >
+                                <img
+                                    src="../../static/main/assets/img/new/grafik/Icon-YouTube.svg"
+                                    width="30"
+                                    height="36"
+                                    alt="LIJANA YouTube Icon"
+                                    loading="lazy"
                                 />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </container>
+            <div class="main flex-row">
+                <div class="footer-term">
+                    <div class="footer-term__items">
+                        <a
+                            class="footer-nav_link footer-nav_link-bottom"
+                            href="#"
+                            >Nutzungsbedingungen</a
+                        >
+                    </div>
+                    <div class="footer-term__items">
+                        <a
+                            class="footer-nav_link footer-nav_link-bottom"
+                            href="#"
+                            >Datenschutzrichtlinie</a
+                        >
+                    </div>
+                    <div class="footer-term__items">
+                        <a
+                            class="footer-nav_link footer-nav_link-bottom"
+                            href="#"
+                            >Cookies-Richtlinien</a
+                        >
+                    </div>
+                    <div class="footer-term__items">
+                        <a
+                            class="footer-nav_link footer-nav_link-bottom"
+                            href="#"
+                            >Sicherheitshinweise</a
+                        >
+                    </div>
+                    <div class="footer-term__items">
+                        <a
+                            class="footer-nav_link footer-nav_link-bottom"
+                            href="#"
+                            >Cookie-Einstellungen</a
+                        >
+                    </div>
+                </div>
+                <div class="footer-term__contact">
+                    <a href="#"
+                        ><img
+                            src="../../static/main/assets/img/new/grafik/Button_Kontakt.svg"
+                            width="150"
+                            height="70"
+                            alt="Kontakt LoveAlwaysWins"
+                            loading="lazy"
+                    /></a>
+                </div>
+            </div>
+        </div>
 
         <script>
             $("a[href*='" + location.pathname + "']").addClass("active");

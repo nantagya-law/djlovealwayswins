@@ -1,9 +1,61 @@
 /* ######################## My Font ######################################### */
 
 @import url(./fonts.css);
-@import url(./global.css);
+// @import url(./global.css);
 @import url(./landingpage_new_version.css);
 @import url(./footer_new_version.css);
+
+:root {
+    /*      Theme font-family   */
+    --Abel: "Abel", cursive;
+    --Anton: "Anton", cursive;
+    --Josefin: "Josefin", cursive;
+    --Lexend: "Lexend", cursive;
+    --Livvic: "Livvic", cursive;
+    --Cafe: "louis_george_caferegular", sans-serif;
+
+    --love: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --text-color: #575e62;
+    --text-color-blue: #0081c7;
+    --text-color-blue-light: #7dafdf;
+    --text-color-white: #ffffff;
+    --text-color-subtitel: #d8dcdf;
+    --text-color-content: #646469;
+    --main-menu-color: #575e62;
+    --main-menu-color-active: #a82ca8;
+    --footer-nav-color: #fff;
+    --main-menu-bg: #ebebeb;
+    --header-bg: #ffffff;
+    --footer-bg: #373a3b;
+    --bg-blue: #0081c7;
+    --bg-blue-light: #7dafdf;
+    --bg-grey: #b2b2b2;
+    --bg-grey2: #aa96a0;
+    --bg-landing-page1: #ffcdb2;
+    --bg-landing-page2: #ffb4a2;
+    --bg-landing-page3: #e5989b;
+    --bg-landing-page4: #b5838d;
+    --bg-landing-page5: #6d6875;
+    --text-color-titel: #daa520;
+}
+/* -------------- Global Classes -------------- */
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+ul {
+    // list-style-type: none;
+    margin-left: 50px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* -------x------ Global Classes ------x------- */
 
 * {
     margin: 0;
@@ -18,18 +70,21 @@
     }
 }
 
-// .container {
-//     width: 100%;
-//     // padding: 50px;
-//     border: 2px solid red;
-// }
+.container {
+    width: 100%;
+    // padding: 50px;
+    // border: 2px solid red;
+}
+.main-header {
+    // border: 2px solid red;
+    width: 100%;
+}
 
 .main {
-    width: 60%;
-    margin: 0 auto;
+    width: 70%;
+    margin: auto;
     // padding: 0 10px;
     // width: 69.05vw;
-    margin: 0 auto;
     // padding: 0 10px;
     position: relative;
 
@@ -37,6 +92,7 @@
 }
 
 // ################### HEADER #######################
+
 .header {
     // border: 2px solid red;
     // height: 18.4vh;
@@ -71,6 +127,7 @@
 
 // ################### MENU #######################
 .main-menu {
+    // border: 2px solid red;
     border-top: 1px solid var(--bg-grey);
     /* border-bottom: 10px solid var(--bg-grey); */
     background-color: var(--main-menu-bg);
@@ -102,19 +159,55 @@
 // ######### X ########## MENU ############ X #######
 
 // ################### TITEL #######################
-
-.titel__image:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-.titel__image img {
-    max-width: none;
+.titel {
     width: 100%;
-    height: 100%;
+    // border: 2px solid yellow;
+    &__image:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &__image img {
+        // border: 2px solid red;
+        max-width: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        // margin-top: 14.101vh;
+        position: absolute;
+        margin-top: 30vh;
+
+        z-index: 1;
+        color: var(--text-color-white);
+
+        h1 {
+            font-size: 3.57vw;
+        }
+        p {
+            font-size: 2.14vw;
+            margin-bottom: 11.91vh;
+        }
+    }
+
+    &__hearts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20%;
+        z-index: 1;
+        width: 5%;
+
+        margin-top: -10.003vh;
+        // margin-left: 490px;
+        margin-left: 32vw;
+    }
 }
 
 .titel__bg-image {
@@ -131,37 +224,6 @@
 }
 .titel__bg-image:after {
     height: 10px;
-}
-
-.titel__text {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 44.101vh;
-    margin-top: 33.08vh;
-
-    z-index: 1;
-    color: var(--text-color-white);
-
-    h1 {
-        font-size: 3.57vw;
-    }
-    p {
-        font-size: 2.14vw;
-        margin-bottom: 11.91vh;
-    }
-}
-
-.titel__hearts {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20%;
-    z-index: 1;
-    width: 20%;
-
-    margin-top: -10.003vh;
-    // margin-left: 490px;
-    margin-left: 28.242vw;
 }
 
 .main-image-50:after {
@@ -194,7 +256,146 @@
         font-size: 1.0714vw;
     }
 }
+
 // ######### X ########## CONTENT ############ X #######
+
+// ################### DONATE #######################
+.donate {
+    margin-bottom: 5.95vh;
+    // border: 2px solid rgb(255, 0, 21);
+    color: var(--text-color-content);
+    &__text h1 {
+        font-size: 2.6vw;
+    }
+    &__text p {
+        font-size: 2vw;
+    }
+}
+
+.donate-heading {
+    border: 2px solid var(--bg-grey2);
+    // height: 100px;
+    background-color: var(--bg-grey2);
+}
+.heading {
+    &__text h1 {
+        text-align: center;
+        font-size: 4.5vw;
+        font-weight: 800;
+        color: var(--text-color-white);
+    }
+}
+.donate-reason {
+    .reason {
+        &__text {
+            // border: 2px solid rgb(0, 119, 255);
+            width: 100%;
+            text-align: center;
+        }
+        &__text h1 {
+            // border: 2px solid rgb(255, 0, 21);
+            font-size: 3.5vw;
+            font-weight: 800;
+            color: rebeccapurple;
+        }
+        &__text p {
+            // border: 2px solid rgb(255, 0, 21);
+            font-size: 2.5vw;
+            font-weight: 500;
+        }
+    }
+    .art {
+        &__text {
+            // border: 2px solid rgb(0, 119, 255);
+            width: 100%;
+            text-align: center;
+        }
+        &__text h1 {
+            // border: 2px solid rgb(255, 0, 21);
+            font-size: 2.5vw;
+            font-weight: 600;
+        }
+    }
+    .rhythmus {
+        &__text {
+            // border: 2px solid rgb(0, 119, 255);
+            width: 100%;
+            text-align: center;
+        }
+        &__text h1 {
+            // border: 2px solid rgb(255, 0, 21);
+            font-size: 2.5vw;
+            font-weight: 600;
+        }
+    }
+    .person {
+        &__text {
+            // border: 2px solid rgb(0, 119, 255);
+            width: 100%;
+            text-align: center;
+        }
+        &__text h1 {
+            // border: 2px solid rgb(255, 0, 21);
+            font-size: 2.5vw;
+            font-weight: 600;
+        }
+        &__text p {
+            // border: 2px solid rgb(255, 0, 21);
+            font-size: 1.5vw;
+            font-weight: 500;
+        }
+        &__formular {
+        }
+
+        &__anrede {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            .anrede,
+            .titel {
+                width: 50%;
+                font-size: 1.5vw;
+            }
+        }
+
+        &__name {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            .vorname,
+            .nachname {
+                width: 50%;
+                font-size: 1.5vw;
+            }
+        }
+
+        &__email {
+            width: 100%;
+
+            .e-mail-adresse {
+                width: 100%;
+                font-size: 1.5vw;
+            }
+        }
+    }
+    .bescheinigung {
+        width: 100%;
+        text-align: center;
+        &__text p {
+            font-size: 1.5vw;
+        }
+    }
+    .beformular {
+        width: 100%;
+        &__input p {
+            font-size: 1.5vw;
+        }
+    }
+}
+// ######## X ########## DONATE ######## X ############
 
 // ################### TEASER #######################
 // .teaser-container {
@@ -224,6 +425,7 @@
         box-shadow: 0 0 20px var(--bg-grey);
 
         &__text p {
+            // border: 2px solid rgb(103, 183, 17);
             line-height: 1.1;
             font-size: 1.0714vw;
             margin-top: 2.6vh;
@@ -251,14 +453,17 @@
         }
 
         &__button-Lijana a img {
+            // border: 2px solid red;
             max-width: none;
             width: 30%;
         }
         &__button-Cybermobbing a img {
+            // border: 2px solid rgb(7, 94, 59);
             max-width: none;
             width: 50%;
         }
         &__button-Schulbesuche a img {
+            // border: 2px solid rgb(75, 7, 192);
             max-width: none;
             width: 50%;
         }
@@ -289,7 +494,7 @@
 //     height: 490px;
 // }
 
-.book__bg-image {
+.main-book {
     background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
     width: 100%;
 }
@@ -318,31 +523,135 @@
 }
 // ######### X ########## BOOK ############ X #######
 
-// @media (max-width: 500px) {
-//     .titel__text {
-//         top: 1vh;
+// ################### SCHULBESUCHE ###################
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    // margin: 0 0 16px;
+    // padding: 0 0 0 16px;
+    font-size: 1vw;
+}
 
-//         h1 {
-//             font-size: 3.57vw;
-//         }
-//         p {
-//             font-size: 2.14vw;
-//         }
-//     }
+.schulbesuche {
+    // border: 2px solid rgb(255, 0, 21);
+    display: flex;
+    flex-direction: row;
+    // align-content: space-evenly;
+    // align-items: center;
+    margin-top: 11.69vh;
+    margin-bottom: 11.69vh;
+    // &__text {
+    //     // border: 2px solid rgb(255, 0, 21);
+    //     max-width: none;
+    //     width: 100%;
+    //     // margin-top: 11.69vh;
+    // }
+    &__text1 h1 {
+        // border: 2px solid rgb(0, 247, 255);
+        margin-left: 50px;
+        font-size: 2vw;
+    }
+    &__text1 li {
+        // border: 2px solid rgb(0, 247, 255);
+        width: 100%;
+        // margin-left: 50px;
+        font-size: 1.0714vw;
+    }
+
+    &__text2 h1 {
+        // border: 2px solid rgb(0, 247, 255);
+        font-size: 2vw;
+    }
+    &__text2 p {
+        // border: 2px solid rgb(0, 247, 255);
+        // width: 90%;
+        margin-right: 20px;
+        font-size: 1.0714vw;
+    }
+    &__text3 h1 {
+        // border: 2px solid rgb(0, 247, 255);
+        margin-left: 50px;
+        font-size: 2vw;
+    }
+    &__text3 p {
+        // border: 2px solid rgb(0, 247, 255);
+        margin-left: 50px;
+        font-size: 1.0714vw;
+    }
+
+    &__image {
+        // border: 2px solid blueviolet;
+        max-width: none;
+        width: 50%;
+        // margin-left: 20.95vw;
+        // align-content: center;
+    }
+}
+.termin {
+    // border: 2px solid rgb(255, 0, 21);
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+.card-title {
+    font-size: 1.5vw;
+    text-align: center;
+}
+.card-text {
+    font-size: 16px;
+    text-align: center;
+}
+.schulbesuche__text5 p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2vw;
+}
+.schulbesuche-reasonwhy {
+    border: 2px solid var(--bg-grey2);
+    // height: 100px;
+    background-color: var(--bg-grey2);
+}
+.reason {
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 50px;
+
+    &__text p {
+        font-size: 1.1vw;
+        margin-right: 100px;
+    }
+}
+.reason-titel {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button-buchen1 {
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.button-buchen2 {
+    text-align: center;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+}
+.schulbesuche__button {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+// .schulbesuche__text2 .button {
+//     text-align: center;
+//     align-content: center;
 // }
-
-// @media (max-width: 250px) {
-//     .titel__text {
-//         margin-top: -5vh;
-
-//         h1 {
-//             font-size: 3.57vw;
-//         }
-//         p {
-//             font-size: 2.14vw;
-//         }
-//     }
-// }
+// ######### X ########## SCHULBESUCHE ############ X #######
 
 @media (max-width: 1400px) {
     .titel__text {
@@ -373,6 +682,10 @@
 }
 
 @media (max-width: 800px) {
+    ul {
+        // list-style-type: none;
+        margin-left: 15px;
+    }
     .titel__text {
         margin-top: 8.5vh;
 
@@ -383,6 +696,73 @@
         p {
             font-size: 2.14vw;
         }
+    }
+
+    .schulbesuche {
+        display: flex;
+        flex-direction: column;
+
+        &__text1 h1 {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        &__text1 li {
+            margin-left: 0px;
+            font-size: 12px;
+        }
+
+        &__text2 h1 {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        &__text2 p {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        &__text3 h1 {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        &__text3 p {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+    .termin {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reason {
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        // margin-bottom: 50px;
+
+        &__text p {
+            font-size: 14px;
+            margin-left: 10px;
+            // margin-right: 100px;
+        }
+    }
+
+    .person-data input {
+        width: 100%;
+    }
+
+    .button-buchen1 {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .button-buchen2 {
+        margin-left: 200px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 }
 
@@ -398,19 +778,24 @@
 
     .header {
         grid-template-columns: 1fr;
+        margin-left: 10px;
 
         &__logo {
             width: 200px;
+            margin-bottom: 0px;
         }
 
         &__button {
-            width: 200px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            width: 100px;
             justify-self: left;
         }
     }
 
     .menu {
         flex-direction: column;
+        margin-left: 10px;
         &__item {
             .menu__item-link {
                 font-size: 12px;
@@ -420,6 +805,7 @@
 
     .titel__text {
         margin-top: 4vh;
+        margin-left: 10px;
 
         h1 {
             font-size: 3.57vw;
@@ -430,6 +816,7 @@
     }
 
     .content {
+        margin-left: 10px;
         &__text h1 {
             font-size: 24px;
         }
@@ -437,6 +824,20 @@
             font-size: 10px;
         }
     }
+
+    // .reason {
+    //     // width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     // margin-bottom: 50px;
+
+    //     &__text p {
+    //         font-size: 14px;
+    //         margin-left: 10px;
+    //         // margin-right: 100px;
+    //     }
+    // }
 
     .teaser-container {
         // flex-direction: column;

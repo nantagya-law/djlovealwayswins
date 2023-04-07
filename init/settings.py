@@ -68,6 +68,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'paypal.standard.ipn',
     'main.apps.MainConfig',
     'crispy_forms',
     'django.contrib.admin',
@@ -76,6 +77,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'donateapp',
+    
 ]
 
 MIDDLEWARE = [
@@ -174,6 +177,20 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# STATICFILES_DIRS = [BASE_DIR / 'static']
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'main-home'
+
+STRIPE_PUBLIC_KEY = ""
+STRIPE_SECRET_KEY = ""
+STRIPE_WEBHOOK_SECRET = ""
+
+# PayPal Settings
+PAYPAL_TEST = True
+PAYPAL_RECEIVER_EMAIL = 'sandbox@gmail.com'
+
+# Allow PayPal pop-ups
+
+SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'

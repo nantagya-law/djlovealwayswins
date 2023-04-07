@@ -1,5 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.urls import reverse
+from django.http import JsonResponse
 from .models import Post
+
+import stripe
+stripe.api_key = "sk_test_51Mp2llG92vk5YkSuQxjvt7gDEivGTxbsZ3ho8roVdi7omgYctlzSFRThE4oSSOna5FI0u2XtGbEKEIyUIpt8ebF400V3yVWsIt"
 
 # Create your views here.
 def home(request):
@@ -7,7 +12,7 @@ def home(request):
         'posts': Post.objects.all()
     }
     
-    return render(request, 'main/index_new_version.html', context)
+    return render(request, 'main/index.html', context)
     # return render(request, 'main/index.html', context)
 def about(request):
     return render(request, 'main/about.html', {'title': 'About'})
@@ -36,8 +41,8 @@ def community(request):
     return render(request, 'main/community.html', {'title': 'Community'})
 def events(request):
     return render(request, 'main/events.html', {'title': 'Events'})
-def gallery(request):
-    return render(request, 'main/gallery.html', {'title': 'Gallery'})
+def schulbesuche(request):
+    return render(request, 'main/index.html', {'title': 'Schulbesuche'})
 def projects(request):
     return render(request, 'main/projects.html', {'title': 'Projects'})
 # def book(request):
@@ -55,5 +60,17 @@ def book(request):
      
 def donate(request):
     return render(request, 'main/donate.html', {'title': 'Spende'})
+
+def charge(request):
+    amount = 5
+    if request.method == 'POST':
+        print('Data:', request.POST)
+
+    return redirect(reverse('success', args=[amount]))
+
+def successMsg(request, args):
+    amount = args
+    return render(request, 'main/success.html', {'amount': amount})
+
 def chat(request):
     return render(request, 'main/chat.html', {'title': 'Chat'})

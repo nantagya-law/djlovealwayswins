@@ -1,0 +1,244 @@
+{% extends "../main/base_generic_new_version.html" %}
+<!-- ######################## -->
+{% load static %}
+<!-- ######################### -->
+{% block content %}
+<!-- ######################### -->
+<div class="donate-nav">
+    <div class="main">
+        <div class="nav">
+            <div class="nav__text">
+                <h1>Spendenformular<br /></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="donate-heading">
+    <div class="main">
+        <div class="heading">
+            <div class="heading__text">
+                <h1>
+                    Unterstützen Sie die Arbeit<br />
+                    des LoveAlwaysWins e.v. (LAW)
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="donate-reason">
+    <div class="main">
+        <div class="reason">
+            <div class="reason__text">
+                <h1>Spendenzweck</h1>
+                <p>
+                    <b>Ich spende für<br /></b>
+                </p>
+            </div>
+        </div>
+        <div class="reason">
+            <div class="reason__formular">
+                <p>
+                    <b>Here comes the formualar<br /></b>
+                </p>
+            </div>
+        </div>
+        <div class="reason">
+            <div class="reason__text">
+                <h1>Spendenbetrag</h1>
+                <p>
+                    <b
+                        >Spenden Sie Ihren Wunschbetrag für Menschen in Not:<br
+                    /></b>
+                </p>
+            </div>
+        </div>
+        <div class="reason">
+            <div class="reason__formular">
+                <p>
+                    <b>Here comes the formualar<br /></b>
+                </p>
+            </div>
+        </div>
+        <div class="art">
+            <div class="art__text">
+                <h1>Art der Spende</h1>
+            </div>
+            <div class="art__formular">
+                <h1>Private Spende</h1>
+            </div>
+            <div class="art__formular">
+                <h1>Anonyme Spende</h1>
+            </div>
+            <div class="art__formular">
+                <h1>Unternehmenspende</h1>
+            </div>
+        </div>
+        <div class="rhythmus">
+            <div class="rhythmus__text">
+                <h1>Spenden-Rhythmus</h1>
+            </div>
+            <div class="rhythmus__formular">
+                <h1>Einmalig</h1>
+            </div>
+            <div class="rhythmus__formular">
+                <h1>Monatlich</h1>
+            </div>
+            <div class="rhythmus__formular">
+                <h1>Jährlich</h1>
+            </div>
+        </div>
+        <div class="bescheinigung">
+            <div class="bescheinigung__text">
+                <p>
+                    <br />Optional können sie mit einer Spendenbescheinigung
+                    jede Spende <br />beim Finanzamt geltend machen, dazu
+                    benötigen wir weitere <br />Angaben.
+                </p>
+            </div>
+        </div>
+        <div class="beformular">
+            <div class="beformular__input">
+                <p>Spendenbescheinigung<br /><br /><br /><br /></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="contact-clean">
+        <h3 class="text-center text-dark">
+            Donate to LoveAlwaysWins e.v. (LAW)
+        </h3>
+        <form
+            action=""
+            style="width: 100%; max-width: 100%"
+            method="post"
+            id="payment-form"
+        >
+            {% csrf_token %}
+            <div class="illustration">
+                <i class="icon ion-ios-navigate"></i>
+            </div>
+            <div class="form-group">
+                <input
+                    class="form-control"
+                    type="number"
+                    name="amount"
+                    id="amount"
+                    placeholder="Amount"
+                />
+            </div>
+            <div class="flex-row">
+                <div class="form-group person-data">
+                    <input
+                        class="form-control"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="form-group person-data">
+                    <input
+                        class="form-control"
+                        type="text"
+                        name="full_name"
+                        placeholder="Full name"
+                    />
+                </div>
+            </div>
+
+            <div><br /><br /></div>
+            <div>
+                <label for="card-elemenst"> Credit or debit card </label>
+                <div id="card-element">
+                    <!-- A Stripe Element will be inserted here. -->
+                </div>
+
+                <!-- Used to display form errors. -->
+                <div id="card-errors" role="alert"></div>
+            </div>
+            <div><br /><br /></div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">
+                    Submit
+                </button>
+            </div>
+            <div><br /><br /></div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Create a Stripe client.
+    var stripe = Stripe(
+        "pk_test_51Mp2llG92vk5YkSuoKlYCwdrf91JBt9p2x1Uxbwp1dYKggLrQfSGPWMn3Nr3gc80OIFhXLdlTe4Y0INERmiJKFx800VQSDbZQU"
+    );
+
+    // Create an instance of Elements.
+    var elements = stripe.elements();
+
+    // Custom styling can be passed to options when creating an Element.
+    // (Note that this demo uses a wider set of styles than the guide below.)
+    var style = {
+        base: {
+            color: "#32325d",
+            fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+            fontSmoothing: "antialiased",
+            fontSize: "16px",
+            "::placeholder": {
+                color: "#aab7c4",
+            },
+        },
+        invalid: {
+            color: "#fa755a",
+            iconColor: "#fa755a",
+        },
+    };
+
+    // Create an instance of the card Element.
+    var card = elements.create("card", { style: style });
+
+    // Add an instance of the card Element into the `card-element` <div>.
+    card.mount("#card-element");
+
+    // Handle real-time validation errors from the card Element.
+    card.addEventListener("change", function (event) {
+        var displayError = document.getElementById("card-errors");
+        if (event.error) {
+            displayError.textContent = event.error.message;
+        } else {
+            displayError.textContent = "";
+        }
+    });
+
+    // Handle form submission.
+    var form = document.getElementById("payment-form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        stripe.createToken(card).then(function (result) {
+            if (result.error) {
+                // Inform the user if there was an error.
+                var errorElement = document.getElementById("card-errors");
+                errorElement.textContent = result.error.message;
+            } else {
+                // Send the token to your server.
+                stripeTokenHandler(result.token);
+            }
+        });
+    });
+
+    // Submit the form with the token ID.
+    function stripeTokenHandler(token) {
+        // Insert the token ID into the form so it gets submitted to the server
+        var form = document.getElementById("payment-form");
+        var hiddenInput = document.createElement("input");
+        hiddenInput.setAttribute("type", "hidden");
+        hiddenInput.setAttribute("name", "stripeToken");
+        hiddenInput.setAttribute("value", token.id);
+        form.appendChild(hiddenInput);
+
+        // Submit the form
+        form.submit();
+    }
+</script>
+{% endblock content %}
