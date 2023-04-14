@@ -11,13 +11,43 @@ from django.shortcuts import render, redirect
 
 from . models import Donate
 
+from django.conf import settings
+
+from django.urls import reverse
+
+import stripe
+
+
+
 # My donation page
 
 def donation_page(request):
+  
+    stripe.api_key = settings.STRIPE_PRIVATE_KEY
+
+    session = stripe.checkout.Session.create(
+    
+    line_items=[{
+
+        'price': 'price_1MuX5xLhO1dPVw1fPeBZHXHf',
+
+      'quantity': 1,
+
+    }],
+
+    mode='payment',
+
+    success_url = request.build_absolute_uri(reverse('donation-success')) + '?session_id={CHECTOUT_SESSION_ID}',
+
+    cancel_url = request.build_absolute_uri(reverse('donation-failed')),
+
+    )
+
+  
 
     donation = Donate.objects.get(id=1)
 
-    context = {'donation': donation}
+    context = {'donation': donation, 'session_id': session.id, 'stripe_public_key': settings.STRIPE_PUBLIC_KEY}
 
     return render(request, 'donateapp/donation-page.html', context=context)
 

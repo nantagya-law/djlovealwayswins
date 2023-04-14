@@ -8,14 +8,8 @@
 <div class="main-titel titel__bg-image">
     <div class="main">
         <div class="titel__text">
-            {% if title == "Schulbesuche" %}
-            <h1>
-                <br /><br /><br />Love Always wins<br />- jetzt auch bei euch<br /><br /><br /><br />
-            </h1>
-            {% else %}
             <h1>Love Always<br />Wins e.V.</h1>
-            <p>Mehr Selbstvertrauen für<br />eine bessere Zukunft.</p>
-            {% endif %}
+            <p>Mehr Selbstvertrauen für <br />eine bessere Zukunft</p>
 
             <div class="titel__hearts">
                 <div class="titel__hearts-1">
@@ -45,308 +39,28 @@
         </div>
     </div>
     <div class="titel__image main-image-10">
-        {% if title == "Schulbesuche" %}
-        <img
-            src="{% static 'main/assets/img/new/schule/bg-schulbesuche-00002.PNG' %}"
-            width="1920"
-            height="700"
-            alt="BG_Titel"
-        />
-        {% else %}
         <img
             src="{% static 'main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg' %}"
             width="1920"
             height="700"
             alt="BG_Titel"
         />
-        {% endif %}
     </div>
 </div>
 <div class="main-content">
     <div class="main">
         <div class="content">
             <div class="content__text">
-                {% if title == "Schulbesuche" %}
-                <h1>Mach dich stark!<br />Gemeinsam gegen Hass im Netz.</h1>
-                <p>
-                    <br />
-                    <b>Medienkompetenz Workshops oder Vorträge mit Lijana.</b>
-                    <br /><br />Social Media ist aus unsere Gesellschaft nicht
-                    mehr wegzudenken. Egal ob WhatsApp, Instagram oder Tik Tok -
-                    fast 90% der Menschen in Deutschland nutzen sie. Jede*r 5.
-                    Jugendliche*r erfährt dabei Cybermobbing. Das ist eine neue
-                    Form von Gewalt, die für Betroffene psychische Störungen,
-                    soziale Isolation, körperliche Beschwerden oder im
-                    Extremfall Suizid zur Folge haben kann. Deswegen ist es so
-                    wichtig , Cybermobbing zu verhindern bevor es passiert.
-                    Worauf es jetzt ankommt? Aufklären, sensibilisieren, stark
-                    machen und gemeinsam Stellung gegen Cyberhass beziehen !
-                </p>
-                {% else %}
-
                 <h1>Willkommen bei uns!<br />Schön, dass du hier bist.</h1>
                 <p>
                     Hier findest du alles Rund um Lijana und Love Always Wins
                     e.V.
                 </p>
-                {% endif %}
             </div>
         </div>
     </div>
 </div>
-{% if title == "Schulbesuche" %}
-<!-- ################## Schulbesuche ######################## -->
 
-<div class="main-schulbesuche">
-    <div class="main">
-        <div class="schulbesuche">
-            <div class="schulbesuche__image">
-                <img
-                    src="{% static 'main/assets/img/new/schule/schulbesuche-00004.jpeg' %}"
-                    width="100%"
-                    alt="schulbesuche-09"
-                />
-            </div>
-            <div class="schulbesuche__text1">
-                <h1>Das haben wir für euch:</h1>
-                <ul>
-                    <li>
-                        Prävention gegen Cybermobbing für Schulen, Unternehmen,
-                        Lehrende und Pädagog*innen.
-                    </li>
-                    <li>Mitreißende Vorträge durch persönliche Erfahrungen.</li>
-                    <li>
-                        Spannende interaktive Workshops mit Einsatz von
-                        digitalen Medien
-                    </li>
-                    <li>
-                        Authentische Medienkompetenz Vermittlung durch Lijana,
-                        die auch als Mindest Influencerin bekannt ist.
-                    </li>
-                    <li>
-                        Teilnahme an Podiumsdiskussion zum Thema digitale
-                        Sicherheit
-                    </li>
-                    <li>
-                        Lesung von Lijana aus ihrem Buch : ‚Du verdienst den
-                        Tod!’
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="schulbesuche">
-            <div class="schulbesuche__text2">
-                <h1>Zum Ablauf:</h1>
-                <p>
-                    Der Ablauf eines Angebots von uns , passen wir ganz
-                    individuell auf die Bedürfnisse Ihrer Schule / Ihres
-                    Unternehmens / Ihres Vereins an. Sowohl die konkreten
-                    Inhalte, die Dauer und die Art des Angebots , können von
-                    Ihnen mutgestaltet werden. Nach einer Anfrage geben wir
-                    Ihnen gerne unsere Empfehlung für unseren Besuch bei Ihnen.
-                    Wir empfehlen Workshops in Gruppen von bis zu 50
-                    Teilnehmenden. Lesungen und Vorträge sind auch für eine hohe
-                    Anzahl für Teilnehmende geeignet .
-                </p>
-                <div class="button-buchen1">
-                    <a href="#">
-                        <img
-                            src="{% static 'main/assets/img/new/schule/Button-Pfeil-jetzt-Buchen.svg' %}"
-                            alt="Button-Pfeil-jetzt-Buchen"
-                        />
-                    </a>
-                </div>
-            </div>
-            <div class="schulbesuche__image2">
-                <img
-                    src="{% static 'main/assets/img/new/schule/schulbesuche-00003.jpeg' %}"
-                    width="100%"
-                    alt="schulbesuche-27"
-                />
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="termin">
-            <div class="card" style="width: 200px">
-                <img
-                    class="card-img-top"
-                    src="{% static 'main/assets/img/new/schule/Icon-Termin.svg' %}"
-                    alt="TERMIN image"
-                />
-                <div class="card-body">
-                    <h5 class="card-title">TERMIN</h5>
-                    <p class="card-text">
-                        Den Termin können sie individuell mit uns abstimmen.
-                    </p>
-                    <!-- <div style="text-align: center">
-                        <a href="#" class="btn btn-primary">Go TERMIN</a>
-                    </div> -->
-                </div>
-            </div>
-            <div class="card" style="width: 200px">
-                <img
-                    class="card-img-top"
-                    src="{% static 'main/assets/img/new/schule/Icon-Dauer.svg' %}"
-                    alt="DAUER image"
-                />
-                <div class="card-body">
-                    <h5 class="card-title">DAUER</h5>
-                    <p class="card-text">
-                        1/2 Tag ( bis zu 3 Stunden) Ein-Tages-Programm (bis zu 6
-                        Stunden) Wochen-Programm (bis zu 5 Tagen)
-                    </p>
-                    <!-- <div style="text-align: center">
-                        <a href="#" class="btn btn-primary">Go DAUER</a>
-                    </div> -->
-                </div>
-            </div>
-            <div class="card" style="width: 200px">
-                <img
-                    class="card-img-top"
-                    src="{% static 'main/assets/img/new/schule/Icon-Kosten.svg' %}"
-                    alt="KOSTEN image"
-                />
-                <div class="card-body">
-                    <h5 class="card-title">KOSTEN</h5>
-                    <p class="card-text">Kosten nach Anfrage.</p>
-                    <!-- <div style="text-align: center">
-                        <a href="#" class="btn btn-primary">Go KOSTEN</a>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="schulbesuche">
-            <div class="schulbesuche__image">
-                <img
-                    src="{% static 'main/assets/img/new/schule/schulbesuche-00001.jpeg' %}"
-                    width="100%"
-                    alt="schulbesuche-09"
-                />
-            </div>
-            <div class="schulbesuche__text1">
-                <h1>Inhalte:</h1>
-                <ul>
-                    <li>Was steckt hinter Reality TV?</li>
-                    <li>Persönliche Erfahrungen mit Cybermobbing</li>
-                    <li>Strukturen von Cybermobbing</li>
-                    <li>Was kann man gegen Cybermobbing tun?</li>
-                    <li>Selbstvertrauen als Resilienz gegen Cybermobbing</li>
-                    <li>Social Media Gefahren und Chancen</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="schulbesuche-reasonwhy">
-    <div class="main">
-        <div class="reason-titel">
-            <h1>Reason Why</h1>
-        </div>
-    </div>
-    <div class="main flex-row">
-        <div class="reason">
-            <div class="reason__image">
-                <img
-                    src="{% static 'main/assets/img/new/schule/Icon-Vortrag-Klasse.svg' %}"
-                    width="50"
-                    alt="REASON1"
-                />
-            </div>
-            <div class="reason__text">
-                <p>
-                    Den Teilnehmenden wird eine neue <br />Sichtweise auf das
-                    Thema Cybermobbing<br />
-                    geboten, da unsere Vorträge durch<br />
-                    persönlicheErfahrungen leben.
-                </p>
-            </div>
-        </div>
-        <div class="reason">
-            <div class="reason__image">
-                <img
-                    src="{% static 'main/assets/img/new/schule/Icon-Social-Media.svg' %}"
-                    width="50"
-                    alt="REASON2"
-                />
-            </div>
-            <div class="reason__text">
-                <p>
-                    Social Media zählt zum Alltag und ist ein<br />beliebtes
-                    Tool für viele Menschen. Ein<br />reflektierter Umgang
-                    damit, ist nicht nur wichtig für<br />
-                    sich selbst, sondern auch für die gesamte Gesellschaft.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="main flex-row">
-        <div class="reason">
-            <div class="reason__image">
-                <img
-                    src="{% static 'main/assets/img/new/schule/Icon-Micro.svg' %}"
-                    width="40"
-                    alt="REASON3"
-                />
-            </div>
-            <div class="reason__text">
-                <p>
-                    Kommunikation hat eine neue Ebene-<br />Social Media. Jetzt
-                    ist nicht nur der richtige<br />
-                    Umgang mit den Medien, sondern auch der<br />richtige Umgang
-                    mit einander auf den<br />
-                    Plattformen entscheidend.
-                </p>
-            </div>
-        </div>
-        <div class="reason">
-            <div class="reason__image">
-                <img
-                    src="{% static 'main/assets/img/new/schule/Icon-Mobbing.svg' %}"
-                    width="50"
-                    alt="REASON4"
-                />
-            </div>
-            <div class="reason__text">
-                <p>
-                    Die Auswirkungen von Cybermobbing<br />können gravierend für
-                    Betroffene sein.<br />Umso wichtiger ist es zu handeln,
-                    bevor<br />etwas passiert!
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="main-schulbesuche">
-    <div class="main">
-        <div class="schulbesuche2">
-            <div class="schulbesuche__text5">
-                <p>
-                    Lijana litt selber unter extremen Cybermobbing. Nach ihrer
-                    persönlichen Betroffenheit arbeitete sie mit großen
-                    Organisationen und mit Expert*innen auf diesem Gebiet
-                    zusammen, bilgete sich über digitale Gewalt fort und
-                    entwickelte gemeinsam mit Ihnen dieses Programm.
-                </p>
-                <div class="button-buchen2" style="text-align: center">
-                    <a href="#">
-                        <img
-                            src="{% static 'main/assets/img/new/schule/Button-Pfeil-jetzt-Buchen-2.svg' %}"
-                            alt="Button-Pfeil-jetzt-Buchen"
-                        />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ######## X ########## Schulbesuche ########## X ############## -->
-
-{% else %}
 <div class="main-teaser">
     <div class="main">
         <div class="teaser-container">
@@ -426,7 +140,7 @@
                 </div>
                 <div class="teaser__text">
                     <p>
-                        Erhalte Einbdivcke in unserer Vorträge und Workshops an
+                        Erhalte Einblicke in unsere Vorträge und Workshops an
                         Schulen.
                     </p>
                 </div>
@@ -439,7 +153,7 @@
         <div class="book">
             <div class="book__text">
                 <img
-                    src="{% static 'main/assets/img/new/grafik/Buch-text-Banner.svg' %}"
+                    src="{% static 'main/assets/img/new/Jetzt-erhaeltlich-in-allen-Buchhandlungen.svg' %}"
                     alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
                     loading="lazy"
                 />
@@ -447,7 +161,7 @@
                 <a href="{% url 'main-book' %}">
                     <img
                         style="margin-top: 56px"
-                        src="{% static 'main/assets/img/new/grafik/Button_Bestellen.svg' %}"
+                        src="{% static 'main/assets/img/new/Button-jetzt-bestellen.svg' %}"
                         alt="Button_Bestellen"
                         width="180"
                         loading="lazy"
@@ -462,6 +176,5 @@
         </div>
     </div>
 </div>
-{% endif %}
 <!-- ##################################### -->
 {% endblock %}

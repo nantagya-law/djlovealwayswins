@@ -8,7 +8,7 @@
   margin-bottom: 4.63vh;
   display: flex;
   flex-direction: row;
-  gap: 0.89vw;
+  gap: 1.89vw;
 }
 .footer-menu__item .footer__item-link {
   color: var(--text-color-white);
@@ -47,8 +47,13 @@
   font-size: 1.07vw;
 }
 
+.footer-info__item h5 {
+  color: var(--text-color-content);
+  font-size: 1vw;
+}
+
 .footer-info__logo {
-  margin-right: 33.74vw;
+  margin-right: 13.7vw;
 }
 
 .footer-info__social {
@@ -58,7 +63,7 @@
 .footer-term {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 40px;
   margin-bottom: 4.63vh;
 }
 

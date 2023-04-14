@@ -45,10 +45,10 @@ a {
     color: var(--text-gray);
 }
 
-ul {
-    // list-style-type: none;
-    margin-left: 50px;
-}
+// ul {
+//     // list-style-type: none;
+//     margin-left: 50px;
+// }
 
 .flex-row {
     display: flex;
@@ -133,13 +133,14 @@ ul {
     background-color: var(--main-menu-bg);
 }
 .menu {
-    // height: 5.73vh;
+    height: 5.73vh;
     // border: 2px solid yellow;
     display: flex;
     flex-direction: row;
     gap: 15px;
 
     &__item {
+        align-self: center;
         .menu__item-link {
             color: var(--main-menu-color);
             font-size: 1.0714vw;
@@ -153,6 +154,10 @@ ul {
         .menu__item-link:hover {
             color: var(--main-menu-color-active);
         }
+    }
+
+    &__heart {
+        align-self: center;
     }
 }
 
@@ -197,6 +202,26 @@ ul {
         }
     }
 
+    &__text1 {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        // margin-top: 14.101vh;
+        position: absolute;
+        margin-top: 20vh;
+
+        z-index: 1;
+        color: var(--text-color-white);
+
+        h1 {
+            font-size: 3.57vw;
+        }
+        p {
+            font-size: 2.14vw;
+            margin-bottom: 11.91vh;
+        }
+    }
+
     &__hearts {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -212,6 +237,7 @@ ul {
 
 .titel__bg-image {
     position: relative;
+    top: -15px;
 }
 .titel__bg-image:after {
     content: "";
@@ -261,6 +287,8 @@ ul {
 
 // ################### DONATE #######################
 .donate {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 5.95vh;
     // border: 2px solid rgb(255, 0, 21);
     color: var(--text-color-content);
@@ -269,6 +297,15 @@ ul {
     }
     &__text p {
         font-size: 2vw;
+    }
+
+    &__text1 h1 {
+        font-size: 2vw;
+        margin-left: 50px;
+    }
+    &__text1 p {
+        font-size: 1.5vw;
+        margin-left: 50px;
     }
 }
 
@@ -510,7 +547,7 @@ ul {
         // border: 2px solid rgb(255, 0, 21);
         max-width: none;
         width: 100%;
-        margin-top: 11.69vh;
+        margin-top: 11vh;
     }
 
     &__image {
@@ -523,13 +560,81 @@ ul {
 }
 // ######### X ########## BOOK ############ X #######
 
+// ################### IMPRESSUM ###################
+.impressum {
+    &__text {
+        color: var(--text-color);
+
+        h1 {
+            font-size: 3.57vw;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 1.56vw;
+            font-weight: bold;
+        }
+
+        p {
+            // font-size: 1.5vw;
+            font-size: 1.0714vw;
+            // font-size: 2.14vw;
+            // margin-bottom: 11.91vh;
+        }
+    }
+}
+// ######### X ########## IMPRESSUM ######## X ########
+
+// ################### CONTACT ###################
+.contact__label {
+    font-size: 1.0714vw;
+}
+.contact {
+    &__text {
+        color: var(--text-color);
+
+        h1 {
+            font-size: 3.57vw;
+        }
+        p {
+            // font-size: 1.5vw;
+            font-size: 1.0714vw;
+            // margin-bottom: 11.91vh;
+        }
+    }
+}
+// ######### X ########## CONTACT ######## X ########
+
 // ################### SCHULBESUCHE ###################
+.schulbesuche {
+    &__titel {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        // margin-top: 14.101vh;
+        position: absolute;
+        margin-top: 30vh;
+
+        z-index: 1;
+        color: var(--text-color-white);
+
+        h1 {
+            font-size: 3.57vw;
+        }
+        p {
+            font-size: 2.14vw;
+            margin-bottom: 11.91vh;
+        }
+    }
+}
 li {
     display: list-item;
     text-align: -webkit-match-parent;
     // margin: 0 0 16px;
     // padding: 0 0 0 16px;
-    font-size: 1vw;
+    p {
+        font-size: 1.0714vw;
+    }
 }
 
 .schulbesuche {
@@ -539,7 +644,7 @@ li {
     // align-content: space-evenly;
     // align-items: center;
     margin-top: 11.69vh;
-    margin-bottom: 11.69vh;
+    margin-bottom: 8.69vh;
     // &__text {
     //     // border: 2px solid rgb(255, 0, 21);
     //     max-width: none;
@@ -549,29 +654,33 @@ li {
     &__text1 h1 {
         // border: 2px solid rgb(0, 247, 255);
         margin-left: 50px;
-        font-size: 2vw;
+        font-size: 1.56vw;
+        font-weight: bold;
     }
     &__text1 li {
         // border: 2px solid rgb(0, 247, 255);
         width: 100%;
-        // margin-left: 50px;
+        margin-left: 50px;
         font-size: 1.0714vw;
     }
 
     &__text2 h1 {
         // border: 2px solid rgb(0, 247, 255);
-        font-size: 2vw;
+        font-size: 1.56vw;
+        font-weight: bold;
     }
     &__text2 p {
         // border: 2px solid rgb(0, 247, 255);
         // width: 90%;
-        margin-right: 20px;
+        width: 50%;
+        margin-right: 50px;
         font-size: 1.0714vw;
     }
     &__text3 h1 {
         // border: 2px solid rgb(0, 247, 255);
         margin-left: 50px;
-        font-size: 2vw;
+        font-size: 1.56vw;
+        font-weight: bold;
     }
     &__text3 p {
         // border: 2px solid rgb(0, 247, 255);
@@ -579,11 +688,11 @@ li {
         font-size: 1.0714vw;
     }
 
-    &__image {
+    &__image2 {
         // border: 2px solid blueviolet;
         max-width: none;
         width: 50%;
-        // margin-left: 20.95vw;
+        margin-left: 6vw;
         // align-content: center;
     }
 }
@@ -594,11 +703,12 @@ li {
     gap: 120px;
 }
 .card-title {
-    font-size: 1.5vw;
+    font-size: 1.56vw;
+    font-weight: bold;
     text-align: center;
 }
 .card-text {
-    font-size: 16px;
+    font-size: 1.0714vw;
     text-align: center;
 }
 .schulbesuche__text5 p {
@@ -606,7 +716,7 @@ li {
     margin-bottom: 30px;
     width: 100%;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 2.14vw;
 }
 .schulbesuche-reasonwhy {
     border: 2px solid var(--bg-grey2);
@@ -621,13 +731,17 @@ li {
     margin-bottom: 50px;
 
     &__text p {
-        font-size: 1.1vw;
+        font-size: 1.07vw;
         margin-right: 100px;
     }
 }
 .reason-titel {
     margin-top: 30px;
     margin-bottom: 30px;
+    h1 {
+        font-size: 2.14vw;
+        font-weight: bold;
+    }
 }
 
 .button-buchen1 {
@@ -638,9 +752,11 @@ li {
 .button-buchen2 {
     text-align: center;
     width: 40%;
+    // left: 50%;
+    margin-left: 30%;
     margin-top: 30px;
     margin-bottom: 50px;
-    margin-left: 500px;
+    // margin-left: 500px;
 }
 .schulbesuche__button {
     margin-top: 30px;
@@ -760,11 +876,21 @@ li {
     }
 
     .button-buchen2 {
-        margin-left: 200px;
+        // margin-left: 200px;
+        left: 50%;
         margin-top: 10px;
         margin-bottom: 20px;
     }
 }
+
+// .center {
+//     margin: 0;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     -ms-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+//   }
 
 @media (max-width: 650px) {
     .container {

@@ -60,10 +60,28 @@ SECRET_KEY = 'u1_$!qeqwajjpke$@mm4x#ud%n=mqi4-&8q0)62%m%@k&4_s5d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ALLOWED_HOSTS = []
 #DEBUG = False
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Mailtrap email testing
+# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+# EMAIL_HOST_USER = 'd58f1851d93572'
+# EMAIL_HOST_PASSWORD = '52a88e4c4881d7'
+# EMAIL_PORT = '2525'
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'jmkaggwa@gmail.com'
+EMAIL_HOST_PASSWORD = 'trdkgbhcznbzatpv'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+#  Who gets the emails
+RECIPIENT_LIST = ['jamesnantagya@gmail.com', 'jameskaggwa@gmail.com']
 
 # Application definition
 
@@ -183,14 +201,20 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'main-home'
 
-STRIPE_PUBLIC_KEY = ""
-STRIPE_SECRET_KEY = ""
-STRIPE_WEBHOOK_SECRET = ""
 
-# PayPal Settings
-PAYPAL_TEST = True
-PAYPAL_RECEIVER_EMAIL = 'sandbox@gmail.com'
 
-# Allow PayPal pop-ups
+# # STRIPE public key
+# STRIPE_PUBLIC_KEY = "pk_test_51MuTniLhO1dPVw1fKlXVly9mdP0GYChePM5YEuDdV16tliaBemHXuNJ1zgBoT5vPYGwaOgpCrTdcN16MiGeTYFbH000gelOGsg"
 
-SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
+# # STRIPE private key
+# STRIPE_PRIVATE_KEY = "sk_test_51MuTniLhO1dPVw1fpaFxB2YugFWdSljdfQ4G86vtevhihpPMobM36gqccBcJtpE2X1fs9VhtAo9dysVRUW6APhtG00OZU2K3W4"
+
+# # STRIPE webhook key
+# STRIPE_WEBHOOK_KEY = ""
+
+# # PayPal Settings
+# PAYPAL_TEST = True
+# PAYPAL_RECEIVER_EMAIL = 'sandbox@gmail.com'
+
+# # Allow PayPal pop-ups
+# SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
