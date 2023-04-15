@@ -73,15 +73,22 @@ ALLOWED_HOSTS = []
 # EMAIL_HOST_PASSWORD = '52a88e4c4881d7'
 # EMAIL_PORT = '2525'
 
+# EMAIL_HOST = 'localhost'
+# EMAIL_PORT = 1025
+# EMAIL_HOST_USER = ''
+# EMAIL_HOST_PASSWORD = ''
+# EMAIL_USE_TLS = False
+# # EMAIL_USE_SSL = False
+# RECIPIENT_LIST = ['jamesnantagya@gmail.com', 'jmkaggwa@gmail.com']
+
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'jmkaggwa@gmail.com'
 EMAIL_HOST_PASSWORD = 'trdkgbhcznbzatpv'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-
 #  Who gets the emails
-RECIPIENT_LIST = ['jamesnantagya@gmail.com', 'jameskaggwa@gmail.com']
+RECIPIENT_LIST = ['jamesnantagya@gmail.com', 'info@lovealwayswins.de']
 
 # Application definition
 

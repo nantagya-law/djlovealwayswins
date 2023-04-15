@@ -106,17 +106,37 @@ def contact(request):
     # unternehmen = models.CharField(max_length=100)
     # nachricht = models.TextField()
     if request.method == 'POST':
+        recipient_list = settings.RECIPIENT_LIST
+        subject = 'LAW INFO'
         contact = Contact()
         contact.vorname = request.POST.get('vorname')
         contact.nachname = request.POST.get('nachname')
         contact.email = request.POST.get('email')
         contact.unternehmen = request.POST.get('unternehmen')
         contact.nachricht = request.POST.get('nachricht')
-        contact.save()
-        return HttpResponse("<h1>Thanks for contact us!</h1>")
+
+        if contact.unternehmen:
+             contact.nachricht =  contact.nachricht + ' FROM ' + contact.unternehmen
 
 
-    return render(request, 'main/contact_new.html', {'title': 'Kontak'})
+        #  send an email
+        send_mail(
+            subject, # subject
+            contact.nachricht,  # message
+            contact.email, # From Email
+            recipient_list, # To Email
+            fail_silently=False, 
+            
+            )
+        
+        #  save data in data base
+        # contact.save()
+
+        return render( request, 'main/contact_new.html', {'vorname': contact.vorname})
+    else:
+
+        return render(request, 'main/contact_new.html', {'title': 'Kontak'})
+        # return render(request, 'main/contact_test.html', {'title': 'Kontak'})
 
 def impressum(request):
     return render(request, 'main/impressum.html', {'title': 'impressum'})

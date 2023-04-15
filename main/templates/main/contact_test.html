@@ -1,0 +1,97 @@
+{% extends "../main/base_generic_new_version.html" %}
+<!-- ######################## -->
+{% load static %}
+<!-- ######################### -->
+{% block content %}
+<!-- ######################### -->
+
+<div class="contact">
+    <div class="main">
+        <div class="contact__text text-center">
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1>Kontakt - Dürfen wir uns kennenlernen?</h1>
+            <p>
+                Wenn Sie konkrete Fragen haben oder Details zu einem Projekt
+                besprechen möchten, <br />stehen wir Ihnen selbstverständlich
+                jederzeit zur Verfügung.
+                <br />
+                <br />
+            </p>
+
+            <br />
+            <br />
+            <br />
+        </div>
+
+        <form id="contact-form" name="contact-form" action="" method="POST">
+            {% csrf_token %}
+            <div class="form-row">
+                <!--Grid column-->
+
+                <div class="col-md-6 mb-3">
+                    <label for="vorname">Vorname</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault01"
+                        placeholder="Vorname"
+                        required
+                    />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault02">Last name</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault02"
+                        placeholder="Last name"
+                        value="Otto"
+                        required
+                    />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">Email</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault03"
+                        placeholder="Email"
+                        required
+                    />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault04">Unternehmen</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault04"
+                        placeholder="Unternehmen"
+                        required
+                    />
+                </div>
+            </div>
+
+            <button class="btn btn-light border border-dark" type="submit">
+                Submit form
+            </button>
+        </form>
+
+        <div class="text-center text-md-left">
+            <br />
+            <br />
+            <a
+                class="btn btn-light border border-dark"
+                onclick="document.getElementById('contact-form').submit();"
+                >Abschicken ></a
+            >
+        </div>
+    </div>
+</div>
+
+<!-- ##################################### -->
+{% endblock %}
