@@ -5,8 +5,9 @@ from . import views
 urlpatterns = [
 
     # My donation page
+    # path('spende/', views.donate, name='main-donate'),
 
-    path('donation', views.donation_page, name='donation-page'),
+    path('donation', views.donation_page, name='donateapp-paypal'),
 
     # Payment success
 

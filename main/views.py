@@ -24,8 +24,8 @@ def about(request):
     return render(request, 'main/about.html', {'title': 'About'})
 def setcard(request):
     return render(request, 'main/setcard.html', {'title': 'Setcard'})
-def autogram(request):
-    return render(request, 'main/autogram.html', {'title': 'Autogram'})
+def lijana(request):
+    return render(request, 'main/lijana.html', {'title': 'Lijana'})
 def help(request):
     return render(request, 'main/help.html', {'title': 'Help'})
 def portalhelp(request):

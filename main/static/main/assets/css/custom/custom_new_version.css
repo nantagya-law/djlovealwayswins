@@ -62,6 +62,99 @@ a {
   color: var(--text-color-white);
 }
 
+.main ul {
+  margin: 0 0 16px;
+  padding: 0 0 0 16px;
+  font-size: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  line-height: 1.2;
+  font-size: 2.81vw;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+h2,
+h3 {
+  font-size: 5.41vw;
+}
+
+.content-text h2 {
+  font-size: 1.45rem;
+}
+
+p {
+  font-size: 1.25vw;
+  margin: 0 0 16px;
+}
+
+.container-image-text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 40px;
+  margin: 30px 0;
+}
+
+.content-text {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.41vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1.25vw;
+  text-align: center;
+}
+
+.content__titel h1 {
+  font-size: 4.69vw;
+}
+
+.content__untertitel h2 {
+  font-size: 2.81vw;
+}
+
+.content__text h2 {
+  font-size: 1.41vw;
+  font-weight: bold;
+}
+
+.content__text h3 {
+  font-size: 1.41vw;
+}
+
+.content__text p {
+  font-size: 1.25vw;
+}
+
+.content__text li {
+  font-size: 1.25vw;
+}
+
+.container-image-text {
+  margin-bottom: 50px;
+}
+
 .container {
   width: 100%;
 }
@@ -222,11 +315,63 @@ a {
   margin-bottom: 5.95vh;
   color: var(--text-color-content);
 }
-.content__text h1 {
-  font-size: 3.57vw;
+
+.teaser-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 20px;
+  margin: 30px 0;
+  margin-bottom: 8.6vh;
+  color: var(--text-color-content);
 }
-.content__text p {
-  font-size: 1.0714vw;
+.teaser-container .teaser {
+  position: relative;
+  box-shadow: 0 0 20px var(--bg-grey);
+}
+.teaser-container .teaser .content__text p {
+  margin-top: 2.6vh;
+  margin-bottom: 5.95vh;
+  margin-left: 0.95vh;
+}
+.teaser-container .teaser__image {
+  max-width: none;
+  width: 100%;
+  overflow: hidden;
+}
+.teaser-container .teaser__image img {
+  max-width: none;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.teaser-container .teaser:hover .teaser-container .teaser__image img {
+  transform: scale(1.2);
+}
+.teaser-container .teaser__button-Lijana a img {
+  max-width: none;
+  width: 30%;
+}
+.teaser-container .teaser__button-Cybermobbing a img {
+  max-width: none;
+  width: 50%;
+}
+.teaser-container .teaser__button-Schulbesuche a img {
+  max-width: none;
+  width: 50%;
+}
+.teaser-container .teaser:hover .teaser__image img {
+  transform: scale(1.2);
+}
+
+.card_label {
+  background-color: var(--main-menu-color-active);
+  color: var(--text-color-white);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 2px 5px;
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .donate {
@@ -346,66 +491,6 @@ a {
   font-size: 1.5vw;
 }
 
-.teaser-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 20px;
-  margin: 30px 0;
-  margin-bottom: 8.6vh;
-  color: var(--text-color-content);
-}
-.teaser-container .teaser {
-  position: relative;
-  box-shadow: 0 0 20px var(--bg-grey);
-}
-.teaser-container .teaser__text p {
-  line-height: 1.1;
-  font-size: 1.0714vw;
-  margin-top: 2.6vh;
-  margin-bottom: 5.95vh;
-  margin-left: 0.95vh;
-}
-.teaser-container .teaser__image {
-  max-width: none;
-  width: 100%;
-  overflow: hidden;
-}
-.teaser-container .teaser__image img {
-  max-width: none;
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-.teaser-container .teaser:hover .teaser-container .teaser__image img {
-  transform: scale(1.2);
-}
-.teaser-container .teaser__button-Lijana a img {
-  max-width: none;
-  width: 30%;
-}
-.teaser-container .teaser__button-Cybermobbing a img {
-  max-width: none;
-  width: 50%;
-}
-.teaser-container .teaser__button-Schulbesuche a img {
-  max-width: none;
-  width: 50%;
-}
-.teaser-container .teaser:hover .teaser__image img {
-  transform: scale(1.2);
-}
-
-.card_label {
-  background-color: var(--main-menu-color-active);
-  color: var(--text-color-white);
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  padding: 2px 5px;
-  font-size: 0.813rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
 .main-book {
   background-image: url("../../img/new/grafik/Buch-Hintergrund-Banner.jpg");
   width: 100%;
@@ -473,38 +558,33 @@ a {
   margin-bottom: 11.91vh;
 }
 
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-li p {
-  font-size: 1.0714vw;
-}
-
 .schulbesuche {
   display: flex;
   flex-direction: row;
-  margin-top: 11.69vh;
   margin-bottom: 8.69vh;
 }
-.schulbesuche__text1 h1 {
-  margin-left: 50px;
-  font-size: 1.56vw;
-  font-weight: bold;
+.schulbesuche__text1 .content__textueberschrift h3 {
+  margin-left: 30px;
 }
-.schulbesuche__text1 li {
+.schulbesuche__text1 .content__text li {
+  margin-left: 30px;
+  width: 50%;
+}
+.schulbesuche__image {
+  max-width: none;
+  width: 50%;
+}
+.schulbesuche__text2 .content__text li {
+  margin-right: 120px;
   width: 100%;
-  margin-left: 50px;
-  font-size: 1.0714vw;
 }
 .schulbesuche__text2 h1 {
   font-size: 1.56vw;
   font-weight: bold;
 }
-.schulbesuche__text2 p {
-  width: 50%;
+.schulbesuche__text2 li {
+  width: 100%;
   margin-right: 50px;
-  font-size: 1.0714vw;
 }
 .schulbesuche__text3 h1 {
   margin-left: 50px;
@@ -512,6 +592,7 @@ li p {
   font-weight: bold;
 }
 .schulbesuche__text3 p {
+  width: 100%;
   margin-left: 50px;
   font-size: 1.0714vw;
 }
@@ -525,17 +606,6 @@ li p {
   display: flex;
   flex-direction: row;
   gap: 120px;
-}
-
-.card-title {
-  font-size: 1.56vw;
-  font-weight: bold;
-  text-align: center;
-}
-
-.card-text {
-  font-size: 1.0714vw;
-  text-align: center;
 }
 
 .schulbesuche__text5 p {
@@ -611,6 +681,21 @@ li p {
   .titel__text p {
     font-size: 2.14vw;
   }
+  .content {
+    margin-left: 10px;
+  }
+  .content__text h1 {
+    font-size: 24px;
+  }
+  .content__text p {
+    font-size: 14px;
+  }
+  .teaser-container .teaser__text p {
+    font-size: 14px;
+  }
+  .schulbesuche__titel {
+    margin-top: 15vh;
+  }
 }
 @media (max-width: 800px) {
   ul {
@@ -635,14 +720,14 @@ li p {
   }
   .schulbesuche__text1 li {
     margin-left: 0px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .schulbesuche__text2 h1 {
     font-size: 14px;
     margin-left: 10px;
   }
-  .schulbesuche__text2 p {
-    font-size: 12px;
+  .schulbesuche__text2 li {
+    font-size: 14px;
     margin-left: 10px;
   }
   .schulbesuche__text3 h1 {
@@ -650,12 +735,21 @@ li p {
     margin-left: 10px;
   }
   .schulbesuche__text3 p {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 10px;
   }
   .termin {
     display: flex;
     flex-direction: column;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .card-text {
+    font-size: 14px;
+    text-align: center;
   }
   .reason {
     display: flex;
@@ -664,6 +758,14 @@ li p {
   .reason__text p {
     font-size: 14px;
     margin-left: 10px;
+  }
+  .reason-titel h1 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .schulbesuche__text5 p {
+    text-align: center;
+    font-size: 14px;
   }
   .person-data input {
     width: 100%;
@@ -701,13 +803,6 @@ li p {
     width: 100px;
     justify-self: left;
   }
-  .menu {
-    flex-direction: column;
-    margin-left: 10px;
-  }
-  .menu__item .menu__item-link {
-    font-size: 12px;
-  }
   .titel__text {
     margin-top: 4vh;
     margin-left: 10px;
@@ -717,18 +812,6 @@ li p {
   }
   .titel__text p {
     font-size: 2.14vw;
-  }
-  .content {
-    margin-left: 10px;
-  }
-  .content__text h1 {
-    font-size: 24px;
-  }
-  .content__text p {
-    font-size: 10px;
-  }
-  .teaser-container .teaser__text p {
-    font-size: 12px;
   }
   .book {
     flex-direction: column;

@@ -12,7 +12,9 @@
                     <i class="fa fa-heart fa-sm" aria-hidden="true"></i>
                 </div>
                 <div class="menu__item">
-                    <a class="menu__item-link" href="#">Lijana</a>
+                    <a class="menu__item-link" href="{% url 'main-lijana' %}"
+                        >Lijana</a
+                    >
                 </div>
                 <div class="menu__heart">
                     <i class="fa fa-heart fa-sm" aria-hidden="true"></i>
@@ -60,9 +62,16 @@
                         >Kontakt</a
                     >
                 </div>
-                <!-- <div class="menu__item">
-                    <a class="menu__item-link" href="#">Kontakt</a>
-                </div> -->
+                <div class="menu__heart">
+                    <i class="fa fa-heart fa-sm" aria-hidden="true"></i>
+                </div>
+                <div class="menu__item">
+                    <a
+                        class="menu__item-link"
+                        href="{% url 'donateapp-paypal' %}"
+                        >PayPal</a
+                    >
+                </div>
             </div>
         </div>
     </div>

@@ -210,18 +210,18 @@ LOGIN_REDIRECT_URL = 'main-home'
 
 
 
-# # STRIPE public key
-# STRIPE_PUBLIC_KEY = "pk_test_51MuTniLhO1dPVw1fKlXVly9mdP0GYChePM5YEuDdV16tliaBemHXuNJ1zgBoT5vPYGwaOgpCrTdcN16MiGeTYFbH000gelOGsg"
+# STRIPE public key
+STRIPE_PUBLIC_KEY = "pk_test_51MuTniLhO1dPVw1fKlXVly9mdP0GYChePM5YEuDdV16tliaBemHXuNJ1zgBoT5vPYGwaOgpCrTdcN16MiGeTYFbH000gelOGsg"
 
-# # STRIPE private key
-# STRIPE_PRIVATE_KEY = "sk_test_51MuTniLhO1dPVw1fpaFxB2YugFWdSljdfQ4G86vtevhihpPMobM36gqccBcJtpE2X1fs9VhtAo9dysVRUW6APhtG00OZU2K3W4"
+# STRIPE private key
+STRIPE_PRIVATE_KEY = "sk_test_51MuTniLhO1dPVw1fpaFxB2YugFWdSljdfQ4G86vtevhihpPMobM36gqccBcJtpE2X1fs9VhtAo9dysVRUW6APhtG00OZU2K3W4"
 
-# # STRIPE webhook key
-# STRIPE_WEBHOOK_KEY = ""
+# STRIPE webhook key
+STRIPE_WEBHOOK_KEY = ""
 
-# # PayPal Settings
-# PAYPAL_TEST = True
-# PAYPAL_RECEIVER_EMAIL = 'sandbox@gmail.com'
+# PayPal Settings
+PAYPAL_TEST = True
+PAYPAL_RECEIVER_EMAIL = 'sandbox@gmail.com'
 
-# # Allow PayPal pop-ups
-# SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
+# Allow PayPal pop-ups
+SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'

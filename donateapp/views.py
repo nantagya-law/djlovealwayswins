@@ -20,50 +20,33 @@ import stripe
 
 
 # My donation page
-
 def donation_page(request):
   
     stripe.api_key = settings.STRIPE_PRIVATE_KEY
-
+    
     session = stripe.checkout.Session.create(
     
     line_items=[{
-
         'price': 'price_1MuX5xLhO1dPVw1fPeBZHXHf',
-
-      'quantity': 1,
-
+        'quantity': 1,
     }],
 
     mode='payment',
-
     success_url = request.build_absolute_uri(reverse('donation-success')) + '?session_id={CHECTOUT_SESSION_ID}',
-
     cancel_url = request.build_absolute_uri(reverse('donation-failed')),
 
     )
 
-  
-
     donation = Donate.objects.get(id=1)
-
     context = {'donation': donation, 'session_id': session.id, 'stripe_public_key': settings.STRIPE_PUBLIC_KEY}
-
     return render(request, 'donateapp/donation-page.html', context=context)
 
-
-
 # Payment success
-
 def payment_success(request):
-    
    return render(request, 'donateapp/payment-success.html')
 
-
 # Payment failed
-
 def payment_failed(request):
-    
     return render(request, 'donateapp/payment-failed.html')
 
 
