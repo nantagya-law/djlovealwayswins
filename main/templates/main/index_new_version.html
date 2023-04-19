@@ -3,87 +3,92 @@
 {% load static %}
 <!-- ######################### -->
 {% block content %}
-<container class="container">
-    <div class="titel__bg-image">
-        <div class="main">
-            <div class="titel__text">
-                <h1>Love Always<br />Wins e.V.</h1>
-                <p>
-                    Mehr Selbstvertrauen für<br />
-                    eine bessere Zukunft
-                </p>
+<!-- ######################### -->
 
-                <div class="titel__hearts">
-                    <div class="titel__hearts-1">
-                        <img
-                            src="../../static/main/assets/img/new/grafik/Swipe-Herz-Flaeche.svg"
-                            class="card-img-top"
-                            alt="Herz-Flaeche"
-                        />
-                    </div>
+<div class="main-titel titel__bg-image">
+    <div class="main">
+        <div class="titel__text">
+            <h1>Love Always<br />Wins e.V.</h1>
+            <p>Mehr Selbstvertrauen für <br />eine bessere Zukunft</p>
+        </div>
 
-                    <div class="titel__hearts-2">
-                        <img
-                            src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
-                            class="card-img-top"
-                            alt="Herz-Kontur"
-                        />
-                    </div>
+        <div class="titel__hearts">
+            <div class="titel__hearts-1">
+                <img
+                    src="{% static 'main/assets/img/new/grafik/Swipe-Herz-Flaeche.svg' %}"
+                    class="card-img-top"
+                    alt="Herz-Flaeche"
+                />
+            </div>
 
-                    <div class="titel__hearts-3">
-                        <img
-                            src="../../static/main/assets/img/new/grafik/Swipe-Herz-Kontur.svg"
-                            class="card-img-top"
-                            alt="Herz-Kontur"
-                        />
-                    </div>
-                </div>
+            <div class="titel__hearts-2">
+                <img
+                    src="{% static 'main/assets/img/new/grafik/Swipe-Herz-Kontur.svg' %}"
+                    class="card-img-top"
+                    alt="Herz-Kontur"
+                />
+            </div>
+
+            <div class="titel__hearts-3">
+                <img
+                    src="{% static 'main/assets/img/new/grafik/Swipe-Herz-Kontur.svg' %}"
+                    class="card-img-top"
+                    alt="Herz-Kontur"
+                />
             </div>
         </div>
-        <div class="titel__image main-image-10">
-            <img
-                src="../../static/main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg"
-                width="1920"
-                height="700"
-                alt="BG_Titel"
-            />
-        </div>
     </div>
-
+    <div class="titel__image main-image-10">
+        <img
+            src="{% static 'main/assets/img/new/Titelbild-DSC_2781-Bearbeitet-JD_v2_web.jpg' %}"
+            width="1920"
+            height="700"
+            alt="BG_Titel"
+        />
+    </div>
+</div>
+<div class="main-content">
     <div class="main">
-        <div class="content">
+        <!-- <div class="content">
+            <div class="content__untertitel">
+                <h2>Willkommen bei uns!<br />Schön, dass du hier bist.</h2>
+            </div>
             <div class="content__text">
-                <h1>Willkommen bei uns!<br />Schön, dass du hier bist.</h1>
                 <p>
                     Hier findest du alles Rund um Lijana und Love Always Wins
                     e.V.
                 </p>
             </div>
-        </div>
+        </div> -->
+        <h1>Willkommen bei uns!<br />Schön, dass du hier bist.</h1>
+        <p>Hier findest du alles Rund um Lijana und Love Always Wins e.V.</p>
     </div>
+</div>
+
+<div class="main-teaser">
     <div class="main">
         <div class="teaser-container">
             <div class="teaser">
                 <div class="teaser__image">
                     <img
-                        src="../../static/main/assets/img/new/01-lijana.jpg"
-                        alt="divjana-model"
+                        src="{% static 'main/assets/img/new/01-Lijana.jpg' %}"
+                        alt="Lijana-model"
                         loading="lazy"
                     />
 
                     <span class="card_label">Model Karriere</span>
                 </div>
                 <div class="teaser__button-Lijana">
-                    <a href="/about/">
+                    <a href="#">
                         <img
                             style="margin-top: 28px; margin-left: 20px"
-                            src="../../static/main/assets/img/new/grafik/01-Lijana.svg"
+                            src="{% static 'main/assets/img/new/grafik/01-Lijana.svg' %}"
                             alt="Button_Lijana."
                             loading="lazy"
                         />
                     </a>
                 </div>
-                <div class="teaser__text">
+                <div class="content__text">
                     <p>
                         Lijana Kaggwa (25) gab ihr Mathestudium für eine
                         Modelkarriere auf.
@@ -93,7 +98,7 @@
             <div class="teaser">
                 <div class="teaser__image">
                     <img
-                        src="../../static/main/assets/img/new/02-Cybermobbing.jpg"
+                        src="{% static 'main/assets/img/new/02-Cybermobbing.jpg' %}"
                         alt="Cybermobbing-Lijana"
                         loading="lazy"
                     />
@@ -101,16 +106,16 @@
                     <span class="card_label">Albtraum</span>
                 </div>
                 <div class="teaser__button-Cybermobbing">
-                    <a href="/hilfe/">
+                    <a href="#">
                         <img
                             style="margin-top: 28px; margin-left: 20px"
-                            src="../../static/main/assets/img/new/grafik/02-Cybermobbing.svg"
+                            src="{% static 'main/assets/img/new/grafik/02-Cybermobbing.svg' %}"
                             alt="Button_Cybermobbing"
                             loading="lazy"
                         />
                     </a>
                 </div>
-                <div class="teaser__text">
+                <div class="content__text">
                     <p>
                         Was als großer Traum begann, mündete in einem Albtraum.
                         Aus der Favoritin der Sendung wurde eine Zielscheibe.
@@ -120,24 +125,24 @@
             <div class="teaser">
                 <div class="teaser__image">
                     <img
-                        src="../../static/main/assets/img/new/03-Schulbesuche.jpg"
-                        alt="Schdivbesuche-divjana"
+                        src="{% static 'main/assets/img/new/03-Schulbesuche.jpg' %}"
+                        alt="Schdivbesuche-lijana"
                         loading="lazy"
                     />
 
                     <span class="card_label">Workshops</span>
                 </div>
                 <div class="teaser__button-Schulbesuche">
-                    <a href="/gallery/">
+                    <a href="{% url 'main-schulbesuche' %}">
                         <img
                             style="margin-top: 28px; margin-left: 20px"
-                            src="../../static/main/assets/img/new/grafik/03-Schulbesuche.svg"
+                            src="{% static 'main/assets/img/new/grafik/03-Schulbesuche.svg' %}"
                             alt="Button_Schulbesuche"
                             loading="lazy"
                         />
                     </a>
                 </div>
-                <div class="teaser__text">
+                <div class="content__text">
                     <p>
                         Erhalte Einblicke in unsere Vorträge und Workshops an
                         Schulen.
@@ -146,34 +151,34 @@
             </div>
         </div>
     </div>
-    <div class="book__bg-image">
-        <div class="main">
-            <div class="book">
-                <div class="book__text">
+</div>
+<div class="main-book">
+    <div class="main">
+        <div class="book">
+            <div class="book__text">
+                <img
+                    src="{% static 'main/assets/img/new/Jetzt-erhaeltlich-in-allen-Buchhandlungen.svg' %}"
+                    alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
+                    loading="lazy"
+                />
+
+                <a href="{% url 'main-book' %}">
                     <img
-                        src="../../static/main/assets/img/new/grafik/Buch-text-Banner.svg"
-                        alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
+                        style="margin-top: 56px"
+                        src="{% static 'main/assets/img/new/Button-jetzt-bestellen.svg' %}"
+                        alt="Button_Bestellen"
+                        width="180"
                         loading="lazy"
                     />
-
-                    <a href="{% url 'main-book' %}">
-                        <img
-                            style="margin-top: 56px"
-                            src="../../static/main/assets/img/new/grafik/Button_Bestellen.svg"
-                            alt="Button_Bestellen"
-                            width="180"
-                            loading="lazy"
-                        />
-                    </a>
-                </div>
-                <div class="book__image">
-                    <a href="{% url 'main-book' %}">
-                        <img src="../../static/main/assets/img/new/Buch.png" />
-                    </a>
-                </div>
+                </a>
+            </div>
+            <div class="book__image">
+                <a href="{% url 'main-book' %}">
+                    <img src="{% static 'main/assets/img/new/Buch.png' %}" />
+                </a>
             </div>
         </div>
     </div>
-</container>
-
+</div>
+<!-- ##################################### -->
 {% endblock %}

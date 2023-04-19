@@ -47,8 +47,10 @@ def community(request):
     return render(request, 'main/community.html', {'title': 'Community'})
 def events(request):
     return render(request, 'main/events.html', {'title': 'Events'})
+
 def schulbesuche(request):
-    return render(request, 'main/school_visiting.html', {'title': 'Schulbesuche'})
+    return render(request, 'main/school_new_version.html', {'title': 'Schulbesuche'})
+    # return render(request, 'main/school_visiting.html', {'title': 'Schulbesuche'})
 def projects(request):
     return render(request, 'main/projects.html', {'title': 'Projects'})
 # def book(request):

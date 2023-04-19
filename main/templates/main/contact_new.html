@@ -16,38 +16,19 @@
 
         {% else %}
 
-        <div class="contact__text text-center">
-            <br />
-            <br />
-            <br />
-            <br />
+        <div class="contact-text">
+            <div class="content__text text-center">
+                <title>LoveAlwaysWins</title>
 
-            <title>LoveAlwaysWins</title>
-
-            <h1>Kontakt - Dürfen wir uns kennenlernen?</h1>
-            <p>
-                Wenn Sie konkrete Fragen haben oder Details zu einem Projekt
-                besprechen möchten, <br />stehen wir Ihnen selbstverständlich
-                jederzeit zur Verfügung.
-                <br />
-                <br />
-            </p>
-
-            <br />
-            <br />
-            <br />
-
-            <!-- <form
-                id="contact-form"
-                name="contact-form"
-                action="."
-                method="POST"
-            >
-                {% csrf_token %} {{ form.as_p }}
-
-                <button>Submit</button>
-            </form> -->
+                <h2>Kontakt - Dürfen wir uns kennenlernen?</h2>
+                <p>
+                    Wenn Sie konkrete Fragen haben oder Details zu einem Projekt
+                    besprechen möchten, <br />stehen wir Ihnen
+                    selbstverständlich jederzeit zur Verfügung.
+                </p>
+            </div>
         </div>
+
         <!--Section: Contact v.2-->
         <section class="mb-4">
             <!--Section heading-->
@@ -55,6 +36,7 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-md-9 mb-md-0 mb-5">
+                    <br />
                     <form
                         class="was-validated"
                         id="contact-form"
@@ -183,31 +165,22 @@
                             </div>
                         </div>
                     </form>
-
-                    <!-- <div class="text-center text-md-left">
-                        <br />
-                        <br />
-                        <a
-                            class="btn btn-light border border-dark"
-                            onclick="document.getElementById('contact-form').submit();"
-                            >Abschicken ></a
-                        >
-                    </div> 
-                   
-                    <div class="status"></div>
-                    -->
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
                 <div class="col-md-3 text-center">
+                    <br />
+                    <br />
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <p>So finden Sie uns</p>
+                            <h3>So finden Sie uns</h3>
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Dalwigkstraße 7, 34130 Kassel, Germany</p>
+                            <p content__text>
+                                Dalwigkstraße 7, 34130 Kassel, Germany
+                            </p>
                         </li>
 
                         <li>
