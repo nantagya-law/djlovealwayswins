@@ -1,25 +1,28 @@
 {% load static %}
 <container class="container">
     <div class="main">
-        <div class="header">
-            <div class="header__logo">
+        <div class="row">
+            <div class="col-sm-6 align-self-center">
                 <a href="{% url 'main-home' %}">
                     <img
+                        class="img-fluid"
                         src="{% static 'main/assets/img/new/grafik/Logo_LAW_final.svg' %}"
+                        width="300"
                         alt="LOGO LoveAlwaysWins"
-                        class="responsive"
                     />
                 </a>
             </div>
-            <div class="header__button">
-                <a href="{% url 'main-donate' %}">
-                    <img
-                        src="{% static 'main/assets/img/new/Spende/Button-jetzt-Spenden-Pfeil.svg' %}"
-                        width="100%"
-                        alt="Spenden Button"
-                        class="responsive"
-                    />
-                </a>
+            <div class="col-sm-6 align-self-center">
+                <div class="header__image1">
+                    <a href="{% url 'main-donate' %}">
+                        <img
+                            class="img-fluid float-end header__image"
+                            src="{% static 'main/assets/img/new/Spende/Button-jetzt-Spenden-Pfeil.svg' %}"
+                            width="200"
+                            alt="Spenden Button"
+                        />
+                    </a>
+                </div>
             </div>
         </div>
     </div>

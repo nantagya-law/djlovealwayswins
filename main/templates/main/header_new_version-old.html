@@ -1,0 +1,26 @@
+{% load static %}
+<container class="container">
+    <div class="main">
+        <div class="header">
+            <div class="header__logo">
+                <a href="{% url 'main-home' %}">
+                    <img
+                        src="{% static 'main/assets/img/new/grafik/Logo_LAW_final.svg' %}"
+                        alt="LOGO LoveAlwaysWins"
+                        class="responsive"
+                    />
+                </a>
+            </div>
+            <div class="header__button">
+                <a href="{% url 'main-donate' %}">
+                    <img
+                        src="{% static 'main/assets/img/new/Spende/Button-jetzt-Spenden-Pfeil.svg' %}"
+                        width="100%"
+                        alt="Spenden Button"
+                        class="responsive"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+</container>

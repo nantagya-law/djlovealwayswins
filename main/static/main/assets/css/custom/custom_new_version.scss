@@ -78,45 +78,6 @@ a {
     }
 }
 
-// h2,
-// h3 {
-//     font-size: 1.41vw; // 18px
-// }
-
-// .main ul {
-//     margin: 0 0 16px;
-//     padding: 0 0 0 16px;
-//     font-size: 1.15rem;
-// }
-// h1 {
-//     line-height: 1.2;
-//     font-size: 1.5rem;
-// }
-// h1,
-// h2,
-// h3 {
-//     font-weight: 700;
-//     margin: 0 0 16px;
-// }
-// h2,
-// h3 {
-//     font-size: 1.25rem;
-// }
-// .content__text h2 {
-//     font-size: 1.45rem;
-// }
-// p {
-//     font-size: 1.15rem;
-//     margin: 0 0 16px;
-// }
-// .content-text h2 {
-//     font-size: 1.45rem;
-// }
-// p {
-//     font-size: 1.25vw; // 16px
-//     margin: 0 0 16px;
-// }
-
 .container-image-text {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -137,31 +98,122 @@ a {
 }
 
 // ################### NEW CSS FOR TEXT #######################
-.content__titel {
-    h1 {
-        font-size: 4.69vw; //60px
-    }
-}
 
-.content__image img {
-    margin-top: 0vh;
-    // margin-bottom: 11.91vh;
-    margin-right: 0px;
-}
-
-.content__image {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    // margin-right: 50px;
-    // width: 10%;
+.vertical-align-top {
+    vertical-align: top;
 }
 
 .responsive {
-    width: 100%;
+    // width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
+.bottom_top_buffer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+// .top5 {
+//     margin-top: 5px;
+// }
+
+// .top10 {
+//     margin-top: 10px;
+// }
+// .top15 {
+//     margin-top: 15px;
+// }
+// .top20 {
+//     margin-top: 20px;
+// }
+// .top30 {
+//     margin-top: 30px;
+// }
+
+// .top1p {
+//     margin-top: 1%;
+// }
+// .top2p {
+//     margin-top: 2%;
+// }
+// .top3p {
+//     margin-top: 3%;
+// }
+// .top4p {
+//     margin-top: 4%;
+// }
+// .top5p {
+//     margin-top: 5%;
+// }
+// .top7p {
+//     margin-top: 7%;
+// }
+// .top10p {
+//     margin-top: 10%;
+// }
+
+.more-info {
+    img {
+        width: 100%;
+        object-fit: cover;
+        // height: 11em;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 28px;
+        // font-size: 1.25rem;
+    }
+
+    .desc {
+        // line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    img {
+        width: 50em;
+        // width: 100%;
+    }
+
+    .content {
+        // text-align: right;
+        width: 50em;
+        // width: 100%;
+    }
+}
+
+.feature.left {
+    grid-template-areas: "left right";
+
+    img {
+        grid-area: left;
+    }
+
+    .content {
+        text-align: left;
+        width: 50em;
+        justify-self: left;
+    }
+}
+.school__spende_image {
+    // width: 20em;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+}
+
 // ################### CONTACT ###################
+
 .contact__label {
     // font-size: 1.25vw;
     font-size: 16px;
@@ -181,23 +233,20 @@ a {
         }
     }
 }
-// ######### X ########## CONTACT ######## X ########
 
-// ################### CONTENT #######################
-
-// ######### X ########## CONTENT ############ X #######
-
-// .content__untertitel {
-//     h2 {
-//         font-size: 2.81vw; // 36px
-//     }
-// }
+.content__titel {
+    h1 {
+        font-size: 4.69vw; //60px
+        font-weight: bold;
+    }
+}
 
 .content__text h2,
 h2 {
     // textueberschrift
 
-    font-size: 2.19vw; // 18px
+    // font-size: 2.19vw; // 28px
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -205,22 +254,27 @@ h2 {
 h3 {
     // textueberschrift
 
-    font-size: 1.41vw; // 18px
+    // font-size: 1.41vw; // 18px
+    // font-size: 1.125rem; // 18px
+    // font-size: 1.125em; // 18px
+    font-size: 24px;
     font-weight: bold;
 }
 
 .content__text p,
+.teaser__text p,
 p,
 li {
-    font-size: 1.25vw; // 16px
+    // font-size: 1.25vw; // 16px
+    font-size: 18px; // 16px
     // margin-top: 130px;
     // margin-bottom: 130px;
     // width: 100%;
 }
 
-.content__text li {
-    font-size: 1.25vw; // 16px
-}
+// .content__text li {
+//     // font-size: 1.25vw; // 16px
+// }
 
 // ########## X ######### NEW CSS FOR TEXT ######### X #########
 
@@ -235,11 +289,8 @@ li {
 }
 
 .main {
-    width: 70%;
+    max-width: 70%;
     margin: auto;
-    // padding: 0 10px;
-    // width: 69.05vw;
-    // padding: 0 10px;
     position: relative;
 
     // border: 3px solid #73ad21;
@@ -609,15 +660,29 @@ li {
         -webkit-box-shadow: 0 0 20px var(--bg-grey);
         box-shadow: 0 0 20px var(--bg-grey);
 
+        // &__text p {
+        //     // border: 2px solid rgb(103, 183, 17);
+        //     line-height: 1.1;
+        //     font-size: 1.25vw;
+        //     // font-size: 1.0714vw;
+        //     margin-top: 2.6vh;
+        //     margin-bottom: 5.95vh;
+        //     margin-left: 2vh;
+        //     // text-align: center;
+        // }
+
         &__text p {
             // border: 2px solid rgb(103, 183, 17);
-            line-height: 1.1;
-            font-size: 1.25vw;
+            // line-height: 1.1;
+            // font-size: 1.25vw;
             // font-size: 1.0714vw;
-            margin-top: 2.6vh;
-            margin-bottom: 5.95vh;
+            // margin-top: 2.6vh;
+            // margin-bottom: 5.95vh;
+
             margin-left: 2vh;
-            // text-align: center;
+            margin-right: 2vh;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
         }
 
         &__image {
@@ -706,6 +771,10 @@ li {
         margin-left: 20.95vw;
         // align-content: center;
     }
+}
+
+.book-image {
+    margin-top: 7%;
 }
 // ######### X ########## BOOK ############ X #######
 
@@ -851,6 +920,20 @@ li {
         // align-content: center;
     }
 }
+
+.cyber_button_center {
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+}
+
+.cyber_button_left {
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 50px;
+}
+
 .termin {
     // border: 2px solid rgb(255, 0, 21);
     display: flex;
@@ -918,56 +1001,33 @@ li {
     margin-bottom: 50px;
 }
 
+// @media (max-width: 1400px) {
+//     .titel__text {
+//         margin-top: 15.5vh;
+//     }
+// }
+
 // .schulbesuche__text2 .button {
 //     text-align: center;
 //     align-content: center;
 // }
 // ######### X ########## SCHULBESUCHE ############ X #######
-@media (max-width: 1600px) {
-    // .container-image-text {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-}
 
 @media (max-width: 1400px) {
-    // .container-image-text {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-
     .titel__text {
-        margin-top: 15.5vh;
-
-        // h1 {
-        //     font-size: 3.57vw;
-        // }
-
-        // p {
-        //     font-size: 2.14vw;
-        // }
+        margin-top: 13.5vh;
+    }
+    .press__titel {
+        margin-top: 16.5vh;
+    }
+    .schulbesuche__titel {
+        margin-top: 13.5vh;
     }
 }
 
 @media (max-width: 1000px) {
-    h3 {
-        font-size: 16px;
-    }
-
-    p,
-    li {
-        font-size: 14px;
-    }
     .titel__text {
         margin-top: 10.5vh;
-
-        // h1 {
-        //     font-size: 3.57vw;
-        // }
-
-        // p {
-        //     font-size: 2.14vw;
-        // }
 
         h1 {
             font-size: 35px;
@@ -977,499 +1037,250 @@ li {
             font-size: 20px;
         }
     }
-
-    .content {
-        margin-left: 10px;
-        &__text h2,
-        h2 {
-            font-size: 20px;
-        }
-        &__text p,
-        li {
-            font-size: 14px;
-        }
-    }
-
-    .donate {
-        &__text1 h2,
-        h2 {
-            font-size: 20px;
-        }
-        &__text1 p {
-            font-size: 14px;
-        }
-    }
-
-    .teaser-container {
-        // flex-direction: column;
-
-        .teaser {
-            &__text p,
-            p {
-                font-size: 14px;
-            }
-        }
-    }
-
-    .schulbesuche {
-        &__titel {
-            margin-top: 15vh;
-        }
-    }
 }
 
 @media (max-width: 800px) {
-    ul {
-        // list-style-type: none;
-        margin-left: 15px;
-    }
     .titel__text {
+        margin-top: 5vh;
+    }
+
+    .press__titel {
         margin-top: 8.5vh;
-
-        // h1 {
-        //     font-size: 3.57vw;
-        // }
-
-        // p {
-        //     font-size: 2.14vw;
-        // }
     }
 
-    // .container-image-text {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-
-    .donate {
-        display: flex;
-        flex-direction: column;
+    .schulbesuche__titel {
+        margin-top: 9vh;
     }
 
-    .schulbesuche {
-        display: flex;
-        flex-direction: column;
-
-        &__text1 h1 {
-            font-size: 14px;
-            margin-left: 10px;
-        }
-
-        &__text1 li {
-            margin-left: 0px;
-            font-size: 14px;
-        }
-
-        &__text2 h1 {
-            font-size: 14px;
-            margin-left: 10px;
-        }
-        &__text2 li {
-            font-size: 14px;
-            margin-left: 10px;
-        }
-        &__text3 h1 {
-            font-size: 14px;
-            margin-left: 10px;
-        }
-        &__text3 p {
-            font-size: 14px;
-            margin-left: 10px;
-        }
+    .header__image img {
+        margin-left: 1px;
+        align-self: self-start;
+        float: inline-start;
+        // align-items: start;
+        // align-content: start;
+        // align-tracks: w;
     }
-    .termin {
-        display: flex;
-        flex-direction: column;
-    }
-    .card-title {
-        font-size: 14px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .card-text {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .reason {
-        // width: 100%;
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-
-        // margin-bottom: 50px;
-
-        &__text p {
-            font-size: 14px;
-            margin-left: 10px;
-            // margin-right: 100px;
-        }
-    }
-
-    .reason-titel {
-        h1 {
-            font-size: 16px;
-            font-weight: bold;
-        }
-    }
-
-    .schulbesuche__text5 p {
-        text-align: center;
-        font-size: 14px;
-    }
-
-    .person-data input {
-        width: 100%;
-    }
-
-    .button-buchen1 {
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .button-buchen2 {
-        // margin-left: 200px;
-        left: 50%;
-        margin-top: 10px;
-        margin-bottom: 20px;
+    .feature {
+        grid-template-columns: 1fr;
     }
 }
-
-// .center {
-//     margin: 0;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     -ms-transform: translate(-50%, -50%);
-//     transform: translate(-50%, -50%);
-//   }
 
 @media (max-width: 650px) {
-    .container {
-        padding: 30px;
-    }
-
-    .main {
-        width: 100%;
-        margin: auto;
-    }
-
-    .header {
-        grid-template-columns: 1fr;
-        margin-left: 10px;
-
-        &__logo {
-            width: 200px;
-            margin-bottom: 0px;
-        }
-
-        &__button {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            width: 100px;
-            justify-self: left;
-        }
-    }
-
-    // .menu {
-    //     flex-direction: column;
-    //     margin-left: 10px;
-    //     &__item {
-    //         .menu__item-link {
-    //             font-size: 12px;
-    //         }
-    //     }
-    // }
-
     .titel__text {
+        margin-top: 1vh;
+        margin-left: 10px;
+    }
+
+    .schulbesuche__titel {
         margin-top: 4vh;
-        margin-left: 10px;
-
-        // h1 {
-        //     font-size: 3.57vw;
-        // }
-        // p {
-        //     font-size: 2.14vw;
-        // }
     }
 
-    // .content {
-    //     margin-left: 10px;
-    //     &__text h1 {
-    //         font-size: 24px;
-    //     }
-    //     &__text p {
-    //         font-size: 14px;
-    //     }
-    // }
-
-    // .reason {
-    //     // width: 100%;
-    //     display: flex;
-    //     flex-direction: column;
-
-    //     // margin-bottom: 50px;
-
-    //     &__text p {
-    //         font-size: 14px;
-    //         margin-left: 10px;
-    //         // margin-right: 100px;
-    //     }
-    // }
-
-    .book {
-        flex-direction: column;
+    .header__image img {
+        margin-left: 1px;
+        align-self: self-start;
     }
 }
 
-@media (max-width: 500px) {
-    .titel__text {
-        margin-top: 1.5vh;
+// @media (max-width: 1000px) {
+//     // h3 {
+//     //     font-size: 16px;
+//     // }
 
-        // h1 {
-        //     font-size: 3.57vw;
-        // }
+//     // p,
+//     // li {
+//     //     font-size: 14px;
+//     // }
 
-        // p {
-        //     font-size: 2.14vw;
-        // }
-    }
-}
-
-@media (max-width: 350px) {
-    .titel__text {
-        margin-top: 0.5vh;
-
-        // h1 {
-        //     font-size: 3.57vw;
-        // }
-
-        // p {
-        //     font-size: 2.14vw;
-        // }
-    }
-}
-
-// @media screen and (min-width: 780px) {
-//     h1,
-//     h2,
-//     h3 {
-//         font-size: 2.25rem;
-//     }
-//     .content-text h2 {
-//         font-size: 1.45rem;
-//     }
-//     p {
-//         font-size: 1.15rem;
-//     }
-
-//     .header {
-//         height: 168px;
-//     }
-//     .logo {
-//         width: auto;
-//     }
-//     .logo,
-//     .action-button {
-//         top: 30px;
-//     }
-//     .header-info {
-//         left: auto;
-//         right: 200px;
-//         top: 60px;
-//         padding: 2px 10px;
-//     }
-//     .header-info span {
-//         font-size: 1rem;
-//     }
-//     .header-info a {
-//         display: block;
-//         padding: 0;
-//     }
-//     .main-nav_list {
-//         margin: 0 0 0 140px;
-//     }
-//     .main-nav {
-//         height: 58px;
-//     }
-//     .main-nav_item {
-//         padding: 0 20px;
-//     }
-//     .main-nav_link {
-//         padding: 14px 0 12px;
-//     }
-//     .main-nav_link.active,
-//     .main-nav_link:hover {
-//         border-bottom: 4px solid var(--text-color-blue);
-//     }
-//     .swiper-pagination {
-//         display: block;
-//         text-align: right;
-//         padding: 0 50px 0 0;
-//     }
-//     .swiper-pagination-bullet {
-//         width: 50px;
-//         height: 8px;
-//         border-radius: 0;
-//         background-color: var(--bg-blue-light);
-//         opacity: 1;
-//     }
-//     .swiper-pagination-bullet-active {
-//         background-color: var(--bg-blue);
-//     }
-//     .swiper-button-next:after,
-//     .swiper-button-prev:after {
-//         font-size: 80px;
-//     }
-//     .swiper-button-prev {
-//         left: 40px;
-//     }
-//     .swiper-button-next {
-//         right: 60px;
-//     }
-//     .slider-content {
-//         display: block;
-//         position: absolute;
-//         z-index: 1;
-//         top: 20px;
-//         border-top: 5px solid var(--bg-blue);
-//         border-bottom: 5px solid var(--bg-blue);
-//         padding: 10px;
-//         max-width: 580px;
-//     }
-//     .slider-content h1 {
-//         line-height: 1.1;
-//         color: #fff;
-//         font-size: 1.5rem;
-//     }
-//     .slider-content p {
-//         line-height: 1.1;
-//         color: var(--text-color-blue-light);
-//         font-size: 1.25rem;
-//         font-weight: 700;
-//         margin: 0;
-//     }
-//     .main {
-//         margin: 66px 0 0;
-//     }
-//     .teaser-container {
-//         margin: 30px 0 85px;
-//     }
-//     .teaser-map {
-//         background: url(../images/home/KSB-SupremeServ-von-der-KLAWA-Service-GmbH-Hessen-Kassel-Goettingen.jpg)
-//             50% no-repeat #fff;
-//         min-height: 490px;
-//         max-height: 490px;
-//     }
-//     .teaser-map_text {
-//         position: absolute;
-//         top: 80px;
-//         padding: 0;
-//     }
-//     .teaser-map_text h3,
-//     .teaser-map_text p {
-//         font-size: 1.7rem;
-//     }
-//     .container-image-text {
-//         margin: 85px 0;
-//     }
-//     .footer-info {
-//         height: 100px;
-//         padding: 0;
-//         display: -webkit-box;
-//         display: -ms-flexbox;
-//         display: flex;
-//         -webkit-box-align: center;
-//         -ms-flex-align: center;
-//         align-items: center;
-//     }
-//     .footer-info_item {
-//         padding: 0;
-//         margin: 0 40px 0 0;
-//     }
-// }
-// @media screen and (min-width: 1200px) {
-//     .logo {
-//         left: 0;
-//     }
-//     .action-button {
-//         right: 0;
-//     }
-//     .container {
-//         padding: 0;
-//     }
-//     .swiper-pagination {
-//         padding: 0 200px 0 0;
-//     }
-//     .swiper-pagination-bullet {
-//         width: 100px;
-//         height: 10px;
-//     }
-//     .slider-content_link {
-//         display: block;
-//         position: absolute;
-//         right: 205px;
-//         left: auto;
-//         top: auto;
-//         z-index: 2;
-//         bottom: 70px;
-//     }
-//     .slider-content_link a {
-//         background-color: var(--bg-blue);
-//         padding: 6px 10px;
-//         color: #fff;
-//         font-weight: 700;
-//         text-transform: uppercase;
-//     }
-//     .slider-content {
-//         top: 60px;
-//         border-top: 10px solid var(--bg-blue);
-//         border-bottom: 10px solid var(--bg-blue);
-//         padding: 20px;
-//     }
-//     .slider-content h1 {
-//         font-size: 3rem;
-//     }
-//     .slider-content p,
-//     .teaser-map_text h3 {
-//         font-size: 2.25rem;
-//     }
-//     .teaser-map_text p {
-//         font-size: 2rem;
-//     }
-//     .footer-info_item:last-child {
-//         margin: 0 0 0 400px;
-//     }
-// }
-// @media screen and (min-width: 1600px) {
-//     .slider-content {
-//         top: 140px;
-//     }
-//     .slider-content_home {
-//         top: 320px;
-//     }
-// }
-// @media screen and (min-width: 1900px) {
-//     .teaser-map {
-//         background-size: cover;
-//     }
-//     .swiper img {
-//         max-width: none;
-//         width: 100%;
-//     }
-// }
-
-// @media (max-width: 1120px) {
 //     .titel__text {
-//         top: 15vh;
+//         margin-top: 10.5vh;
 
 //         h1 {
-//             font-size: 3.57vw;
+//             font-size: 35px;
 //         }
 
 //         p {
-//             font-size: 2.14vw;
+//             font-size: 20px;
 //         }
+//     }
+
+//     .donate {
+//         &__text1 h2,
+//         h2 {
+//             font-size: 20px;
+//         }
+//         &__text1 p {
+//             font-size: 14px;
+//         }
+//     }
+
+//     .teaser-container {
+//         // flex-direction: column;
+
+//         .teaser {
+//             &__text p,
+//             p {
+//                 font-size: 14px;
+//             }
+//         }
+//     }
+
+//     .schulbesuche {
+//         &__titel {
+//             margin-top: 15vh;
+//         }
+//     }
+// }
+
+// @media (max-width: 800px) {
+//     ul {
+//         // list-style-type: none;
+//         margin-left: 15px;
+//     }
+//     .titel__text {
+//         margin-top: 8.5vh;
+//     }
+
+//     .donate {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .schulbesuche {
+//         display: flex;
+//         flex-direction: column;
+
+//         &__text1 h1 {
+//             font-size: 14px;
+//             margin-left: 10px;
+//         }
+
+//         &__text1 li {
+//             margin-left: 0px;
+//             font-size: 14px;
+//         }
+
+//         &__text2 h1 {
+//             font-size: 14px;
+//             margin-left: 10px;
+//         }
+//         &__text2 li {
+//             font-size: 14px;
+//             margin-left: 10px;
+//         }
+//         &__text3 h1 {
+//             font-size: 14px;
+//             margin-left: 10px;
+//         }
+//         &__text3 p {
+//             font-size: 14px;
+//             margin-left: 10px;
+//         }
+//     }
+//     .termin {
+//         display: flex;
+//         flex-direction: column;
+//     }
+//     .card-title {
+//         font-size: 14px;
+//         font-weight: bold;
+//         text-align: center;
+//     }
+//     .card-text {
+//         font-size: 14px;
+//         text-align: center;
+//     }
+
+//     .reason {
+//         // width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         // align-items: center;
+
+//         // margin-bottom: 50px;
+
+//         &__text p {
+//             font-size: 14px;
+//             margin-left: 10px;
+//             // margin-right: 100px;
+//         }
+//     }
+
+//     .reason-titel {
+//         h1 {
+//             font-size: 16px;
+//             font-weight: bold;
+//         }
+//     }
+
+//     .schulbesuche__text5 p {
+//         text-align: center;
+//         font-size: 14px;
+//     }
+
+//     .person-data input {
+//         width: 100%;
+//     }
+
+//     .button-buchen1 {
+//         margin-left: 10px;
+//         margin-top: 10px;
+//         margin-bottom: 20px;
+//     }
+
+//     .button-buchen2 {
+//         // margin-left: 200px;
+//         left: 50%;
+//         margin-top: 10px;
+//         margin-bottom: 20px;
+//     }
+// }
+
+// @media (max-width: 650px) {
+//     .container {
+//         padding: 30px;
+//     }
+
+//     .main {
+//         width: 100%;
+//         margin: auto;
+//     }
+
+//     .header {
+//         grid-template-columns: 1fr;
+//         margin-left: 10px;
+
+//         &__logo {
+//             width: 200px;
+//             margin-bottom: 0px;
+//         }
+
+//         &__button {
+//             margin-top: 0px;
+//             margin-bottom: 0px;
+//             width: 100px;
+//             justify-self: left;
+//         }
+//     }
+
+//     .titel__text {
+//         margin-top: 4vh;
+//         margin-left: 10px;
+//     }
+
+//     .book {
+//         flex-direction: column;
+//     }
+// }
+
+// @media (max-width: 500px) {
+//     .titel__text {
+//         margin-top: 1.5vh;
+//     }
+// }
+
+// @media (max-width: 350px) {
+//     .titel__text {
+//         margin-top: 0.5vh;
 //     }
 // }
 

@@ -80,23 +80,64 @@ a {
   text-align: center;
 }
 
-.content__titel h1 {
-  font-size: 4.69vw;
-}
-
-.content__image img {
-  margin-top: 0vh;
-  margin-right: 0px;
-}
-
-.content__image {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.vertical-align-top {
+  vertical-align: top;
 }
 
 .responsive {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+.bottom_top_buffer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.more-info .title {
+  font-weight: bold;
+  font-size: 28px;
+}
+.more-info .desc {
+  font-size: 18px;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.feature img {
+  width: 50em;
+}
+.feature .content {
+  width: 50em;
+}
+
+.feature.left {
+  grid-template-areas: "left right";
+}
+.feature.left img {
+  grid-area: left;
+}
+.feature.left .content {
+  text-align: left;
+  width: 50em;
+  justify-self: left;
+}
+
+.school__spende_image {
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 30%;
 }
 
 .contact__label {
@@ -113,26 +154,28 @@ a {
   font-size: 1.0714vw;
 }
 
+.content__titel h1 {
+  font-size: 4.69vw;
+  font-weight: bold;
+}
+
 .content__text h2,
 h2 {
-  font-size: 2.19vw;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .content__text h3,
 h3 {
-  font-size: 1.41vw;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .content__text p,
+.teaser__text p,
 p,
 li {
-  font-size: 1.25vw;
-}
-
-.content__text li {
-  font-size: 1.25vw;
+  font-size: 18px;
 }
 
 .container {
@@ -144,7 +187,7 @@ li {
 }
 
 .main {
-  width: 70%;
+  max-width: 70%;
   margin: auto;
   position: relative;
 }
@@ -422,11 +465,10 @@ li {
   box-shadow: 0 0 20px var(--bg-grey);
 }
 .teaser-container .teaser__text p {
-  line-height: 1.1;
-  font-size: 1.25vw;
-  margin-top: 2.6vh;
-  margin-bottom: 5.95vh;
   margin-left: 2vh;
+  margin-right: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .teaser-container .teaser__image {
   max-width: none;
@@ -489,6 +531,10 @@ li {
   max-width: none;
   width: 100%;
   margin-left: 20.95vw;
+}
+
+.book-image {
+  margin-top: 7%;
 }
 
 .impressum__text {
@@ -579,6 +625,19 @@ li {
   margin-left: 6vw;
 }
 
+.cyber_button_center {
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 30%;
+}
+
+.cyber_button_left {
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+
 .termin {
   display: flex;
   flex-direction: row;
@@ -650,17 +709,16 @@ li {
 
 @media (max-width: 1400px) {
   .titel__text {
-    margin-top: 15.5vh;
+    margin-top: 13.5vh;
+  }
+  .press__titel {
+    margin-top: 16.5vh;
+  }
+  .schulbesuche__titel {
+    margin-top: 13.5vh;
   }
 }
 @media (max-width: 1000px) {
-  h3 {
-    font-size: 16px;
-  }
-  p,
-  li {
-    font-size: 14px;
-  }
   .titel__text {
     margin-top: 10.5vh;
   }
@@ -670,152 +728,37 @@ li {
   .titel__text p {
     font-size: 20px;
   }
-  .content {
-    margin-left: 10px;
-  }
-  .content__text h2,
-  .content h2 {
-    font-size: 20px;
-  }
-  .content__text p,
-  .content li {
-    font-size: 14px;
-  }
-  .donate__text1 h2,
-  .donate h2 {
-    font-size: 20px;
-  }
-  .donate__text1 p {
-    font-size: 14px;
-  }
-  .teaser-container .teaser__text p,
-  .teaser-container .teaser p {
-    font-size: 14px;
-  }
-  .schulbesuche__titel {
-    margin-top: 15vh;
-  }
 }
 @media (max-width: 800px) {
-  ul {
-    margin-left: 15px;
-  }
   .titel__text {
+    margin-top: 5vh;
+  }
+  .press__titel {
     margin-top: 8.5vh;
   }
-  .donate {
-    display: flex;
-    flex-direction: column;
+  .schulbesuche__titel {
+    margin-top: 9vh;
   }
-  .schulbesuche {
-    display: flex;
-    flex-direction: column;
+  .header__image img {
+    margin-left: 1px;
+    align-self: self-start;
+    float: inline-start;
   }
-  .schulbesuche__text1 h1 {
-    font-size: 14px;
-    margin-left: 10px;
-  }
-  .schulbesuche__text1 li {
-    margin-left: 0px;
-    font-size: 14px;
-  }
-  .schulbesuche__text2 h1 {
-    font-size: 14px;
-    margin-left: 10px;
-  }
-  .schulbesuche__text2 li {
-    font-size: 14px;
-    margin-left: 10px;
-  }
-  .schulbesuche__text3 h1 {
-    font-size: 14px;
-    margin-left: 10px;
-  }
-  .schulbesuche__text3 p {
-    font-size: 14px;
-    margin-left: 10px;
-  }
-  .termin {
-    display: flex;
-    flex-direction: column;
-  }
-  .card-title {
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .card-text {
-    font-size: 14px;
-    text-align: center;
-  }
-  .reason {
-    display: flex;
-    flex-direction: column;
-  }
-  .reason__text p {
-    font-size: 14px;
-    margin-left: 10px;
-  }
-  .reason-titel h1 {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .schulbesuche__text5 p {
-    text-align: center;
-    font-size: 14px;
-  }
-  .person-data input {
-    width: 100%;
-  }
-  .button-buchen1 {
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .button-buchen2 {
-    left: 50%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  .feature {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 650px) {
-  .container {
-    padding: 30px;
-  }
-  .main {
-    width: 100%;
-    margin: auto;
-  }
-  .header {
-    grid-template-columns: 1fr;
+  .titel__text {
+    margin-top: 1vh;
     margin-left: 10px;
   }
-  .header__logo {
-    width: 200px;
-    margin-bottom: 0px;
-  }
-  .header__button {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 100px;
-    justify-self: left;
-  }
-  .titel__text {
+  .schulbesuche__titel {
     margin-top: 4vh;
-    margin-left: 10px;
   }
-  .book {
-    flex-direction: column;
-  }
-}
-@media (max-width: 500px) {
-  .titel__text {
-    margin-top: 1.5vh;
-  }
-}
-@media (max-width: 350px) {
-  .titel__text {
-    margin-top: 0.5vh;
+  .header__image img {
+    margin-left: 1px;
+    align-self: self-start;
   }
 }
 /* @media only screen and (max-width: 600px)  {...}

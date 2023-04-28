@@ -1,0 +1,277 @@
+{% extends "../main/base_generic_new_version.html" %}
+<!-- ######################## -->
+{% load static %}
+<!-- ######################### -->
+{% block content %}
+<!-- ######################### -->
+
+<div class="main-titel titel__bg-image">
+    <div class="titel__image main-image-10">
+        <img
+            src="{% static 'main/assets/img/new/myschool/title_bild.PNG' %}"
+            width="1920"
+            height="700"
+            alt="BG_Titel"
+        />
+    </div>
+</div>
+<div class="main-content">
+    <div class="main">
+        <div class="content">
+            <div class="content__text">
+                <h2>Tusanyuse okukulaba!<br />Unsere Schule in Uganda</h2>
+                <p style="text-align: justify">
+                    Dinge, die für uns selbstverständlich sind, sind für viele
+                    Kinder in Uganda unerreichbarer Luxus. Bildung, sauberes
+                    Trinkwasser, geregelte Mahlzeiten. Mit unserer Schule
+                    Ntenjeru Unique High School geben wir diesen Kindern die
+                    Möglichkeit auf all das was auch für sie selbstverständlich
+                    sein sollte. Wir haben den Samen gesäht, gemeinsam k,önnen
+                    wir Uganda in voller Blüte wachsen lassen.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="more-info">
+    <div class="main">
+        <div class="feature">
+            <div class="content">
+                <p class="title">Und so fng alles an:</p>
+                <p class="desc">
+                    Als kleiner Schuljunge erkannte unser Vereinsmitglied James
+                    Kaggwa mit Bedauern sehr früh, welchen Nachteil die anderen
+                    Kinder seines Dorfes in Uganda hatten, die nicht, wie er,
+                    zur Schule gehen konnten. Schon damals beschloss er, später,
+                    wenn er groß ist, die Entwicklung in seinem Dorf positiv zu
+                    beeinfussen insbesondere die Chancengleichheit für junge
+                    Menschen auf Bildung. 2006 bot sich ihm die Möglichkeit in
+                    der nähe seines Heimatdorfes die privat Schule zu gründen.
+                    Er ergriff selbstlos die Chance, noch ärmeren Kindern , die
+                    Möglichkeit zur Schulausbildung zu geben. Mit Hilfe seines
+                    vom Großvater geerbten Landes und Kreditaufnahmen
+                    realisierte er dies
+                </p>
+            </div>
+            <img
+                src="{% static 'main/assets/img/new/myschool/girls_dom.PNG' %}"
+                alt="schulbesuche-01"
+            />
+        </div>
+        <div class="feature left">
+            <div class="content">
+                <p class="title">Was wir bereits geschafft haben:</p>
+                <p class="desc">
+                    Zum Zeitpunkt der Gründung gab es gar nichts. Weder eine
+                    Toilette, noch Schlafmöglichkeit, keinen Strom, keinen
+                    Speisesaal, keinen Raum für medizinische Notversorgung. Die
+                    ersten Maßnahmen waren der Bau eines Brunnens und Toiletten,
+                    Schlafräume und Unterrichtsgebäude. Mit dieser
+                    Infrastruktur, bestand die Möglichkeit, Kindern aus oft weit
+                    entlegenen Orten neben der Schule ebenfalls eine
+                    Unterbringung bereit zu stellen. Manche Familien der Kinder
+                    unserer Schule haben kein Geld für die Gebühren und Kosten.
+                    Sie sind so arm, dass die Kinder ihre einzige Mahlzeit in
+                    unserer Schule erhalten. Diese Kinder verdienen endlich eine
+                    Chance und wir geben sie ihnen!
+                </p>
+            </div>
+            <img
+                src="{% static 'main/assets/img/new/myschool/students_meeting.PNG' %}"
+                alt="schulbesuche-01"
+            />
+        </div>
+        <div class="feature">
+            <div class="content">
+                <p class="title">Das benötigt die Schule dringend:</p>
+
+                <ul>
+                    <li>
+                        In Uganda haben ca. 95% der Menschen kein sauberes
+                        Trinkwasser: wir benötigen Expert*innen auf dem Gebiet
+                        der Wasserversorgung
+                    </li>
+                    <li>Pumpe und Wasserbehälter für den Brunnen</li>
+                    <li>Pädagog*innen vor Ort</li>
+                    <li>Unterrichtsmaterialienen: Stifte, Blöcke, etc.</li>
+                    <li>
+                        Klassenzimmerausstattungen: Labor, Tische, Stühle,..
+                    </li>
+                    <li>Transportmöglichkeiten der Materialien</li>
+                </ul>
+                <div class="school__spende_image">
+                    <a href="{% url 'main-donate' %}">
+                        <img
+                            class="img-fluid float-end school__image"
+                            src="{% static 'main/assets/img/new/Spende/Button-jetzt-Spenden-Pfeil.svg' %}"
+                            alt="Spenden Button"
+                        />
+                    </a>
+                </div>
+            </div>
+            <img
+                src="{% static 'main/assets/img/new/myschool/men_at_work.PNG' %}"
+                alt="schulbesuche-01"
+            />
+        </div>
+    </div>
+</section>
+<!-- ######################################################################################### -->
+
+<div class="schulbesuche-reasonwhy top2p">
+    <div class="main">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="content__text">
+                    <h3><br />Good to know:</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="reason__image">
+                            <img
+                                src="{% static 'main/assets/img/new/schule/Icon-Vortrag-Klasse.svg' %}"
+                                width="90"
+                                alt="REASON1"
+                                class="responsive"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="content__text">
+                            <p>
+                                Wir sind eine Secondary und High School und
+                                haben zur Zeit 150 Schüler*innen, 14
+                                Lehrer*innen und 4 Hektor Gesamtfäche.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="reason__image">
+                            <img
+                                src="{% static 'main/assets/img/new/schule/Icon-Micro.svg' %}"
+                                width="70"
+                                alt="REASON2"
+                                class="responsive"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="content__text">
+                            <p>
+                                In Uganda besteht keine allgemeine Schulpficht.
+                                Der Besuch einer Schule wird ausschließlich
+                                privat fnanziert. Vielen Waisenkindern oder
+                                Kindern aus sehr armen Familien bleibt die
+                                Chance auf Bildung verwehrt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ######################################################################################### -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="reason__image">
+                            <img
+                                src="{% static 'main/assets/img/new/schule/Icon-Mobbing.svg' %}"
+                                width="90"
+                                alt="REASON3"
+                                class="responsive"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="content__text">
+                            <p>
+                                Der Unterricht geht regulär bis ca. 16 Uhr. Je
+                                nach Entfernung des Wohnortes der Familie
+                                schlafen die Schüler*innen auch in der Schule.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="reason__image">
+                            <img
+                                src="{% static 'main/assets/img/new/schule/Icon-Social-Media.svg' %}"
+                                width="80"
+                                alt="REASON2"
+                                class="responsive"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="content__text">
+                            <p>
+                                Die Schüler*innen sind auf deine Hilfe
+                                angweiesen! Mach auf uns aufmerksam und frag in
+                                deinem Umfeld nach Unterstützung!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="more-info">
+    <div class="main">
+        <div class="feature">
+            <div class="content">
+                <p class="title">Der Gründer:</p>
+
+                <ul>
+                    <li>
+                        James Kaggwa ist in Kalengera, Uganda geboren und
+                        aufgewachsen
+                    </li>
+                    <li>
+                        Mittels eines Kirchenstipendiums (Brot für die Welt) kam
+                        er 1978 nach Deutschland
+                    </li>
+                    <li>
+                        Nach seinem Diplomabschluss in Maschinenbau studierte er
+                        Informatik
+                    </li>
+                    <li>
+                        Er arbeitete Jahrzehnte lang in einem IT-Unternehmen als
+                        SoftwareEntwickler
+                    </li>
+                </ul>
+
+                <div class="school__spende_image">
+                    <a href="{% url 'main-donate' %}">
+                        <img
+                            class="img-fluid float-end school__image"
+                            src="{% static 'main/assets/img/new/Spende/Button-jetzt-Spenden-Pfeil.svg' %}"
+                            alt="Spenden Button"
+                        />
+                    </a>
+                </div>
+            </div>
+            <img
+                src="{% static 'main/assets/img/new/myschool/school_director.PNG' %}"
+                alt="schulbesuche-01"
+            />
+        </div>
+    </div>
+</section>
+<!-- ######################################################################################### -->
+<!-- ##################################### -->
+{% endblock %}

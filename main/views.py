@@ -36,7 +36,7 @@ def booking(request):
     return render(request, 'main/booking.html', {'title': 'Booking'})
 
 def school(request):
-    return render(request, 'main/school.html', {'title': 'school'})
+    return render(request, 'main/project_school_uganda.html', {'title': 'school'})
 def coffee(request):
     return render(request, 'main/coffee.html', {'title': 'coffee'})
 def vanilla(request):

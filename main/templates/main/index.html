@@ -52,7 +52,7 @@
         <div class="content">
             <div class="content__text">
                 <h2>Willkommen bei uns!<br />Schön, dass du hier bist.</h2>
-                <p>
+                <p style="text-align: justify">
                     Hier findest du alles Rund um Lijana und Love Always Wins
                     e.V.
                 </p>
@@ -66,16 +66,18 @@
         <div class="teaser-container">
             <div class="teaser">
                 <div class="teaser__image">
-                    <img
-                        src="{% static 'main/assets/img/new/01-Lijana.jpg' %}"
-                        alt="Lijana-model"
-                        loading="lazy"
-                    />
+                    <a href="{% url 'main-lijana' %}">
+                        <img
+                            src="{% static 'main/assets/img/new/01-Lijana.jpg' %}"
+                            alt="Lijana-model"
+                            loading="lazy"
+                        />
+                    </a>
 
                     <span class="card_label">Model Karriere</span>
                 </div>
                 <div class="teaser__button-Lijana">
-                    <a href="#">
+                    <a href="{% url 'main-lijana' %}">
                         <img
                             style="margin-top: 28px; margin-left: 20px"
                             src="{% static 'main/assets/img/new/grafik/01-Lijana.svg' %}"
@@ -85,7 +87,7 @@
                     </a>
                 </div>
                 <div class="teaser__text">
-                    <p>
+                    <p style="text-align: justify">
                         Lijana Kaggwa (25) gab ihr Mathestudium für eine
                         Modelkarriere auf.
                     </p>
@@ -112,7 +114,7 @@
                     </a>
                 </div>
                 <div class="teaser__text">
-                    <p>
+                    <p style="text-align: justify">
                         Was als großer Traum begann, mündete in einem Albtraum.
                         Aus der Favoritin der Sendung wurde eine Zielscheibe.
                     </p>
@@ -120,11 +122,13 @@
             </div>
             <div class="teaser">
                 <div class="teaser__image">
-                    <img
-                        src="{% static 'main/assets/img/new/03-Schulbesuche.jpg' %}"
-                        alt="Schdivbesuche-divjana"
-                        loading="lazy"
-                    />
+                    <a href="{% url 'main-schulbesuche' %}">
+                        <img
+                            src="{% static 'main/assets/img/new/03-Schulbesuche.jpg' %}"
+                            alt="Schdivbesuche-divjana"
+                            loading="lazy"
+                        />
+                    </a>
 
                     <span class="card_label">Workshops</span>
                 </div>
@@ -139,7 +143,7 @@
                     </a>
                 </div>
                 <div class="teaser__text">
-                    <p>
+                    <p style="text-align: justify">
                         Erhalte Einblicke in unsere Vorträge und Workshops an
                         Schulen.
                     </p>
@@ -150,13 +154,15 @@
 </div>
 <div class="main-book">
     <div class="main">
-        <div class="book">
-            <div class="book__text">
-                <img
-                    src="{% static 'main/assets/img/new/Jetzt-erhaeltlich-in-allen-Buchhandlungen.svg' %}"
-                    alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
-                    loading="lazy"
-                />
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="book-image">
+                    <img
+                        src="{% static 'main/assets/img/new/Jetzt-erhaeltlich-in-allen-Buchhandlungen.svg' %}"
+                        alt="BOOK TEXT CYBERMOBBING LoveAlwaysWins"
+                        loading="lazy"
+                    />
+                </div>
 
                 <a href="{% url 'main-book' %}">
                     <img
@@ -168,7 +174,7 @@
                     />
                 </a>
             </div>
-            <div class="book__image">
+            <div class="col-sm-6">
                 <a href="{% url 'main-book' %}">
                     <img src="{% static 'main/assets/img/new/Buch.png' %}" />
                 </a>

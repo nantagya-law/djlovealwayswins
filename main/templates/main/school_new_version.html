@@ -26,11 +26,10 @@
 </div>
 <div class="main-content">
     <div class="main">
-        <div class="content">
-            <div class="content__text">
+        <div class="row" style="text-align: justify">
+            <div class="col-sm-12">
                 <h2>Mach dich stark!<br />Gemeinsam gegen Hass im Netz.</h2>
-            </div>
-            <div class="content__text">
+
                 <p>
                     Social Media ist aus unsere Gesellschaft nicht mehr
                     wegzudenken. Egal ob WhatsApp, Instagram oder Tik Tok - fast
@@ -50,21 +49,24 @@
 <!-- ################## Schulbesuche ######################## -->
 
 <div class="main-schulbesuche">
+    <!-- ######################################################################################### -->
+    <!-- ######################################################################################### -->
     <div class="main">
-        <div class="container-image-text">
-            <div class="content__image">
+        <div class="row">
+            <div class="col-sm-12">
                 <br /><br />
                 <img
+                    class="float-start img-fluid"
+                    style="margin-right: 40px; margin-bottom: 40px"
                     src="{% static 'main/assets/img/new/schulbesuche/Schulbesuche-01.jpg' %}"
                     width="560"
                     height="321"
                     alt="schulbesuche-01"
-                    class="responsive"
                 />
-            </div>
 
-            <div class="content__text">
-                <h3>Das haben wir für euch:</h3>
+                <h3 class="align-top">Das haben wir für euch:</h3>
+
+                <!-- text-align: top; -->
 
                 <ul>
                     <li>Medienkompetenz Workshops oder Vorträge mit Lijana</li>
@@ -93,12 +95,19 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <!-- ######################################################################################### -->
 
-    <div class="main">
-        <div class="container-image-text">
-            <div class="content__text">
+        <!-- ######################################################################################### -->
+
+        <div class="row">
+            <div class="col-sm-12">
+                <img
+                    class="float-end img-fluid"
+                    style="margin-left: 40px; margin-bottom: 40px"
+                    src="{% static 'main/assets/img/new/schulbesuche/Schulbesuche-03.jpg' %}"
+                    width="560"
+                    alt="schulbesuche-0"
+                    loading="lazy"
+                />
                 <h3>Inhalte:</h3>
 
                 <ul>
@@ -109,30 +118,24 @@
                     <li>Selbstvertrauen als Resilienz gegen Cybermobbing</li>
                     <li>Gefahren und Chancen von Social Media</li>
                 </ul>
-                <div class="button-buchen1">
+                <div class="cyber_button_left">
                     <a href="{% url 'main-contact' %}">
                         <img
                             src="{% static 'main/assets/img/new/schule/Button-Pfeil-jetzt-Buchen.svg' %}"
                             width="300"
                             alt="Button-Pfeil-jetzt-Buchen"
+                            class="responsive"
                         />
                     </a>
                 </div>
-            </div>
-            <div class="content__image">
-                <img
-                    src="{% static 'main/assets/img/new/schulbesuche/Schulbesuche-03.jpg' %}"
-                    width="560"
-                    height="321"
-                    alt="schulbesuche-0"
-                    loading="lazy"
-                    class="responsive"
-                />
+
+                <br /><br />
             </div>
         </div>
-    </div>
-    <div class="main">
-        <div class="row">
+        <!-- ######################################################################################### -->
+        <!-- ######################################################################################### -->
+
+        <div class="row top2p">
             <div class="col-sm-4">
                 <div class="card border-0" style="width: 200px">
                     <img
@@ -161,7 +164,7 @@
                             Halb Tag <br />( bis zu 3 Stunden)<br />
                             Ein-Tages-Programm <br />(bis zu 6 Stunden)<br />
                             Wochen-Programm<br />
-                            (bis zu 5 Tagen)<br /><br /><br />
+                            (bis zu 5 Tagen)
                         </p>
                     </div>
                 </div>
@@ -180,68 +183,22 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- ######################################################################################### -->
-    <!-- <div class="main">
-        <div class="container-image-text">
-            <div class="card border-0" style="width: 100px">
-                <img
-                    class="card-img-top"
-                    src="{% static 'main/assets/img/new/schule/Icon-Termin.svg' %}"
-                    alt="TERMIN image"
-                />
-                <div class="card-body">
-                    <h2 class="card-title">TERMIN</h2>
-                    <p class="card-text">
-                        Den Termin können Sie individuell mit uns abstimmen
-                    </p>
-                </div>
-            </div>
-            <div class="card border-0" style="width: 100px">
-                <img
-                    class="card-img-top"
-                    src="{% static 'main/assets/img/new/schule/Icon-Dauer.svg' %}"
-                    alt="DAUER image"
-                />
-                <div class="card-body">
-                    <h2 class="card-title">DAUER</h2>
-                    <p class="card-text">
-                        Halb Tag <br />( bis zu 3 Stunden)<br />
-                        Ein-Tages-Programm <br />(bis zu 6 Stunden)<br />
-                        Wochen-Programm<br />
-                        (bis zu 5 Tagen)<br /><br /><br />
-                    </p>
-                </div>
-            </div>
-            <div class="card border-0" style="width: 100px">
-                <img
-                    class="card-img-top"
-                    src="{% static 'main/assets/img/new/schule/Icon-Kosten.svg' %}"
-                    alt="KOSTEN image"
-                />
-                <div class="card-body">
-                    <h2 class="card-title">KOSTEN</h2>
-                    <p class="card-text">Kosten nach Anfrage.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- ######################################################################################### -->
 
-    <div class="main">
-        <div class="container-image-text">
-            <div class="content__image">
-                <br /><br />
+        <!-- ######################################################################################### -->
+        <!-- <div class="row top2p"> -->
+
+        <div class="row" style="text-align: justify">
+            <div class="col-sm-12">
+                <br />
+                <br />
                 <img
+                    class="float-start img-fluid"
+                    style="margin-right: 20px; margin-bottom: 10px"
                     src="{% static 'main/assets/img/new/schulbesuche/Schulbesuche-02.jpg' %}"
                     width="560"
-                    height="321"
                     alt="schulbesuche-01"
-                    class="responsive"
                 />
-            </div>
 
-            <div class="content__text">
                 <h3>Zum Ablauf:</h3>
 
                 <p>
@@ -257,119 +214,148 @@
             </div>
         </div>
     </div>
-</div>
-<!-- ######################################################################################### -->
 
-<div class="main-schulbesuche">
-    <div class="schulbesuche-reasonwhy">
-        <div class="main">
-            <div class="content__text">
-                <h3><br />Reason Why</h3>
-            </div>
-        </div>
-        <!-- ######################################################################################### -->
+    <!-- ######################################################################################### -->
 
+    <div class="schulbesuche-reasonwhy top2p">
         <div class="main">
-            <div class="container-image-text">
-                <div class="reason">
-                    <div class="reason__image">
-                        <img
-                            src="{% static 'main/assets/img/new/schule/Icon-Vortrag-Klasse.svg' %}"
-                            width="100"
-                            alt="REASON1"
-                        />
-                    </div>
+            <div class="row">
+                <div class="col-sm-3">
                     <div class="content__text">
-                        <p>
-                            Den Teilnehmenden wird eine neue Sichtweise auf das
-                            Thema Cybermobbing geboten, da unsere Vorträge von
-                            persönlichen Erfahrungen leben.
-                        </p>
-                    </div>
-                </div>
-                <div class="reason">
-                    <div class="reason__image">
-                        <img
-                            src="{% static 'main/assets/img/new/schule/Icon-Social-Media.svg' %}"
-                            width="90"
-                            alt="REASON2"
-                        />
-                    </div>
-                    <div class="content__text">
-                        <p>
-                            Social Media ist ein beliebtes und alltägliches Tool
-                            für viele Menschen. Ein reflektierter Umgang damit,
-                            ist nicht nur wichtig für sich selbst, sondern auch
-                            für die gesamte Gesellschaft.
-                        </p>
+                        <h3><br />Reason Why</h3>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- ######################################################################################### -->
-
-        <div class="main">
-            <div class="container-image-text">
-                <div class="reason">
-                    <div class="reason__image">
-                        <img
-                            src="{% static 'main/assets/img/new/schule/Icon-Micro.svg' %}"
-                            width="80"
-                            alt="REASON3"
-                        />
-                    </div>
-                    <div class="content__text">
-                        <p>
-                            Kommunikation hat eine neue Ebene-Social Media.
-                            Jetzt ist nicht nur der richtige Umgang mit den
-                            Medien, sondern auch der richtige Umgang mit
-                            einander auf den Plattformen entscheidend.
-                        </p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="reason__image">
+                                <img
+                                    src="{% static 'main/assets/img/new/schule/Icon-Vortrag-Klasse.svg' %}"
+                                    width="120"
+                                    alt="REASON1"
+                                    class="responsive"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="content__text">
+                                <p>
+                                    Den Teilnehmenden wird eine neue Sichtweise
+                                    auf das Thema Cybermobbing geboten, da
+                                    unsere Vorträge von persönlichen Erfahrungen
+                                    leben.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="reason">
-                    <div class="reason__image">
-                        <img
-                            src="{% static 'main/assets/img/new/schule/Icon-Mobbing.svg' %}"
-                            width="90"
-                            alt="REASON4"
-                        />
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="reason__image">
+                                <img
+                                    src="{% static 'main/assets/img/new/schule/Icon-Social-Media.svg' %}"
+                                    width="120"
+                                    alt="REASON2"
+                                    class="responsive"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="content__text">
+                                <p>
+                                    Social Media ist ein beliebtes und
+                                    alltägliches Tool für viele Menschen. Ein
+                                    reflektierter Umgang damit, ist nicht nur
+                                    wichtig für sich selbst, sondern auch für
+                                    die gesamte Gesellschaft.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content__text">
-                        <p>
-                            Die Auswirkungen von Cybermobbing können gravierend
-                            für Betroffene sein. Umso wichtiger ist es zu
-                            handeln, bevor etwas passiert!
-                        </p>
+                </div>
+            </div>
+            <!-- ######################################################################################### -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="reason__image">
+                                <img
+                                    src="{% static 'main/assets/img/new/schule/Icon-Micro.svg' %}"
+                                    width="90"
+                                    alt="REASON3"
+                                    class="responsive"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="content__text">
+                                <p>
+                                    Kommunikation hat eine neue Ebene-Social
+                                    Media. Jetzt ist nicht nur der richtige
+                                    Umgang mit den Medien, sondern auch der
+                                    richtige Umgang mit einander auf den
+                                    Plattformen entscheidend.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="reason__image">
+                                <img
+                                    src="{% static 'main/assets/img/new/schule/Icon-Mobbing.svg' %}"
+                                    width="120"
+                                    alt="REASON4"
+                                    class="responsive"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="content__text">
+                                <p>
+                                    Die Auswirkungen von Cybermobbing können
+                                    gravierend für Betroffene sein. Umso
+                                    wichtiger ist es zu handeln, bevor etwas
+                                    passiert!
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ######################################################################################### -->
 
-    <div class="main-schulbesuche">
+    <!-- ######################################################################################### -->
+    <div class="cybermobbing">
         <div class="main">
-            <div class="schulbesuche2">
-                <div class="content__text text-center">
-                    <h3>
-                        <br />
-                        <br />
-                        <br />
-                        Lijana litt aufgrund der Ausstrahlung bei Germany’s next
-                        Topmodel selber unter extremem Cybermobbing. Daraufhin
-                        bildete Sie sich im Bereich digitale Gewalt fort,
-                        arbeitete sie mit großen Organisationen und mit
-                        Expert*innen auf diesem Gebiet zusammen und entwickelte
-                        gemeinsam mit Ihnen dieses Programm.
-                    </h3>
-                    <div class="button-buchen2" style="text-align: center">
-                        <a href="{% url 'main-contact' %}">
-                            <img
-                                src="{% static 'main/assets/img/new/schule/Button-Pfeil-jetzt-Buchen-2.svg' %}"
-                                alt="Button-Pfeil-jetzt-Buchen"
-                            />
-                        </a>
+            <div class="row top2p">
+                <div class="col-sm-12">
+                    <div class="content__text text-center">
+                        <h3>
+                            Lijana litt aufgrund der Ausstrahlung bei Germany’s
+                            next Topmodel selber unter extremem Cybermobbing.
+                            Daraufhin bildete Sie sich im Bereich digitale
+                            Gewalt fort, arbeitete sie mit großen Organisationen
+                            und mit Expert*innen auf diesem Gebiet zusammen und
+                            entwickelte gemeinsam mit Ihnen dieses Programm.
+                        </h3>
+                        <div class="cyber_button_center">
+                            <a href="{% url 'main-contact' %}">
+                                <img
+                                    src="{% static 'main/assets/img/new/schule/Button-Pfeil-jetzt-Buchen-2.svg' %}"
+                                    width="500"
+                                    alt="Button-Pfeil-jetzt-Buchen"
+                                    class="responsive"
+                                />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
